@@ -1,5 +1,4 @@
 
-import logo from '../assets/creative pay logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -9,7 +8,7 @@ export default function Navbar() {
         <div className="flex-1 px-2">
             <div className="avatar">
                 <div className="w-36 h-10 rounded object-fill">
-                   <Link to="/"><img src={logo} /></Link> 
+                   <Link to="/"><img src="./assets/creative pay logo.png" /></Link> 
                 </div>
             </div>
         </div>

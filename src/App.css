@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 } */
+
+@media(max-width:768px){
+  .top .react-reveal,.react-reveal.bottom p,
+  .react-reveal span,.react-reveal .item-inner,
+  h2 .react-reveal, h2 .react-reveal span,
+  .imgs .react-reveal, .react-reveal h4,
+  .react-reveal .links, .react-reveal h3,
+  .react-reveal .MuiFormControl-root,
+  .react-reveal button, .react-reveal.last,
+  .react-reveal p{
+  animation:unset !important;
+}
+}

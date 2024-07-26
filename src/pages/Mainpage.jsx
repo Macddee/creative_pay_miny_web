@@ -1,15 +1,25 @@
-import About from "../components/home/About";
+import Audit from "../components/home/Audit";
 import Banner from "../components/home/Banner";
-import Services from "../components/home/Services";
-
-
+import Because from "../components/home/Because";
+import Employ from "../components/home/Employ";
+import Footer from "../components/home/Footer";
+import GetInTouch from "../components/home/GetInTouch";
+import Hardware from "../components/home/Hardware";
+import Multi from "../components/home/Multi";
+import Partners from "../components/home/Partners";
+import Scanning from "../components/home/Scanning";
 
 export default function Mainpage() {
   return (
     <>
-      <Banner title="This is the home page title" extraClasses="bg-red-600" />
-      <About />
-      <Services />
+      <Banner />
+      <Because />
+      <Hardware />
+      <Multi />
+      <Employ />
+      <Scanning />
+      <GetInTouch />
+      <Footer />
     </>
   )
 }

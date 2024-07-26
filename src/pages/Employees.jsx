@@ -66,7 +66,7 @@ export default function Employees() {
                   <span className="ml-3">Home</span>
                 </NavLink>
                 <NavLink
-                  to="/employees/events"
+                  to="/employees/company"
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
@@ -75,11 +75,11 @@ export default function Employees() {
                   }}
                 >
                   <FaBuildingUser className="w-6 h-6 text-gray-400 transition duration-75 text-grape " />
-                  <span className={` ml-3`}>Events</span>
+                  <span className={` ml-3`}>Company</span>
                 </NavLink>
 
                 <NavLink
-                  to="/employees/other-link"
+                  to="/employees/tax-information"
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
@@ -88,8 +88,74 @@ export default function Employees() {
                   }}
                 >
                   <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
-                  <span className="ml-3">Other Link</span>
+                  <span className="ml-3">Tax Information</span>
                 </NavLink>
+
+                <NavLink
+                  to="/employees/banking"
+                  onClick={() => setIsSidebarOpen(false)}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                  }}
+                >
+                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <span className="ml-3">Banking</span>
+                </NavLink>
+
+                <NavLink
+                  to="/employees/indicators"
+                  onClick={() => setIsSidebarOpen(false)}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                  }}
+                >
+                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <span className="ml-3">Indicators</span>
+                </NavLink>
+
+                <NavLink
+                  to="/employees/references"
+                  onClick={() => setIsSidebarOpen(false)}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? "bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                  }}
+                >
+                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <span className="ml-3">References</span>
+                </NavLink>
+
+                <NavLink
+                  to="/employees/dates"
+                  onClick={() => setIsSidebarOpen(false)}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                  }}
+                >
+                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <span className="ml-3">Dates</span>
+                </NavLink>
+
+                <NavLink
+                  to="/employees/amounts"
+                  onClick={() => setIsSidebarOpen(false)}
+                  className={({ isActive }) => {
+                    return isActive
+                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                  }}
+                >
+                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <span className="ml-3">Amounts</span>
+                </NavLink>
+
               </Sidebar.ItemGroup>
             </Sidebar.Items>
           </Sidebar>
@@ -103,7 +169,7 @@ export default function Employees() {
           onClick={() => setIsSidebarOpen(false)}
         >
           <div className="absolute right-0 w-['max-content'] md:relative p-5 px-10 md:shadow top-0 md:left-0 md:w-full bg-white">
-            <h3 className="text-black text-xl lg:text-4xl">Dashboard App</h3>
+            <h3 className="text-black text-xl lg:text-4xl">Manage Employees</h3>
           </div>
           <Outlet />
         </div>
