@@ -21,8 +21,6 @@ export default function HomeEmploy() {
     }));
   };
 
-noo i dont wanna go ahhhh, you are too ugly!
-
   const handleSubmit = (e) => {
 
   }
