@@ -74,7 +74,7 @@ const WrapperReverse = styled.section`
     }
   }
   .inner {
-    @media (min-width: 992px) {
+    @media (min-width: 1200wpx) {
       background: #ffffff;
       padding: 6% 8% 0;
       z-index: 2;

@@ -4,7 +4,15 @@ import React from 'react';
 import { Sidebar } from 'flowbite-react';
 import { FaBuildingUser } from 'react-icons/fa6';
 import { LuFileTerminal } from 'react-icons/lu';
+import { CgAlbum } from "react-icons/cg";
 import { HiHome } from 'react-icons/hi';
+import { BiSolidInstitution } from "react-icons/bi";
+import { VscReferences } from "react-icons/vsc";
+import { IoInformationCircle } from "react-icons/io5";
+import { BsBank } from "react-icons/bs";
+import { BsCalendarDate } from "react-icons/bs";
+import { RiMoneyDollarBoxFill } from "react-icons/ri";
+
 
 export default function Employees() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
@@ -15,8 +23,8 @@ export default function Employees() {
   };
   return (
     <>
-      <section className="md:p-0 md:flex bg-white">
-        <div className="p-[5%] md:p-2">
+      <section className="md:flex bg-slate-100 p-0 m-0">
+        <div>
           <button
             data-drawer-target="default-sidebar"
             data-drawer-toggle="default-sidebar"
@@ -43,26 +51,28 @@ export default function Employees() {
 
           <Sidebar
             aria-label="Sidebar with logo branding example"
-            className={`bg-white fixed top-0 left-0 z-40 w-64 h-screen transition-transform ${
+            className={`bg-slate-100 fixed top-0 left-0 z-40 w-64 h-screen transition-transform${
               isSidebarOpen ? "translate-x-0" : "-translate-x-full"
             } md:translate-x-0 md:relative bg-sidebar`}
           >
-            <Sidebar.Logo
+            {/* <Sidebar.Logo
               href="#"
               img=""
               imgAlt=""
               className="flex items-center justify-center"
             >
-              <img src="/logo.png" className="mt-5 w-[100px] block" alt="" />
-            </Sidebar.Logo>
-            <Sidebar.Items>
-              <Sidebar.ItemGroup>
+              <img src="/logo.png" className="mt-0 block" alt="" />
+            </Sidebar.Logo> */}
+            
+            <Sidebar.Items className='pb-5 h-full'>
+              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 font-bold bg-slate-100 h-full '>
+
                 <NavLink
                   to="/employees"
                   onClick={() => setIsSidebarOpen(false)}
                   className="flex items-center gap-1 pb-3 text-black ml-1"
                 >
-                  <HiHome className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <HiHome className="w-6 h-6 text-blue-300 transition duration-75  text-grape" />
                   <span className="ml-3">Home</span>
                 </NavLink>
                 <NavLink
@@ -74,7 +84,7 @@ export default function Employees() {
                       : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
                   }}
                 >
-                  <FaBuildingUser className="w-6 h-6 text-gray-400 transition duration-75 text-grape " />
+                  <BiSolidInstitution className="w-6 h-6 text-blue-400 transition duration-75 text-grape " />
                   <span className={` ml-3`}>Company</span>
                 </NavLink>
 
@@ -87,7 +97,7 @@ export default function Employees() {
                       : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
                   }}
                 >
-                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <IoInformationCircle className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
                   <span className="ml-3">Tax Information</span>
                 </NavLink>
 
@@ -100,7 +110,7 @@ export default function Employees() {
                       : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
                   }}
                 >
-                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <BsBank className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
                   <span className="ml-3">Banking</span>
                 </NavLink>
 
@@ -113,7 +123,7 @@ export default function Employees() {
                       : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
                   }}
                 >
-                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <CgAlbum className="w-6 h-6 text-blue-300 transition duration-75  text-grape" />
                   <span className="ml-3">Indicators</span>
                 </NavLink>
 
@@ -126,7 +136,7 @@ export default function Employees() {
                       : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
                   }}
                 >
-                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <VscReferences className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
                   <span className="ml-3">References</span>
                 </NavLink>
 
@@ -139,7 +149,7 @@ export default function Employees() {
                       : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
                   }}
                 >
-                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <BsCalendarDate className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
                   <span className="ml-3">Dates</span>
                 </NavLink>
 
@@ -152,7 +162,7 @@ export default function Employees() {
                       : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
                   }}
                 >
-                  <LuFileTerminal className="w-6 h-6 text-gray-400 transition duration-75  text-grape" />
+                  <RiMoneyDollarBoxFill className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
                   <span className="ml-3">Amounts</span>
                 </NavLink>
 
@@ -168,9 +178,9 @@ export default function Employees() {
           }
           onClick={() => setIsSidebarOpen(false)}
         >
-          <div className="absolute right-0 w-['max-content'] md:relative p-5 px-10 md:shadow top-0 md:left-0 md:w-full bg-white">
+          {/* <div className="absolute right-0 w-['max-content'] md:relative p-5 px-10 md:shadow top-0 md:left-0 md:w-full bg-white">
             <h3 className="text-black text-xl lg:text-4xl">Manage Employees</h3>
-          </div>
+          </div> */}
           <Outlet />
         </div>
       </section>

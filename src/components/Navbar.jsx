@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <div className="navbar text-black shadow-gray shadow-md">
+    <div className="navbar text-black shadow-gray shadow-md h-full ">
 
         <div className="flex-1 px-2">
             <div className="avatar">
-                <div className="w-36 h-10 rounded object-fill">
+                <div className="w-36 h-10 rounded object-fill m-5">
                    <Link to="/"><img src="./assets/creative pay logo.png" /></Link> 
                 </div>
             </div>
