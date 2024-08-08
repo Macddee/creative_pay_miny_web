@@ -53,3 +53,18 @@
   animation:unset !important;
 }
 }
+
+.App {
+  font-family: 'Helvetica', saserifns-;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* table selection */
+.no-select {
+  user-select: none;
+}

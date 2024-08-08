@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa6";
-
+import React, { useState, useEffect } from "react";   
 import Input from "../../../styled/inputs"
 
 export default function HomeEmploy() {
@@ -22,16 +19,15 @@ export default function HomeEmploy() {
   };
 
   const handleSubmit = (e) => {
-
+    console.log(data)
   }
   return (
     <>
-      <div className="bg-[#ffffff] max-w-[1300px] p-5  md:p-15 py-10 rounded-lg w-[95%] relative block mt-10 m-auto ">
+      <div className="bg-blue-100 max-w-[1300px] p-5  md:p-15 py-10 rounded-lg w-[95%] relative block mt-10 m-auto ">
         <h1 className="text-3xl text-center mb-5 font-bold">Update Employeee Details</h1>
         <form onSubmit={handleSubmit}>
           <div className="md:flex gap-20 flex-wrap">
             <div className="flex-1">
-
               <div className="mt-10">
                 <div className="flex flex-col">
                   <div className="md:flex w-full gap-10">
@@ -52,7 +48,6 @@ export default function HomeEmploy() {
                       placeholder="Title"
                       onChange={handleChange} />
                   </div>
-
                   <div className="md:flex w-full gap-10">
                     <Input
                       title="Surname"
@@ -71,7 +66,6 @@ export default function HomeEmploy() {
                       placeholder="Spouse"
                       onChange={handleChange} />
                   </div>
-
                   <div className="md:flex w-full gap-10">
                     <Input
                       title="Names"
@@ -128,7 +122,7 @@ export default function HomeEmploy() {
           </div>
           <button
             type="submit"
-            className="btn btn-wide btn-accent"
+            className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600"
           >
             Submit
           </button>

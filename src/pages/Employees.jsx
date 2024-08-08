@@ -2,8 +2,7 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import React from 'react';
 import { Sidebar } from 'flowbite-react';
-import { FaBuildingUser } from 'react-icons/fa6';
-import { LuFileTerminal } from 'react-icons/lu';
+
 import { CgAlbum } from "react-icons/cg";
 import { HiHome } from 'react-icons/hi';
 import { BiSolidInstitution } from "react-icons/bi";
@@ -23,7 +22,7 @@ export default function Employees() {
   };
   return (
     <>
-      <section className="md:flex bg-slate-100 p-0 m-0">
+      <section className="md:flex bg-white p-0 m-0">
         <div>
           <button
             data-drawer-target="default-sidebar"
@@ -51,30 +50,24 @@ export default function Employees() {
 
           <Sidebar
             aria-label="Sidebar with logo branding example"
-            className={`bg-slate-100 fixed top-0 left-0 z-40 w-64 h-screen transition-transform${
-              isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-            } md:translate-x-0 md:relative bg-sidebar`}
+            className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+              } md:translate-x-0 md:relative bg-sidebar`}
           >
-            {/* <Sidebar.Logo
-              href="#"
-              img=""
-              imgAlt=""
-              className="flex items-center justify-center"
-            >
-              <img src="/logo.png" className="mt-0 block" alt="" />
-            </Sidebar.Logo> */}
-            
-            <Sidebar.Items className='pb-5 h-full'>
-              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 font-bold bg-slate-100 h-full '>
+
+            <Sidebar.Items className='pb-5 h-full gap-y-5 mb-10 bg-white'>
+              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 h-full '>
 
                 <NavLink
-                  to="/employees"
+                  to={{
+                    pathname: "/employees",
+                  }}
                   onClick={() => setIsSidebarOpen(false)}
                   className="flex items-center gap-1 pb-3 text-black ml-1"
                 >
                   <HiHome className="w-6 h-6 text-blue-300 transition duration-75  text-grape" />
                   <span className="ml-3">Home</span>
                 </NavLink>
+
                 <NavLink
                   to="/employees/company"
                   onClick={() => setIsSidebarOpen(false)}
@@ -93,7 +86,7 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
+                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition group"
                       : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
                   }}
                 >
@@ -178,9 +171,6 @@ export default function Employees() {
           }
           onClick={() => setIsSidebarOpen(false)}
         >
-          {/* <div className="absolute right-0 w-['max-content'] md:relative p-5 px-10 md:shadow top-0 md:left-0 md:w-full bg-white">
-            <h3 className="text-black text-xl lg:text-4xl">Manage Employees</h3>
-          </div> */}
           <Outlet />
         </div>
       </section>
