@@ -5,9 +5,12 @@ import moment from 'moment'
 import styled from "styled-components";
 
 const FooterWrapper = styled.section`
-    padding:5%;
-    background:${props => props.theme.color.blue};
-    color:#ffffff;
+position: fixed;
+bottom: 0;
+width: 100%;
+padding:5%;
+background:${props => props.theme.color.blue};
+color:#ffffff;
     @media(min-width:768px){
         padding:20px 5%;
         .last{

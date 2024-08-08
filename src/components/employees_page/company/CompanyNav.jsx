@@ -25,6 +25,7 @@ export default function CompanyNav() {
 
         <TabPanel>
           <Empcompany />
+          {/* <Empcompany /> */}
         </TabPanel>
 
         <TabPanel>

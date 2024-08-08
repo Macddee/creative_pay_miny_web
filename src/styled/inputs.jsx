@@ -14,8 +14,8 @@ export default function Input({
   step = null,
 }) {
   return (
-    <div className="mb-5 w-full">
-      <label htmlFor="title" className="block mb-2 text-base font-medium text-gray-900 ">
+    <div className="mb-4 w-full">
+      <label htmlFor="title" className="block mb-1 text-base font-medium text-gray-900 ">
         {title}
       </label>
       <div className="relative">

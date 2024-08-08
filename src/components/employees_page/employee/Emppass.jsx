@@ -29,26 +29,24 @@ export default function Emppass() {
 
   return (
     <div>
-      <div className="bg-blue-100 max-w-[1300px] p-5  md:p-15 py-10 rounded-lg w-[95%] relative block mt-10 m-auto ">
-        <h1 className="text-3xl text-center mb-5 font-bold">Update Employeee Password</h1>
-        <form onSubmit={handleSubmit}>
+      <div className="bg-blue-100 max-w-[1300px] p-5 md:p-15 py-10 rounded-lg w-[95%] relative block mt-1 m-auto">
+        {/* <h1 className="text-3xl text-center font-bold">Update Employeee Details</h1> */}
+        <form onSubmit={handleSubmit} >
           <div className="md:flex gap-20 flex-wrap">
             <div className="flex-1">
-
-              <div className="mt-10">
-                <div className="flex flex-col">
-                  <div className="md:flex w-full gap-10">
-                    <Input
-                      title="Password"
-                      value={data.empPass}
-                      type="password"
-                      inputId="empPass"
-                      name="empPass"
-                      placeholder="*********"
-                      onChange={handleChange} />
-                  </div>
+              <div className="flex flex-col">
+                <div className="md:flex w-full gap-10">
+                  <Input
+                    title="Password"
+                    value={data.empPass}
+                    type="password"
+                    inputId="empPass"
+                    name="empPass"
+                    placeholder="*********"
+                    onChange={handleChange} />
                 </div>
               </div>
+
             </div>
           </div>
           <button

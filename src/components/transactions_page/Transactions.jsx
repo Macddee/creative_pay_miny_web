@@ -70,25 +70,16 @@ export default function Transactions() {
 
 
   useEffect(() => {
-    // setsetsearchList([
-    //   { id: 1, initials: "K", surname: 'Cy Ganderton', name: 'Blue', },
-    //   { id: 2, initials: "K", surname: 'Hart Hagerty', name: 'Purple', },
-    //   { id: 3, initials: "K", surname: 'Brice Swyre', name: 'Red' },
-    // ])
-
     fetch('/data/cp-employee.json')
       .then(response => response.json())
       .then(data => setsetsearchList(data));
   }, [])
 
   useEffect(() => {
-    setCodeMore([
-      { id: 1, name: 'Blue', },
-      { id: 2, name: 'Purple', },
-      { id: 3, name: 'Red' },
-    ])
+    fetch('/data/cp-parm-codes.json')
+      .then(response => response.json())
+      .then(data => setCodeMore(data));
   }, [])
-
 
   const [showError, setShowError] = useState(false)
   const [errorMesage, setErrorMessage] = useState("")
@@ -299,26 +290,28 @@ export default function Transactions() {
               <button className="btn btn-sm btn-circle btn-ghost mb-5">✕</button>
             </form>
           </div>
-          <table className="table ">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Codename</th>
-              </tr>
-            </thead>
-            <tbody>
-              {searchList.map((item) => (
-                <tr className="hover" key={item.id} onClick={() => {
-                  setselectedCodeRow(item)
-                  setData(prevData => ({ ...prevData, dgCode: item.id }));
-                  document.getElementById('moreDropdownModal').close()
-                }}>
-                  <th>{item.id}</th>
-                  <td>{item.name}</td>
+          <div className="max-h-[25rem] overflow-y-auto">
+            <table className="table ">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Codename</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {codeMore.map((item) => (
+                  <tr className="hover no-select" key={item.OrdinalNo} onClick={() => {
+                    setselectedCodeRow(item)
+                    setData(prevData => ({ ...prevData, dgCode: item.OrdinalNo }));
+                    document.getElementById('moreDropdownModal').close()
+                  }}>
+                    <th>{item.OrdinalNo}</th>
+                    <td>{item.CodeName}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </dialog>
 

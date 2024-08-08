@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";   
+import React, { useState, useEffect } from "react";
 import Input from "../../../styled/inputs"
 
 export default function Empstoppay() {
@@ -23,33 +23,32 @@ export default function Empstoppay() {
   }
   return (
     <>
-      <div className="bg-blue-100 max-w-[1300px] p-5  md:p-15 py-10 rounded-lg w-[95%] relative block mt-10 m-auto ">
-        <h1 className="text-3xl text-center mb-5 font-bold">Company Details</h1>
-        <form onSubmit={handleSubmit}>
+      <div className="bg-blue-100 max-w-[1300px] p-5 md:p-15 py-10 rounded-lg w-[95%] relative block mt-1 m-auto">
+        {/* <h1 className="text-3xl text-center font-bold">Update Employeee Details</h1> */}
+        <form onSubmit={handleSubmit} >
           <div className="md:flex gap-20 flex-wrap">
             <div className="flex-1">
-              <div className="mt-10">
-                <div className="flex flex-col">
-                  <div className="md:flex w-full gap-10">
-                    <Input
-                      title="Stop From"
-                      value={data.comStop}
-                      type="date"
-                      inputId="comStop"
-                      name="comStop"
-                      placeholder="XX/XX/20XX"
-                      onChange={handleChange} />
-                    <Input
-                      title="Stop To"
-                      value={data.comTo}
-                      type="date"
-                      inputId="comTo"
-                      name="comTo"
-                      placeholder="XX/XX/20XX"
-                      onChange={handleChange} />        
-                  </div>
+              <div className="flex flex-col">
+                <div className="md:flex w-full gap-10">
+                  <Input
+                    title="Stop From"
+                    value={data.comStop}
+                    type="date"
+                    inputId="comStop"
+                    name="comStop"
+                    placeholder="XX/XX/20XX"
+                    onChange={handleChange} />
+                  <Input
+                    title="Stop To"
+                    value={data.comTo}
+                    type="date"
+                    inputId="comTo"
+                    name="comTo"
+                    placeholder="XX/XX/20XX"
+                    onChange={handleChange} />
                 </div>
               </div>
+
             </div>
           </div>
           <button

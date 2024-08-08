@@ -29,6 +29,7 @@ import { AuthProvider } from './auth/auth';
 import Login from './auth/Login';
 import RequireAuth from './auth/RequireAuth';
 import ViewBatches from './components/transactions_page/ViewBatches';
+import Footer from './components/home/Footer';
 
 function App() {
   return (
@@ -36,8 +37,7 @@ function App() {
       <AuthProvider>
         <Router>
           <Navbar />
-          <Routes>
-
+          <Routes className="relative">
             <Route path="/utilities" element={<Utilities />} />
             <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
             <Route path="/login" element={<Login />} />
@@ -61,6 +61,8 @@ function App() {
 
             <Route path="/" element={<Mainpage />} />
           </Routes>
+          <div className='h-20'></div>
+          <Footer />
         </Router>
       </AuthProvider>
     </div>

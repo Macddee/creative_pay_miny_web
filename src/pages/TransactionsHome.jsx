@@ -22,7 +22,7 @@ export default function TransactionsHome() {
   };
   return (
     <>
-      <section className="md:flex bg-white p-0 m-0">
+      <section className="sticky md:flex bg-white p-0 m-0">
         <div>
           <button
             data-drawer-target="default-sidebar"
@@ -50,12 +50,12 @@ export default function TransactionsHome() {
 
           <Sidebar
             aria-label="Sidebar with logo branding example"
-            className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+            className={`sticky top-0 left-0 z-40 w-64 transition-transform${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
               } md:translate-x-0 md:relative bg-sidebar`}
           >
 
-            <Sidebar.Items className='pb-5 h-full gap-y-5 mb-10 bg-white'>
-              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 h-full '>
+            <Sidebar.Items className='pb-5 h-full gap-y-5 mb-10 bg-white '>
+              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 space-y-8 '>
 
                 <NavLink
                   to={{
