@@ -110,9 +110,9 @@ export default function Transactions() {
 
   return (
     <>
-      <div className="overflow-x-auto  p-4">
-        <div className="overflow-x-auto bg-slate-200 p-10 m-8 rounded-lg">
-          <table className="table ">
+      <div className="overflow-x-auto m-0 p-0">
+        <div className="flex flex-col h-[28rem] overflow-y-auto overflow-x-auto bg-slate-200 p-5 m-8 rounded-lg">
+          <table className="table overflow-y-auto">
             <thead>
               <tr>
                 <th>#</th>
@@ -125,7 +125,7 @@ export default function Transactions() {
             <tbody>
               {
                 transactioBatches.map((item, index) => (
-                  <tr className="hover" key={index}>
+                  <tr className="hover no-select " key={index}>
                     <td>{index + 1}</td>
                     <td>{item.dgNum}</td>
                     <th>{item.dgCode}</th>

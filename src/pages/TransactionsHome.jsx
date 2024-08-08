@@ -3,14 +3,8 @@ import { NavLink, Outlet } from 'react-router-dom';
 import React from 'react';
 import { Sidebar } from 'flowbite-react';
 
-import { CgAlbum } from "react-icons/cg";
 import { HiHome } from 'react-icons/hi';
 import { BiSolidInstitution } from "react-icons/bi";
-import { VscReferences } from "react-icons/vsc";
-import { IoInformationCircle } from "react-icons/io5";
-import { BsBank } from "react-icons/bs";
-import { BsCalendarDate } from "react-icons/bs";
-import { RiMoneyDollarBoxFill } from "react-icons/ri";
 
 
 export default function TransactionsHome() {
