@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7baf"
+  },
+  "OrdinalNo": 1,
+  "PaypointName": "PAYPOINT 1",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb0"
+  },
+  "OrdinalNo": 2,
+  "PaypointName": "PAYPOINT 2 (SET UP OWN NAME)",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb1"
+  },
+  "OrdinalNo": 3,
+  "PaypointName": "PAYPOINT 3 (SET UP OWN NAME)",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb2"
+  },
+  "OrdinalNo": 4,
+  "PaypointName": "PAYPOINT 4 (SET UP OWN NAME)",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb3"
+  },
+  "OrdinalNo": 5,
+  "PaypointName": "PAYPOINT 5 (SET UP OWN NAME)",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb4"
+  },
+  "OrdinalNo": 6,
+  "PaypointName": "PAYPOINT 6 (SET UP OWN NAME)",
+  "Payroll": 1
+}]

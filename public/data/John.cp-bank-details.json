@@ -1,0 +1,1024 @@
+[{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76c3"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "TATENDA MURINGA",
+  "DestinBankAccountNumber": "64962724950013",
+  "DestinBankSortCode": "006302",
+  "EmpNo": 58,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76c4"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MKHWANANZI CONCERN",
+  "DestinBankAccountNumber": "019000078525",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 70,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76c5"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "DUBE NQOBANI",
+  "DestinBankAccountNumber": "016242607101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 71,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76c6"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MOYO NOTHANDO",
+  "DestinBankAccountNumber": "016242608101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 72,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76c7"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "RAYMOND MOYO",
+  "DestinBankAccountNumber": "016128396101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 75,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76c8"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MOYO NDUMISO",
+  "DestinBankAccountNumber": "1223746730016",
+  "DestinBankSortCode": "006302",
+  "EmpNo": 77,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76c9"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NCUBE SITHABILE",
+  "DestinBankAccountNumber": "016113246101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 80,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76ca"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "DUBE SIMOSAMI",
+  "DestinBankAccountNumber": "016112283101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 81,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76cb"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NDLOVU MENELISI M",
+  "DestinBankAccountNumber": "016112952101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 83,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76cc"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NCUBE IDO",
+  "DestinBankAccountNumber": "64961474200013",
+  "DestinBankSortCode": "006302",
+  "EmpNo": 84,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "01220220420020",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76cd"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "SIZIBA FELIX",
+  "DestinBankAccountNumber": "016112956101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 87,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76ce"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "PRETTY   CHITIYO",
+  "DestinBankAccountNumber": "01223336480017",
+  "DestinBankSortCode": "006302",
+  "EmpNo": 90,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "01220220420020",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76cf"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MPOFU MLUNGISI",
+  "DestinBankAccountNumber": "016112288101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 91,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d0"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MKHULUNYELWA KHUMALO",
+  "DestinBankAccountNumber": "019000081507",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 97,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d1"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "SIDUMISO NDEBELE PAGE",
+  "DestinBankAccountNumber": "016332925101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 98,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d2"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "KENIAS NCUBE",
+  "DestinBankAccountNumber": "016229532101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 100,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d3"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MOYO LANGTON",
+  "DestinBankAccountNumber": "004297552101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 101,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d4"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "JANET MATHE",
+  "DestinBankAccountNumber": "16121501101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 103,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000005293",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d5"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "SUNDIRAYI FULTON",
+  "DestinBankAccountNumber": "16192958101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 105,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d6"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "THEMBANI DUBE",
+  "DestinBankAccountNumber": "16122771101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 106,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d7"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "RODWELL XOLANI BANDA",
+  "DestinBankAccountNumber": "019000131426",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 107,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d8"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MBUSO SIBANDA",
+  "DestinBankAccountNumber": "61573890011",
+  "DestinBankSortCode": "649",
+  "EmpNo": 109,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76d9"
+  },
+  "AccountHolderStatus": "",
+  "DestinAccountType": "4",
+  "DestinBankAccountName": "OPRAH SIBANDA",
+  "DestinBankAccountNumber": "4302295034201",
+  "DestinBankSortCode": "004302",
+  "EmpNo": 110,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "01900001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76da"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MAGUTSHWA  NONTOBEKO P",
+  "DestinBankAccountNumber": "1027267552",
+  "DestinBankSortCode": "20000",
+  "EmpNo": 112,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76db"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "OVUMIQINISO NCUBE",
+  "DestinBankAccountNumber": "210264701",
+  "DestinBankSortCode": "011311",
+  "EmpNo": 113,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76dc"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "DUBE NOBUHLE PRIMROSE",
+  "DestinBankAccountNumber": "210 264 922",
+  "DestinBankSortCode": "NMB",
+  "EmpNo": 114,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "100000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76dd"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MEDELINAH MLILO",
+  "DestinBankAccountNumber": "205310004566",
+  "DestinBankSortCode": "009500",
+  "EmpNo": 115,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76de"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "SICELO MSALILI",
+  "DestinBankAccountNumber": "100006602821",
+  "DestinBankSortCode": "010304",
+  "EmpNo": 116,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76df"
+  },
+  "AccountHolderStatus": "",
+  "DestinAccountType": "",
+  "DestinBankAccountName": "",
+  "DestinBankAccountNumber": "",
+  "DestinBankSortCode": "0",
+  "EmpNo": 117,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e0"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "SIPHEPHILE DUBE",
+  "DestinBankAccountNumber": "100007716944",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 118,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "100000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e1"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "GRAY P MPUNZI",
+  "DestinBankAccountNumber": "19000151184",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 120,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "100000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e2"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "DUBE NOTHA",
+  "DestinBankAccountNumber": "64960983110015",
+  "DestinBankSortCode": "006302",
+  "EmpNo": 121,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e3"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "SIKHULILE SHOKO",
+  "DestinBankAccountNumber": "100005875352",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 122,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "100000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e4"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "ZWELIBANZI NDLOVU",
+  "DestinBankAccountNumber": "151000155517",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 123,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "100000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e5"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MASEKO ETHEL",
+  "DestinBankAccountNumber": "1006380566",
+  "DestinBankSortCode": "0000",
+  "EmpNo": 124,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e6"
+  },
+  "AccountHolderStatus": "",
+  "DestinAccountType": "",
+  "DestinBankAccountName": "",
+  "DestinBankAccountNumber": "",
+  "DestinBankSortCode": "0",
+  "EmpNo": 125,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e7"
+  },
+  "AccountHolderStatus": "",
+  "DestinAccountType": "",
+  "DestinBankAccountName": "",
+  "DestinBankAccountNumber": "",
+  "DestinBankSortCode": "0",
+  "EmpNo": 127,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e8"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "SITHOKOZILE",
+  "DestinBankAccountNumber": "",
+  "DestinBankSortCode": "0",
+  "EmpNo": 129,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76e9"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NOKUKHANYA NCUBE",
+  "DestinBankAccountNumber": "4307267921200",
+  "DestinBankSortCode": "004302",
+  "EmpNo": 130,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76ea"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "WUSUMANI ELIZABETH",
+  "DestinBankAccountNumber": "221642001",
+  "DestinBankSortCode": "3231",
+  "EmpNo": 131,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "100000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76eb"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MUDZINGWA ALEC",
+  "DestinBankAccountNumber": "54237843302014",
+  "DestinBankSortCode": "120",
+  "EmpNo": 134,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76ec"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NONHLANHLA SIBANDA",
+  "DestinBankAccountNumber": "10000497352",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 137,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "100000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76ed"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "Phenyo Dube",
+  "DestinBankAccountNumber": "7784124672001",
+  "DestinBankSortCode": "870",
+  "EmpNo": 138,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "10000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76ee"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "FISIWE NCUBE",
+  "DestinBankAccountNumber": "016614879101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 162,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76ef"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MAHOVE JOSEPH",
+  "DestinBankAccountNumber": "5734400007243",
+  "DestinBankSortCode": "26000",
+  "EmpNo": 189,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "100000359399",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f0"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NCUBE SIKHANYISO",
+  "DestinBankAccountNumber": "016160774101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 199,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f1"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "CURTIS MAPHOSA",
+  "DestinBankAccountNumber": "016160838101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 212,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f2"
+  },
+  "AccountHolderStatus": null,
+  "DestinAccountType": "",
+  "DestinBankAccountName": "NKALA NTANDO",
+  "DestinBankAccountNumber": "016114508101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 318,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f3"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MAPHOSA SILINGANISO",
+  "DestinBankAccountNumber": "016370641101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 332,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f4"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MICHAEL MOYO",
+  "DestinBankAccountNumber": "016149356101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 333,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f5"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NKALA YAMUKELANI",
+  "DestinBankAccountNumber": "016112953101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 338,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f6"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "DUBE ZENZO",
+  "DestinBankAccountNumber": "016351445101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 363,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f7"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "LOVEMORE SHOKO",
+  "DestinBankAccountNumber": "016157896101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 419,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f8"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "TSHAKA ONIAS",
+  "DestinBankAccountNumber": "016814929101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 430,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76f9"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MOYO DORIS",
+  "DestinBankAccountNumber": "016129527101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 446,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76fa"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NGWENYA SIDUDUZILE",
+  "DestinBankAccountNumber": "016200606101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 455,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76fb"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "CHINJONJO TAPIWA",
+  "DestinBankAccountNumber": "057158285011",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 510,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76fc"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NCUBE BROWN",
+  "DestinBankAccountNumber": "016351447101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 512,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76fd"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "KHETHIWE MBANGENI",
+  "DestinBankAccountNumber": "016149355101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 517,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76fe"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MAXWEL MOYO",
+  "DestinBankAccountNumber": "016112954101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 518,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb76ff"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MKHWANANZI NOMSA",
+  "DestinBankAccountNumber": "016149803101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 519,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb7700"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "SHELTER NKOMO MOYO",
+  "DestinBankAccountNumber": "016323637101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 520,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb7701"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "NYATHI HLANGANO",
+  "DestinBankAccountNumber": "016183344101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 523,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb7702"
+  },
+  "AccountHolderStatus": "1",
+  "DestinAccountType": "2",
+  "DestinBankAccountName": "MATHWASA SIPHOSETHU",
+  "DestinBankAccountNumber": "016349587101",
+  "DestinBankSortCode": "010516",
+  "EmpNo": 534,
+  "OrdinalNo": 1,
+  "PayMode": "B",
+  "SARSBankAccount": "N",
+  "SourceBankAccountNumber": "019000001913",
+  "SplitPayCode": 250
+}]

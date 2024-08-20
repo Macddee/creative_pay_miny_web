@@ -1,25 +1,42 @@
 import React, { useState, useEffect } from "react";
 import Input from "../../../styled/inputs"
+import { CgMore } from "react-icons/cg";
+import { CompanyCostCodePopup, OccupationCodePopup, PayPointPopup } from "../../SearchPopup";
+import { useDataContexts } from "../../../ContextProviders/DataContexts";
+import { convertFromDateTimeToJulian, convertFromJulianToDateTime } from "../../logic/EmployeeLogic";
 
-export default function HomeEmploy() {
-  const [data, setData] = useState({
-    eventName: "",
-    description: '',
-    location: "",
-    date: '',
-  });
+export default function Empcompany() {
+  const { 
+    setAllEmployees,
+    employee, setEmployee } = useDataContexts()
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
 
-    setData((data) => ({
-      ...data,
-      [name]: value,
-    }));
-  };
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      let newVal = value;
+  
+      if (name.includes("Date")) {
+        newVal = convertFromDateTimeToJulian(value);
+        console.log(newVal);
+      }
+  
+      setEmployee((employee) => ({
+        ...employee,
+        [name]: newVal,
+      }));
+    };
+
+  function updateEmployeeDetails(updatedEmployee) {
+    setAllEmployees(prevEmployees =>
+      prevEmployees.map(employee =>
+        employee.EmpNo === updatedEmployee.EmpNo ? updatedEmployee : employee
+      )
+    );
+  }
 
   const handleSubmit = (e) => {
-    console.log(data)
+    e.preventDefault()
+    updateEmployeeDetails(employee)
   }
   return (
     <>
@@ -32,71 +49,77 @@ export default function HomeEmploy() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Cost Code"
-                    value={data.comCode}
+                    value={employee.CostCodes}
                     type="text"
-                    inputId="comCode"
-                    name="comCode"
+                    inputId="CostCodes"
+                    name="CostCodes"
                     placeholder="Cost Code"
+                    Icon={CgMore}
+                    onIconClick={() => document.getElementById('CompanyCodeModal').showModal()}
                     onChange={handleChange} />
                   <Input
                     title="Pay Point"
-                    value={data.comPP}
+                    value={employee.PayPoint}
                     type="text"
-                    inputId="comPP"
-                    name="comPP"
-                    placeholder="comPP"
-                    onChange={handleChange} />
+                    inputId="PayPoint"
+                    name="PayPoint"
+                    placeholder="Pay Point"
+                    onChange={handleChange}
+                    Icon={CgMore}
+                    onIconClick={() => document.getElementById('PayPointModal').showModal()} />
                 </div>
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Leave Code"
-                    value={data.comLC}
+                    value={employee.LeaveCode}
                     type="text"
-                    inputId="comLC"
-                    name="comLC"
-                    placeholder="comLC"
+                    inputId="LeaveCode"
+                    name="LeaveCode"
+                    placeholder="Leave Code"
                     onChange={handleChange} />
                   <Input
                     title="Position"
-                    value={data.comPosition}
+                    value={employee.PositionCode}
                     type="text"
-                    inputId="comPosition"
-                    name="comPosition"
-                    placeholder="comPosition"
+                    inputId="PositionCode"
+                    name="PositionCode"
+                    placeholder="Position Code"
                     onChange={handleChange} />
                 </div>
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Engagement Date"
-                    value={data.comEngDate}
-                    type="text"
-                    inputId="comEngDate"
-                    name="comEngDate"
-                    placeholder="comEngDate"
+                    value={convertFromJulianToDateTime(employee.EngageDate)}
+                    type="date"
+                    inputId="EngageDate"
+                    name="EngageDate"
+                    placeholder="Engage Date"
                     onChange={handleChange} />
                   <Input
                     title="Occupation"
-                    value={data.comOcc}
+                    value={employee.Occup}
                     type="text"
-                    inputId="comOcc"
-                    name="comOcc"
-                    placeholder="Sales Person"
+                    inputId="Occup"
+                    name="Occup"
+                    placeholder="Occupation"
+                    Icon={CgMore}
+                    onIconClick={() => document.getElementById('OccupationCodeModal').showModal()}
                     onChange={handleChange} />
                 </div>
 
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Terminatation date"
-                    value={data.comEnddate}
+                    value={convertFromJulianToDateTime(employee.DischDate)}
                     type="date"
-                    inputId="comEnddate"
-                    name="comEnddate"
+                    inputId="DischDate"
+                    name="DischDate"
                     placeholder="XX/XX/20XX"
                     onChange={handleChange} />
                   <Input
                     title="Department"
-                    value={data.comDept}
-                    type="date"
+                    value={employee.StrDeptCode}
+                    type="text"
                     inputId="comDept"
                     name="comDept"
                     placeholder="Department"
@@ -107,10 +130,10 @@ export default function HomeEmploy() {
                   <div style={{ flex: '0 0 48%' }}>
                     <Input
                       title="Initials"
-                      value={data.initials}
+                      value={employee.Inits}
                       type="text"
-                      inputId="initials"
-                      name="initials"
+                      inputId="Inits"
+                      name="Inits"
                       placeholder="initials"
                       onChange={handleChange} />
                   </div>
@@ -126,6 +149,11 @@ export default function HomeEmploy() {
             Submit
           </button>
         </form>
-      </div></>
+
+      </div>
+      <CompanyCostCodePopup />
+      <PayPointPopup />
+      <OccupationCodePopup />
+    </>
   );
 }

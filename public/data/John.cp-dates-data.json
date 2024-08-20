@@ -1,0 +1,2416 @@
+[{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb5"
+  },
+  "DateValue": 80445,
+  "EmpNo": 58,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb6"
+  },
+  "DateValue": 80445,
+  "EmpNo": 58,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb7"
+  },
+  "DateValue": 80445,
+  "EmpNo": 58,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb8"
+  },
+  "DateValue": 77888,
+  "EmpNo": 70,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bb9"
+  },
+  "DateValue": 77888,
+  "EmpNo": 70,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bba"
+  },
+  "DateValue": 76975,
+  "EmpNo": 70,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bbb"
+  },
+  "DateValue": 76835,
+  "EmpNo": 71,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bbc"
+  },
+  "DateValue": 78546,
+  "EmpNo": 71,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bbd"
+  },
+  "DateValue": 77432,
+  "EmpNo": 71,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bbe"
+  },
+  "DateValue": 77401,
+  "EmpNo": 72,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bbf"
+  },
+  "DateValue": 77401,
+  "EmpNo": 72,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc0"
+  },
+  "DateValue": 77432,
+  "EmpNo": 72,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc1"
+  },
+  "DateValue": 76580,
+  "EmpNo": 75,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc2"
+  },
+  "DateValue": 77126,
+  "EmpNo": 75,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc3"
+  },
+  "DateValue": 76733,
+  "EmpNo": 75,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc4"
+  },
+  "DateValue": 78035,
+  "EmpNo": 77,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc5"
+  },
+  "DateValue": 78194,
+  "EmpNo": 77,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc6"
+  },
+  "DateValue": 78071,
+  "EmpNo": 77,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc7"
+  },
+  "DateValue": 76103,
+  "EmpNo": 80,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc8"
+  },
+  "DateValue": 76153,
+  "EmpNo": 80,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bc9"
+  },
+  "DateValue": 76103,
+  "EmpNo": 80,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bca"
+  },
+  "DateValue": 76153,
+  "EmpNo": 81,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bcb"
+  },
+  "DateValue": 76153,
+  "EmpNo": 81,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bcc"
+  },
+  "DateValue": 76103,
+  "EmpNo": 81,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bcd"
+  },
+  "DateValue": 76153,
+  "EmpNo": 83,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bce"
+  },
+  "DateValue": 76153,
+  "EmpNo": 83,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bcf"
+  },
+  "DateValue": 76153,
+  "EmpNo": 83,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd0"
+  },
+  "DateValue": 76103,
+  "EmpNo": 84,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd1"
+  },
+  "DateValue": 76153,
+  "EmpNo": 84,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd2"
+  },
+  "DateValue": 76123,
+  "EmpNo": 84,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd3"
+  },
+  "DateValue": 76103,
+  "EmpNo": 87,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd4"
+  },
+  "DateValue": 76153,
+  "EmpNo": 87,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd5"
+  },
+  "DateValue": 76103,
+  "EmpNo": 87,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd6"
+  },
+  "DateValue": 76379,
+  "EmpNo": 90,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd7"
+  },
+  "DateValue": 76488,
+  "EmpNo": 90,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd8"
+  },
+  "DateValue": 76457,
+  "EmpNo": 90,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bd9"
+  },
+  "DateValue": 76337,
+  "EmpNo": 91,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bda"
+  },
+  "DateValue": 76427,
+  "EmpNo": 91,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bdb"
+  },
+  "DateValue": 76337,
+  "EmpNo": 91,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bdc"
+  },
+  "DateValue": 78832,
+  "EmpNo": 97,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bdd"
+  },
+  "DateValue": 79775,
+  "EmpNo": 97,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bde"
+  },
+  "DateValue": 78832,
+  "EmpNo": 97,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bdf"
+  },
+  "DateValue": 76488,
+  "EmpNo": 98,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be0"
+  },
+  "DateValue": 76580,
+  "EmpNo": 98,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be1"
+  },
+  "DateValue": 76518,
+  "EmpNo": 98,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be2"
+  },
+  "DateValue": 76610,
+  "EmpNo": 100,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be3"
+  },
+  "DateValue": 76792,
+  "EmpNo": 100,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be4"
+  },
+  "DateValue": 76610,
+  "EmpNo": 100,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be5"
+  },
+  "DateValue": 73415,
+  "EmpNo": 101,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be6"
+  },
+  "DateValue": 73415,
+  "EmpNo": 101,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be7"
+  },
+  "DateValue": 73415,
+  "EmpNo": 101,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be8"
+  },
+  "DateValue": 78771,
+  "EmpNo": 103,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7be9"
+  },
+  "DateValue": 78771,
+  "EmpNo": 103,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bea"
+  },
+  "DateValue": 78771,
+  "EmpNo": 103,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7beb"
+  },
+  "DateValue": 78771,
+  "EmpNo": 105,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bec"
+  },
+  "DateValue": 78771,
+  "EmpNo": 105,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bed"
+  },
+  "DateValue": 78771,
+  "EmpNo": 105,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bee"
+  },
+  "DateValue": 78771,
+  "EmpNo": 106,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bef"
+  },
+  "DateValue": 78771,
+  "EmpNo": 106,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf0"
+  },
+  "DateValue": 78771,
+  "EmpNo": 106,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf1"
+  },
+  "DateValue": 79624,
+  "EmpNo": 107,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf2"
+  },
+  "DateValue": 79775,
+  "EmpNo": 107,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf3"
+  },
+  "DateValue": 79624,
+  "EmpNo": 107,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf4"
+  },
+  "DateValue": 80323,
+  "EmpNo": 110,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf5"
+  },
+  "DateValue": 80323,
+  "EmpNo": 110,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf6"
+  },
+  "DateValue": 80323,
+  "EmpNo": 110,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf7"
+  },
+  "DateValue": 81601,
+  "EmpNo": 112,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf8"
+  },
+  "DateValue": 81601,
+  "EmpNo": 112,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bf9"
+  },
+  "DateValue": 81601,
+  "EmpNo": 112,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bfa"
+  },
+  "DateValue": 80506,
+  "EmpNo": 113,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bfb"
+  },
+  "DateValue": 80689,
+  "EmpNo": 113,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bfc"
+  },
+  "DateValue": 80633,
+  "EmpNo": 113,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bfd"
+  },
+  "DateValue": 81677,
+  "EmpNo": 114,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bfe"
+  },
+  "DateValue": 80804,
+  "EmpNo": 115,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7bff"
+  },
+  "DateValue": 80901,
+  "EmpNo": 115,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c00"
+  },
+  "DateValue": 80810,
+  "EmpNo": 115,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c01"
+  },
+  "DateValue": 80793,
+  "EmpNo": 116,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c02"
+  },
+  "DateValue": 80901,
+  "EmpNo": 116,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c03"
+  },
+  "DateValue": 80810,
+  "EmpNo": 116,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c04"
+  },
+  "DateValue": 81085,
+  "EmpNo": 118,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c05"
+  },
+  "DateValue": 81085,
+  "EmpNo": 118,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c06"
+  },
+  "DateValue": 81085,
+  "EmpNo": 120,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c07"
+  },
+  "DateValue": 81085,
+  "EmpNo": 120,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c08"
+  },
+  "DateValue": 74510,
+  "EmpNo": 121,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c09"
+  },
+  "DateValue": 74510,
+  "EmpNo": 121,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c0a"
+  },
+  "DateValue": 81085,
+  "EmpNo": 122,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c0b"
+  },
+  "DateValue": 81085,
+  "EmpNo": 122,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c0c"
+  },
+  "DateValue": 81085,
+  "EmpNo": 123,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c0d"
+  },
+  "DateValue": 81085,
+  "EmpNo": 123,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c0e"
+  },
+  "DateValue": 81454,
+  "EmpNo": 124,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c0f"
+  },
+  "DateValue": 81662,
+  "EmpNo": 124,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c10"
+  },
+  "DateValue": 81454,
+  "EmpNo": 124,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c11"
+  },
+  "DateValue": 81454,
+  "EmpNo": 125,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c12"
+  },
+  "DateValue": 81662,
+  "EmpNo": 125,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c13"
+  },
+  "DateValue": 81454,
+  "EmpNo": 125,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c14"
+  },
+  "DateValue": 81454,
+  "EmpNo": 127,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c15"
+  },
+  "DateValue": 81662,
+  "EmpNo": 127,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c16"
+  },
+  "DateValue": 81454,
+  "EmpNo": 127,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c17"
+  },
+  "DateValue": 81601,
+  "EmpNo": 129,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c18"
+  },
+  "DateValue": 81601,
+  "EmpNo": 129,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c19"
+  },
+  "DateValue": 81601,
+  "EmpNo": 129,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c1a"
+  },
+  "DateValue": 69032,
+  "EmpNo": 162,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c1b"
+  },
+  "DateValue": 68666,
+  "EmpNo": 162,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c1c"
+  },
+  "DateValue": 71131,
+  "EmpNo": 162,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c1d"
+  },
+  "DateValue": 81846,
+  "EmpNo": 189,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c1e"
+  },
+  "DateValue": 69852,
+  "EmpNo": 199,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c1f"
+  },
+  "DateValue": 69943,
+  "EmpNo": 199,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c20"
+  },
+  "DateValue": 71131,
+  "EmpNo": 199,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c21"
+  },
+  "DateValue": 74510,
+  "EmpNo": 212,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c22"
+  },
+  "DateValue": 74510,
+  "EmpNo": 212,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c23"
+  },
+  "DateValue": 74510,
+  "EmpNo": 212,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c24"
+  },
+  "DateValue": 74510,
+  "EmpNo": 318,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c25"
+  },
+  "DateValue": 74510,
+  "EmpNo": 318,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c26"
+  },
+  "DateValue": 74510,
+  "EmpNo": 332,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c27"
+  },
+  "DateValue": 74510,
+  "EmpNo": 332,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c28"
+  },
+  "DateValue": 74510,
+  "EmpNo": 333,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c29"
+  },
+  "DateValue": 74510,
+  "EmpNo": 333,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c2a"
+  },
+  "DateValue": 74510,
+  "EmpNo": 333,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c2b"
+  },
+  "DateValue": 74510,
+  "EmpNo": 338,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c2c"
+  },
+  "DateValue": 74510,
+  "EmpNo": 338,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c2d"
+  },
+  "DateValue": 74510,
+  "EmpNo": 363,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c2e"
+  },
+  "DateValue": 74510,
+  "EmpNo": 363,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c2f"
+  },
+  "DateValue": 73658,
+  "EmpNo": 419,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c30"
+  },
+  "DateValue": 74510,
+  "EmpNo": 419,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c31"
+  },
+  "DateValue": 74510,
+  "EmpNo": 419,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c32"
+  },
+  "DateValue": 74510,
+  "EmpNo": 430,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c33"
+  },
+  "DateValue": 74510,
+  "EmpNo": 430,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c34"
+  },
+  "DateValue": 74510,
+  "EmpNo": 446,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c35"
+  },
+  "DateValue": 74510,
+  "EmpNo": 446,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c36"
+  },
+  "DateValue": 74145,
+  "EmpNo": 455,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c37"
+  },
+  "DateValue": 74510,
+  "EmpNo": 455,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c38"
+  },
+  "DateValue": 74510,
+  "EmpNo": 510,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c39"
+  },
+  "DateValue": 74510,
+  "EmpNo": 510,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c3a"
+  },
+  "DateValue": 74510,
+  "EmpNo": 512,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c3b"
+  },
+  "DateValue": 74510,
+  "EmpNo": 512,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c3c"
+  },
+  "DateValue": 74510,
+  "EmpNo": 517,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c3d"
+  },
+  "DateValue": 74510,
+  "EmpNo": 517,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c3e"
+  },
+  "DateValue": 74510,
+  "EmpNo": 517,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c3f"
+  },
+  "DateValue": 74510,
+  "EmpNo": 518,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c40"
+  },
+  "DateValue": 74510,
+  "EmpNo": 518,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c41"
+  },
+  "DateValue": 74510,
+  "EmpNo": 519,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c42"
+  },
+  "DateValue": 74510,
+  "EmpNo": 519,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c43"
+  },
+  "DateValue": 74510,
+  "EmpNo": 520,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c44"
+  },
+  "DateValue": 74510,
+  "EmpNo": 520,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c45"
+  },
+  "DateValue": 74510,
+  "EmpNo": 520,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c46"
+  },
+  "DateValue": 75119,
+  "EmpNo": 523,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c47"
+  },
+  "DateValue": 75119,
+  "EmpNo": 523,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c48"
+  },
+  "DateValue": 75119,
+  "EmpNo": 523,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c49"
+  },
+  "DateValue": 75971,
+  "EmpNo": 534,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c4a"
+  },
+  "DateValue": 75971,
+  "EmpNo": 534,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7c4b"
+  },
+  "DateValue": 75971,
+  "EmpNo": 534,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8554"
+  },
+  "DateValue": 80445,
+  "EmpNo": 58,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8555"
+  },
+  "DateValue": 80445,
+  "EmpNo": 58,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8556"
+  },
+  "DateValue": 80445,
+  "EmpNo": 58,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8557"
+  },
+  "DateValue": 77888,
+  "EmpNo": 70,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8558"
+  },
+  "DateValue": 77888,
+  "EmpNo": 70,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8559"
+  },
+  "DateValue": 76975,
+  "EmpNo": 70,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb855a"
+  },
+  "DateValue": 76835,
+  "EmpNo": 71,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb855b"
+  },
+  "DateValue": 78546,
+  "EmpNo": 71,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb855c"
+  },
+  "DateValue": 77432,
+  "EmpNo": 71,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb855d"
+  },
+  "DateValue": 77401,
+  "EmpNo": 72,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb855e"
+  },
+  "DateValue": 77401,
+  "EmpNo": 72,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb855f"
+  },
+  "DateValue": 77432,
+  "EmpNo": 72,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8560"
+  },
+  "DateValue": 76580,
+  "EmpNo": 75,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8561"
+  },
+  "DateValue": 77126,
+  "EmpNo": 75,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8562"
+  },
+  "DateValue": 76733,
+  "EmpNo": 75,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8563"
+  },
+  "DateValue": 78035,
+  "EmpNo": 77,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8564"
+  },
+  "DateValue": 78194,
+  "EmpNo": 77,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8565"
+  },
+  "DateValue": 78071,
+  "EmpNo": 77,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8566"
+  },
+  "DateValue": 76103,
+  "EmpNo": 80,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8567"
+  },
+  "DateValue": 76153,
+  "EmpNo": 80,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8568"
+  },
+  "DateValue": 76103,
+  "EmpNo": 80,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8569"
+  },
+  "DateValue": 76153,
+  "EmpNo": 81,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb856a"
+  },
+  "DateValue": 76153,
+  "EmpNo": 81,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb856b"
+  },
+  "DateValue": 76103,
+  "EmpNo": 81,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb856c"
+  },
+  "DateValue": 76153,
+  "EmpNo": 83,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb856d"
+  },
+  "DateValue": 76153,
+  "EmpNo": 83,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb856e"
+  },
+  "DateValue": 76153,
+  "EmpNo": 83,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb856f"
+  },
+  "DateValue": 76103,
+  "EmpNo": 84,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8570"
+  },
+  "DateValue": 76153,
+  "EmpNo": 84,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8571"
+  },
+  "DateValue": 76123,
+  "EmpNo": 84,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8572"
+  },
+  "DateValue": 76103,
+  "EmpNo": 87,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8573"
+  },
+  "DateValue": 76153,
+  "EmpNo": 87,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8574"
+  },
+  "DateValue": 76103,
+  "EmpNo": 87,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8575"
+  },
+  "DateValue": 76379,
+  "EmpNo": 90,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8576"
+  },
+  "DateValue": 76488,
+  "EmpNo": 90,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8577"
+  },
+  "DateValue": 76457,
+  "EmpNo": 90,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8578"
+  },
+  "DateValue": 76337,
+  "EmpNo": 91,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8579"
+  },
+  "DateValue": 76427,
+  "EmpNo": 91,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb857a"
+  },
+  "DateValue": 76337,
+  "EmpNo": 91,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb857b"
+  },
+  "DateValue": 78832,
+  "EmpNo": 97,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb857c"
+  },
+  "DateValue": 79775,
+  "EmpNo": 97,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb857d"
+  },
+  "DateValue": 78832,
+  "EmpNo": 97,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb857e"
+  },
+  "DateValue": 76488,
+  "EmpNo": 98,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb857f"
+  },
+  "DateValue": 76580,
+  "EmpNo": 98,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8580"
+  },
+  "DateValue": 76518,
+  "EmpNo": 98,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8581"
+  },
+  "DateValue": 76610,
+  "EmpNo": 100,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8582"
+  },
+  "DateValue": 76792,
+  "EmpNo": 100,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8583"
+  },
+  "DateValue": 76610,
+  "EmpNo": 100,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8584"
+  },
+  "DateValue": 73415,
+  "EmpNo": 101,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8585"
+  },
+  "DateValue": 73415,
+  "EmpNo": 101,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8586"
+  },
+  "DateValue": 73415,
+  "EmpNo": 101,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8587"
+  },
+  "DateValue": 78771,
+  "EmpNo": 103,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8588"
+  },
+  "DateValue": 78771,
+  "EmpNo": 103,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8589"
+  },
+  "DateValue": 78771,
+  "EmpNo": 103,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb858a"
+  },
+  "DateValue": 78771,
+  "EmpNo": 105,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb858b"
+  },
+  "DateValue": 78771,
+  "EmpNo": 105,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb858c"
+  },
+  "DateValue": 78771,
+  "EmpNo": 105,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb858d"
+  },
+  "DateValue": 78771,
+  "EmpNo": 106,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb858e"
+  },
+  "DateValue": 78771,
+  "EmpNo": 106,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb858f"
+  },
+  "DateValue": 78771,
+  "EmpNo": 106,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8590"
+  },
+  "DateValue": 79624,
+  "EmpNo": 107,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8591"
+  },
+  "DateValue": 79775,
+  "EmpNo": 107,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8592"
+  },
+  "DateValue": 79624,
+  "EmpNo": 107,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8593"
+  },
+  "DateValue": 80323,
+  "EmpNo": 110,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8594"
+  },
+  "DateValue": 80323,
+  "EmpNo": 110,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8595"
+  },
+  "DateValue": 80323,
+  "EmpNo": 110,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8596"
+  },
+  "DateValue": 81601,
+  "EmpNo": 112,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8597"
+  },
+  "DateValue": 81601,
+  "EmpNo": 112,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8598"
+  },
+  "DateValue": 81601,
+  "EmpNo": 112,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8599"
+  },
+  "DateValue": 80506,
+  "EmpNo": 113,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb859a"
+  },
+  "DateValue": 80689,
+  "EmpNo": 113,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb859b"
+  },
+  "DateValue": 80633,
+  "EmpNo": 113,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb859c"
+  },
+  "DateValue": 81677,
+  "EmpNo": 114,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb859d"
+  },
+  "DateValue": 80804,
+  "EmpNo": 115,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb859e"
+  },
+  "DateValue": 80901,
+  "EmpNo": 115,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb859f"
+  },
+  "DateValue": 80810,
+  "EmpNo": 115,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a0"
+  },
+  "DateValue": 80793,
+  "EmpNo": 116,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a1"
+  },
+  "DateValue": 80901,
+  "EmpNo": 116,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a2"
+  },
+  "DateValue": 80810,
+  "EmpNo": 116,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a3"
+  },
+  "DateValue": 81085,
+  "EmpNo": 118,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a4"
+  },
+  "DateValue": 81085,
+  "EmpNo": 118,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a5"
+  },
+  "DateValue": 81085,
+  "EmpNo": 120,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a6"
+  },
+  "DateValue": 81085,
+  "EmpNo": 120,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a7"
+  },
+  "DateValue": 74510,
+  "EmpNo": 121,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a8"
+  },
+  "DateValue": 74510,
+  "EmpNo": 121,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85a9"
+  },
+  "DateValue": 81085,
+  "EmpNo": 122,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85aa"
+  },
+  "DateValue": 81085,
+  "EmpNo": 122,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ab"
+  },
+  "DateValue": 81085,
+  "EmpNo": 123,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ac"
+  },
+  "DateValue": 81085,
+  "EmpNo": 123,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ad"
+  },
+  "DateValue": 81454,
+  "EmpNo": 124,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ae"
+  },
+  "DateValue": 81662,
+  "EmpNo": 124,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85af"
+  },
+  "DateValue": 81454,
+  "EmpNo": 124,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b0"
+  },
+  "DateValue": 81454,
+  "EmpNo": 125,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b1"
+  },
+  "DateValue": 81662,
+  "EmpNo": 125,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b2"
+  },
+  "DateValue": 81454,
+  "EmpNo": 125,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b3"
+  },
+  "DateValue": 81454,
+  "EmpNo": 127,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b4"
+  },
+  "DateValue": 81662,
+  "EmpNo": 127,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b5"
+  },
+  "DateValue": 81454,
+  "EmpNo": 127,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b6"
+  },
+  "DateValue": 81601,
+  "EmpNo": 129,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b7"
+  },
+  "DateValue": 81601,
+  "EmpNo": 129,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b8"
+  },
+  "DateValue": 81601,
+  "EmpNo": 129,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85b9"
+  },
+  "DateValue": 69032,
+  "EmpNo": 162,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ba"
+  },
+  "DateValue": 68666,
+  "EmpNo": 162,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85bb"
+  },
+  "DateValue": 71131,
+  "EmpNo": 162,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85bc"
+  },
+  "DateValue": 81846,
+  "EmpNo": 189,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85bd"
+  },
+  "DateValue": 69852,
+  "EmpNo": 199,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85be"
+  },
+  "DateValue": 69943,
+  "EmpNo": 199,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85bf"
+  },
+  "DateValue": 71131,
+  "EmpNo": 199,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c0"
+  },
+  "DateValue": 74510,
+  "EmpNo": 212,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c1"
+  },
+  "DateValue": 74510,
+  "EmpNo": 212,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c2"
+  },
+  "DateValue": 74510,
+  "EmpNo": 212,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c3"
+  },
+  "DateValue": 74510,
+  "EmpNo": 318,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c4"
+  },
+  "DateValue": 74510,
+  "EmpNo": 318,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c5"
+  },
+  "DateValue": 74510,
+  "EmpNo": 332,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c6"
+  },
+  "DateValue": 74510,
+  "EmpNo": 332,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c7"
+  },
+  "DateValue": 74510,
+  "EmpNo": 333,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c8"
+  },
+  "DateValue": 74510,
+  "EmpNo": 333,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85c9"
+  },
+  "DateValue": 74510,
+  "EmpNo": 333,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ca"
+  },
+  "DateValue": 74510,
+  "EmpNo": 338,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85cb"
+  },
+  "DateValue": 74510,
+  "EmpNo": 338,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85cc"
+  },
+  "DateValue": 74510,
+  "EmpNo": 363,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85cd"
+  },
+  "DateValue": 74510,
+  "EmpNo": 363,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ce"
+  },
+  "DateValue": 73658,
+  "EmpNo": 419,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85cf"
+  },
+  "DateValue": 74510,
+  "EmpNo": 419,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d0"
+  },
+  "DateValue": 74510,
+  "EmpNo": 419,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d1"
+  },
+  "DateValue": 74510,
+  "EmpNo": 430,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d2"
+  },
+  "DateValue": 74510,
+  "EmpNo": 430,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d3"
+  },
+  "DateValue": 74510,
+  "EmpNo": 446,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d4"
+  },
+  "DateValue": 74510,
+  "EmpNo": 446,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d5"
+  },
+  "DateValue": 74145,
+  "EmpNo": 455,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d6"
+  },
+  "DateValue": 74510,
+  "EmpNo": 455,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d7"
+  },
+  "DateValue": 74510,
+  "EmpNo": 510,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d8"
+  },
+  "DateValue": 74510,
+  "EmpNo": 510,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85d9"
+  },
+  "DateValue": 74510,
+  "EmpNo": 512,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85da"
+  },
+  "DateValue": 74510,
+  "EmpNo": 512,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85db"
+  },
+  "DateValue": 74510,
+  "EmpNo": 517,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85dc"
+  },
+  "DateValue": 74510,
+  "EmpNo": 517,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85dd"
+  },
+  "DateValue": 74510,
+  "EmpNo": 517,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85de"
+  },
+  "DateValue": 74510,
+  "EmpNo": 518,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85df"
+  },
+  "DateValue": 74510,
+  "EmpNo": 518,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e0"
+  },
+  "DateValue": 74510,
+  "EmpNo": 519,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e1"
+  },
+  "DateValue": 74510,
+  "EmpNo": 519,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e2"
+  },
+  "DateValue": 74510,
+  "EmpNo": 520,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e3"
+  },
+  "DateValue": 74510,
+  "EmpNo": 520,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e4"
+  },
+  "DateValue": 74510,
+  "EmpNo": 520,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e5"
+  },
+  "DateValue": 75119,
+  "EmpNo": 523,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e6"
+  },
+  "DateValue": 75119,
+  "EmpNo": 523,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e7"
+  },
+  "DateValue": 75119,
+  "EmpNo": 523,
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e8"
+  },
+  "DateValue": 75971,
+  "EmpNo": 534,
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85e9"
+  },
+  "DateValue": 75971,
+  "EmpNo": 534,
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ea"
+  },
+  "DateValue": 75971,
+  "EmpNo": 534,
+  "OrdinalNo": 3
+}]

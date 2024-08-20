@@ -1,0 +1,162 @@
+[{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b59"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 1,
+  "IndName": "EMP CATEGORY",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b5a"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 2,
+  "IndName": "SEX",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b5b"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 3,
+  "IndName": "PENSION SCHEME",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b5c"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 4,
+  "IndName": "NSSA ELIGIBILTY",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b5d"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 5,
+  "IndName": "NEC CONTRIBUTOR",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b5e"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 6,
+  "IndName": "UNION MEMBER",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b5f"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 7,
+  "IndName": "MED AID SOCIETY",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b60"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 8,
+  "IndName": "ANNUAL LEAVE",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b61"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 9,
+  "IndName": "SICK LEAVE",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b62"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 10,
+  "IndName": "STANDARD TIME",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b63"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 11,
+  "IndName": "EXPATRIAT",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b64"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 12,
+  "IndName": "MARS MEMBER",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b65"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 14,
+  "IndName": "MATERNITY LVE",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b66"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 15,
+  "IndName": "TRANSPORT ALLOW",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b67"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 16,
+  "IndName": "HOUSING ALLOW",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b68"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 17,
+  "IndName": "CIMAS SCHEME",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b69"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 18,
+  "IndName": "MASCA SCHEME",
+  "Payroll": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb7b6a"
+  },
+  "IndDefaultNo": 0,
+  "IndicatorNo": 19,
+  "IndName": "NMAS SCHEME",
+  "Payroll": 1
+}]

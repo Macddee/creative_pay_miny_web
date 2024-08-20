@@ -1,25 +1,32 @@
 import React, { useState, useEffect } from "react";
 import Input from "../../styled/inputs";
+import { useDataContexts } from "../../ContextProviders/DataContexts";
 
 export default function Taxinfo() {
-  const [data, setData] = useState({
-    eventName: "",
-    description: '',
-    location: "",
-    date: '',
-  });
+  const { setAllEmployees } = useDataContexts()
+  const { employee, setEmployee } = useDataContexts()
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setData((data) => ({
-      ...data,
+    setEmployee((employee) => ({
+      ...employee,
       [name]: value,
     }));
   };
 
+  function updateEmployeeDetails(updatedEmployee) {
+    setAllEmployees(prevEmployees =>
+      prevEmployees.map(employee =>
+        employee.EmpNo === updatedEmployee.EmpNo ? updatedEmployee : employee
+      )
+    );
+  }
+
   const handleSubmit = (e) => {
-    console.log(data)
+    e.preventDefault()
+    updateEmployeeDetails(employee)
   }
   return (
     <>
@@ -32,15 +39,15 @@ export default function Taxinfo() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Tax Code"
-                    value={data.taxCode}
+                    value={employee.TaxCode}
                     type="text"
-                    inputId="taxCode"
-                    name="taxCode"
+                    inputId="TaxCode"
+                    name="TaxCode"
                     placeholder="Tax Code"
                     onChange={handleChange} />
                   <Input
                     title="Directive NUmber"
-                    value={data.taxDN}
+                    value={"employee.DirectiveNumberNotFound"}
                     type="text"
                     inputId="taxDN"
                     name="taxDN"
@@ -50,7 +57,7 @@ export default function Taxinfo() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Tax Dependance"
-                    value={data.taxDependance}
+                    value={"employee.taxDependanceNotFound"}
                     type="text"
                     inputId="taxDependance"
                     name="taxDependance"
@@ -58,28 +65,28 @@ export default function Taxinfo() {
                     onChange={handleChange} />
                   <Input
                     title="Amount"
-                    value={data.taxAmt}
+                    value={employee.DirAmt}
                     type="currency"
-                    inputId="taxAmt"
-                    name="taxAmt"
+                    inputId="DirAmt"
+                    name="DirAmt"
                     placeholder="$0.00"
                     onChange={handleChange} />
                 </div>
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Percentage"
-                    value={data.taxPerc}
+                    value={employee.DirPercent}
                     type="Number"
-                    inputId="taxOffice"
-                    name="taxOffice"
-                    placeholder="Tax Office"
+                    inputId="DirPercent"
+                    name="DirPercent"
+                    placeholder="0.0000000000"
                     onChange={handleChange} />
                   <Input
                     title="Tax Office"
-                    value={data.taxOffice}
+                    value={employee.TaxOffice}
                     type="text"
-                    inputId="taxOffice"
-                    name="taxOffice"
+                    inputId="TaxOffice"
+                    name="TaxOffice"
                     placeholder="Tax Office"
                     onChange={handleChange} />
                 </div>
@@ -88,10 +95,10 @@ export default function Taxinfo() {
                   <div style={{ flex: '0 0 48%' }}>
                     <Input
                       title="References"
-                      value={data.taxRef}
+                      value={employee.TaxRef}
                       type="text"
-                      inputId="taxRef"
-                      name="taxRef"
+                      inputId="TaxRef"
+                      name="TaxRef"
                       placeholder="References"
                       onChange={handleChange} />
                   </div>

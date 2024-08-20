@@ -1,35 +1,40 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa6";
-
 import Input from "../../../styled/inputs"
+import { useDataContexts } from "../../../ContextProviders/DataContexts";
+
 
 export default function Empaddress() {
-  const [data, setData] = useState({
-    eventName: "",
-    description: '',
-    location: "",
-    date: '',
-  });
+  const  {employeeDetails, setemployeeDetails} = useDataContexts()  
+  const  {setAllEmployeeDetails} = useDataContexts()  
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setData((data) => ({
-      ...data,
+    setemployeeDetails((employee) => ({
+      ...employee,
       [name]: value,
     }));
   };
+    
+  console.log(employeeDetails);
 
-
+  function updateEmployeeDetails(updatedEmployeeDetails) {
+    setAllEmployeeDetails(prevEmployees =>
+      prevEmployees.map(employee =>
+        employee.EmpNo === updatedEmployeeDetails.EmpNo ? updatedEmployeeDetails : employee
+      )
+    );
+  }
 
   const handleSubmit = (e) => {
-
+    e.preventDefault()
+    updateEmployeeDetails(employeeDetails)
   }
   return (
     <>
       <div className="bg-blue-100 max-w-[1300px] p-5 md:p-15 py-10 rounded-lg w-[95%] relative block mt-1 m-auto">
-        {/* <h1 className="text-3xl text-center font-bold">Update Employeee Details</h1> */}
+        {/* className="text-3xl text-center font-bold">Update Employeee Details */}
         <form onSubmit={handleSubmit} >
           <div className="md:flex gap-20 flex-wrap">
             <div className="flex-1">
@@ -37,36 +42,36 @@ export default function Empaddress() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Postal Line 1"
-                    value={data.empPost1}
+                    value={employeeDetails.Post_Line1}
                     type="text"
-                    inputId="empPost1"
-                    name="empPost1"
+                    inputId="Post_Line1"
+                    name="Post_Line1"
                     placeholder="Postal Line 1"
                     onChange={handleChange} />
                   <Input
                     title="Postal Line 2"
-                    value={data.empPost2}
+                    value={employeeDetails.Post_Line2}
                     type="address"
-                    inputId="empPost2"
-                    name="empPost2"
+                    inputId="Post_Line2"
+                    name="Post_Line2"
                     placeholder="Postal Line 2"
                     onChange={handleChange} />
                 </div>
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Postal Line 3"
-                    value={data.empPost3}
+                    value={employeeDetails.Post_Line3}
                     type="text"
-                    inputId="empPost3"
-                    name="empPost3"
+                    inputId="Post_Line3" 
+                    name="Post_Line3"
                     placeholder="Postal Line 3"
                     onChange={handleChange} />
                   <Input
                     title="Postal Line 4"
-                    value={data.empPost4}
+                    value={employeeDetails.Post_Line4}
                     type="text"
-                    inputId="empPost4"
-                    name="empPost4"
+                    inputId="Post_Line4"
+                    name="Post_Line4"
                     placeholder="Postal Line 4"
                     onChange={handleChange} />
                 </div>
@@ -74,15 +79,14 @@ export default function Empaddress() {
                   <div style={{ flex: '0 0 48%' }}>
                     <Input
                       title="Postal Line 5"
-                      value={data.empPost5}
+                      value={"no values for now"}
                       type="text"
-                      inputId="empPost5"
-                      name="empPost5"
+                      inputId="Post_Line5"
+                      name="Post_Line5"
                       placeholder="Postal Line 5"
                       onChange={handleChange} />
                   </div>
                 </div>
-
               </div>
             </div>
           </div>

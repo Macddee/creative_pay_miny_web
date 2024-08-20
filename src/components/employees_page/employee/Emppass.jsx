@@ -1,31 +1,34 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa6";
-
+import { useDataContexts } from "../../../ContextProviders/DataContexts";
 import Input from "../../../styled/inputs"
 
-export default function Emppass() {
-  const [data, setData] = useState({
-    eventName: "",
-    description: '',
-    location: "",
-    date: '',
-  });
+export default function Password() {
+  const  {employee, setEmployee} = useDataContexts()
+  const {setAllEmployees} = useDataContexts()
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setData((data) => ({
-      ...data,
+    setEmployee((employee) => ({
+      ...employee,
       [name]: value,
     }));
   };
 
-
-
-  const handleSubmit = (e) => {
-
+  function updateEmployee(updatedEmployee) {
+    setAllEmployees(prevEmployees =>
+      prevEmployees.map(employee =>
+        employee.EmpNo === updatedEmployee.EmpNo ? updatedEmployee : employee
+      )
+    );
   }
+
+ 
+const handleSubmit = ((e) => {
+  e.preventDefault();
+  updateEmployee(employee)
+  console.log(employee);
+  
+})
 
   return (
     <div>
@@ -38,10 +41,10 @@ export default function Emppass() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Password"
-                    value={data.empPass}
+                    value={employee.Password}
                     type="password"
-                    inputId="empPass"
-                    name="empPass"
+                    inputId="Password"
+                    name="Password"
                     placeholder="*********"
                     onChange={handleChange} />
                 </div>

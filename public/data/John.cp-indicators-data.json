@@ -1,0 +1,3424 @@
+[{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85eb"
+  },
+  "EmpNo": 70,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ec"
+  },
+  "EmpNo": 70,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ed"
+  },
+  "EmpNo": 70,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ee"
+  },
+  "EmpNo": 70,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ef"
+  },
+  "EmpNo": 70,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f0"
+  },
+  "EmpNo": 70,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f1"
+  },
+  "EmpNo": 70,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f2"
+  },
+  "EmpNo": 70,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f3"
+  },
+  "EmpNo": 70,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f4"
+  },
+  "EmpNo": 71,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f5"
+  },
+  "EmpNo": 71,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f6"
+  },
+  "EmpNo": 71,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f7"
+  },
+  "EmpNo": 71,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f8"
+  },
+  "EmpNo": 71,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85f9"
+  },
+  "EmpNo": 71,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85fa"
+  },
+  "EmpNo": 71,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85fb"
+  },
+  "EmpNo": 71,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85fc"
+  },
+  "EmpNo": 71,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85fd"
+  },
+  "EmpNo": 72,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85fe"
+  },
+  "EmpNo": 72,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb85ff"
+  },
+  "EmpNo": 72,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8600"
+  },
+  "EmpNo": 72,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8601"
+  },
+  "EmpNo": 72,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8602"
+  },
+  "EmpNo": 72,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8603"
+  },
+  "EmpNo": 72,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8604"
+  },
+  "EmpNo": 72,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8605"
+  },
+  "EmpNo": 72,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8606"
+  },
+  "EmpNo": 75,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8607"
+  },
+  "EmpNo": 75,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8608"
+  },
+  "EmpNo": 75,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8609"
+  },
+  "EmpNo": 75,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb860a"
+  },
+  "EmpNo": 75,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb860b"
+  },
+  "EmpNo": 75,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb860c"
+  },
+  "EmpNo": 75,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb860d"
+  },
+  "EmpNo": 75,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb860e"
+  },
+  "EmpNo": 75,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb860f"
+  },
+  "EmpNo": 77,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8610"
+  },
+  "EmpNo": 77,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8611"
+  },
+  "EmpNo": 77,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8612"
+  },
+  "EmpNo": 77,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8613"
+  },
+  "EmpNo": 77,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8614"
+  },
+  "EmpNo": 77,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8615"
+  },
+  "EmpNo": 77,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8616"
+  },
+  "EmpNo": 77,
+  "Ind": "0",
+  "OrdinalNo": 14
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8617"
+  },
+  "EmpNo": 77,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8618"
+  },
+  "EmpNo": 77,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8619"
+  },
+  "EmpNo": 80,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb861a"
+  },
+  "EmpNo": 80,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb861b"
+  },
+  "EmpNo": 80,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb861c"
+  },
+  "EmpNo": 80,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb861d"
+  },
+  "EmpNo": 80,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb861e"
+  },
+  "EmpNo": 80,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb861f"
+  },
+  "EmpNo": 80,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8620"
+  },
+  "EmpNo": 80,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8621"
+  },
+  "EmpNo": 80,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8622"
+  },
+  "EmpNo": 81,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8623"
+  },
+  "EmpNo": 81,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8624"
+  },
+  "EmpNo": 81,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8625"
+  },
+  "EmpNo": 81,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8626"
+  },
+  "EmpNo": 81,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8627"
+  },
+  "EmpNo": 81,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8628"
+  },
+  "EmpNo": 81,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8629"
+  },
+  "EmpNo": 81,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb862a"
+  },
+  "EmpNo": 81,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb862b"
+  },
+  "EmpNo": 83,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb862c"
+  },
+  "EmpNo": 83,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb862d"
+  },
+  "EmpNo": 83,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb862e"
+  },
+  "EmpNo": 83,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb862f"
+  },
+  "EmpNo": 83,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8630"
+  },
+  "EmpNo": 83,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8631"
+  },
+  "EmpNo": 83,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8632"
+  },
+  "EmpNo": 83,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8633"
+  },
+  "EmpNo": 83,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8634"
+  },
+  "EmpNo": 84,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8635"
+  },
+  "EmpNo": 84,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8636"
+  },
+  "EmpNo": 84,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8637"
+  },
+  "EmpNo": 84,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8638"
+  },
+  "EmpNo": 84,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8639"
+  },
+  "EmpNo": 84,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb863a"
+  },
+  "EmpNo": 84,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb863b"
+  },
+  "EmpNo": 84,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb863c"
+  },
+  "EmpNo": 84,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb863d"
+  },
+  "EmpNo": 87,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb863e"
+  },
+  "EmpNo": 87,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb863f"
+  },
+  "EmpNo": 87,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8640"
+  },
+  "EmpNo": 87,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8641"
+  },
+  "EmpNo": 87,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8642"
+  },
+  "EmpNo": 87,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8643"
+  },
+  "EmpNo": 87,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8644"
+  },
+  "EmpNo": 87,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8645"
+  },
+  "EmpNo": 87,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8646"
+  },
+  "EmpNo": 90,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8647"
+  },
+  "EmpNo": 90,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8648"
+  },
+  "EmpNo": 90,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8649"
+  },
+  "EmpNo": 90,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb864a"
+  },
+  "EmpNo": 90,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb864b"
+  },
+  "EmpNo": 90,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb864c"
+  },
+  "EmpNo": 90,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb864d"
+  },
+  "EmpNo": 90,
+  "Ind": "1",
+  "OrdinalNo": 9
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb864e"
+  },
+  "EmpNo": 90,
+  "Ind": "1",
+  "OrdinalNo": 10
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb864f"
+  },
+  "EmpNo": 90,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8650"
+  },
+  "EmpNo": 90,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8651"
+  },
+  "EmpNo": 91,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8652"
+  },
+  "EmpNo": 91,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8653"
+  },
+  "EmpNo": 91,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8654"
+  },
+  "EmpNo": 91,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8655"
+  },
+  "EmpNo": 91,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8656"
+  },
+  "EmpNo": 91,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8657"
+  },
+  "EmpNo": 91,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8658"
+  },
+  "EmpNo": 91,
+  "Ind": "5",
+  "OrdinalNo": 9
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8659"
+  },
+  "EmpNo": 91,
+  "Ind": "1",
+  "OrdinalNo": 10
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb865a"
+  },
+  "EmpNo": 91,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb865b"
+  },
+  "EmpNo": 91,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb865c"
+  },
+  "EmpNo": 97,
+  "Ind": "p",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb865d"
+  },
+  "EmpNo": 97,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb865e"
+  },
+  "EmpNo": 97,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb865f"
+  },
+  "EmpNo": 97,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8660"
+  },
+  "EmpNo": 97,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8661"
+  },
+  "EmpNo": 97,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8662"
+  },
+  "EmpNo": 97,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8663"
+  },
+  "EmpNo": 97,
+  "Ind": "5",
+  "OrdinalNo": 9
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8664"
+  },
+  "EmpNo": 98,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8665"
+  },
+  "EmpNo": 98,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8666"
+  },
+  "EmpNo": 98,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8667"
+  },
+  "EmpNo": 98,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8668"
+  },
+  "EmpNo": 98,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8669"
+  },
+  "EmpNo": 98,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb866a"
+  },
+  "EmpNo": 98,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb866b"
+  },
+  "EmpNo": 98,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb866c"
+  },
+  "EmpNo": 98,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb866d"
+  },
+  "EmpNo": 100,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb866e"
+  },
+  "EmpNo": 100,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb866f"
+  },
+  "EmpNo": 100,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8670"
+  },
+  "EmpNo": 100,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8671"
+  },
+  "EmpNo": 100,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8672"
+  },
+  "EmpNo": 100,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8673"
+  },
+  "EmpNo": 100,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8674"
+  },
+  "EmpNo": 100,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8675"
+  },
+  "EmpNo": 100,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8676"
+  },
+  "EmpNo": 101,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8677"
+  },
+  "EmpNo": 101,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8678"
+  },
+  "EmpNo": 101,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8679"
+  },
+  "EmpNo": 101,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb867a"
+  },
+  "EmpNo": 101,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb867b"
+  },
+  "EmpNo": 101,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb867c"
+  },
+  "EmpNo": 101,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb867d"
+  },
+  "EmpNo": 103,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb867e"
+  },
+  "EmpNo": 103,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb867f"
+  },
+  "EmpNo": 103,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8680"
+  },
+  "EmpNo": 103,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8681"
+  },
+  "EmpNo": 103,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8682"
+  },
+  "EmpNo": 103,
+  "Ind": "0",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8683"
+  },
+  "EmpNo": 103,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8684"
+  },
+  "EmpNo": 103,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8685"
+  },
+  "EmpNo": 103,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8686"
+  },
+  "EmpNo": 105,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8687"
+  },
+  "EmpNo": 105,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8688"
+  },
+  "EmpNo": 105,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8689"
+  },
+  "EmpNo": 105,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb868a"
+  },
+  "EmpNo": 105,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb868b"
+  },
+  "EmpNo": 105,
+  "Ind": "0",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb868c"
+  },
+  "EmpNo": 105,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb868d"
+  },
+  "EmpNo": 105,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb868e"
+  },
+  "EmpNo": 105,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb868f"
+  },
+  "EmpNo": 106,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8690"
+  },
+  "EmpNo": 106,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8691"
+  },
+  "EmpNo": 106,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8692"
+  },
+  "EmpNo": 106,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8693"
+  },
+  "EmpNo": 106,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8694"
+  },
+  "EmpNo": 106,
+  "Ind": "0",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8695"
+  },
+  "EmpNo": 106,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8696"
+  },
+  "EmpNo": 106,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8697"
+  },
+  "EmpNo": 106,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8698"
+  },
+  "EmpNo": 107,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8699"
+  },
+  "EmpNo": 107,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb869a"
+  },
+  "EmpNo": 107,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb869b"
+  },
+  "EmpNo": 107,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb869c"
+  },
+  "EmpNo": 107,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb869d"
+  },
+  "EmpNo": 107,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb869e"
+  },
+  "EmpNo": 107,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb869f"
+  },
+  "EmpNo": 107,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a0"
+  },
+  "EmpNo": 109,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a1"
+  },
+  "EmpNo": 109,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a2"
+  },
+  "EmpNo": 109,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a3"
+  },
+  "EmpNo": 109,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a4"
+  },
+  "EmpNo": 109,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a5"
+  },
+  "EmpNo": 109,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a6"
+  },
+  "EmpNo": 109,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a7"
+  },
+  "EmpNo": 110,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a8"
+  },
+  "EmpNo": 110,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86a9"
+  },
+  "EmpNo": 110,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86aa"
+  },
+  "EmpNo": 110,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ab"
+  },
+  "EmpNo": 110,
+  "Ind": "0",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ac"
+  },
+  "EmpNo": 110,
+  "Ind": "0",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ad"
+  },
+  "EmpNo": 110,
+  "Ind": "Y",
+  "OrdinalNo": 7
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ae"
+  },
+  "EmpNo": 110,
+  "Ind": "0",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86af"
+  },
+  "EmpNo": 112,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b0"
+  },
+  "EmpNo": 112,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b1"
+  },
+  "EmpNo": 112,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b2"
+  },
+  "EmpNo": 112,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b3"
+  },
+  "EmpNo": 112,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b4"
+  },
+  "EmpNo": 112,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b5"
+  },
+  "EmpNo": 113,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b6"
+  },
+  "EmpNo": 113,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b7"
+  },
+  "EmpNo": 113,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b8"
+  },
+  "EmpNo": 113,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86b9"
+  },
+  "EmpNo": 113,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ba"
+  },
+  "EmpNo": 113,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86bb"
+  },
+  "EmpNo": 113,
+  "Ind": "N",
+  "OrdinalNo": 7
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86bc"
+  },
+  "EmpNo": 113,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86bd"
+  },
+  "EmpNo": 114,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86be"
+  },
+  "EmpNo": 114,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86bf"
+  },
+  "EmpNo": 114,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c0"
+  },
+  "EmpNo": 114,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c1"
+  },
+  "EmpNo": 114,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c2"
+  },
+  "EmpNo": 114,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c3"
+  },
+  "EmpNo": 114,
+  "Ind": "5",
+  "OrdinalNo": 7
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c4"
+  },
+  "EmpNo": 115,
+  "Ind": "p",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c5"
+  },
+  "EmpNo": 115,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c6"
+  },
+  "EmpNo": 115,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c7"
+  },
+  "EmpNo": 115,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c8"
+  },
+  "EmpNo": 115,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86c9"
+  },
+  "EmpNo": 115,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ca"
+  },
+  "EmpNo": 115,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86cb"
+  },
+  "EmpNo": 116,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86cc"
+  },
+  "EmpNo": 116,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86cd"
+  },
+  "EmpNo": 116,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ce"
+  },
+  "EmpNo": 116,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86cf"
+  },
+  "EmpNo": 116,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d0"
+  },
+  "EmpNo": 116,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d1"
+  },
+  "EmpNo": 116,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d2"
+  },
+  "EmpNo": 118,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d3"
+  },
+  "EmpNo": 118,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d4"
+  },
+  "EmpNo": 118,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d5"
+  },
+  "EmpNo": 120,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d6"
+  },
+  "EmpNo": 120,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d7"
+  },
+  "EmpNo": 120,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d8"
+  },
+  "EmpNo": 121,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86d9"
+  },
+  "EmpNo": 121,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86da"
+  },
+  "EmpNo": 121,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86db"
+  },
+  "EmpNo": 121,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86dc"
+  },
+  "EmpNo": 121,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86dd"
+  },
+  "EmpNo": 121,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86de"
+  },
+  "EmpNo": 121,
+  "Ind": "N",
+  "OrdinalNo": 14
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86df"
+  },
+  "EmpNo": 121,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e0"
+  },
+  "EmpNo": 122,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e1"
+  },
+  "EmpNo": 122,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e2"
+  },
+  "EmpNo": 122,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e3"
+  },
+  "EmpNo": 123,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e4"
+  },
+  "EmpNo": 123,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e5"
+  },
+  "EmpNo": 123,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e6"
+  },
+  "EmpNo": 124,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e7"
+  },
+  "EmpNo": 124,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e8"
+  },
+  "EmpNo": 124,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86e9"
+  },
+  "EmpNo": 124,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ea"
+  },
+  "EmpNo": 124,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86eb"
+  },
+  "EmpNo": 124,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ec"
+  },
+  "EmpNo": 124,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ed"
+  },
+  "EmpNo": 125,
+  "Ind": "B",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ee"
+  },
+  "EmpNo": 125,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ef"
+  },
+  "EmpNo": 125,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f0"
+  },
+  "EmpNo": 125,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f1"
+  },
+  "EmpNo": 125,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f2"
+  },
+  "EmpNo": 125,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f3"
+  },
+  "EmpNo": 125,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f4"
+  },
+  "EmpNo": 127,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f5"
+  },
+  "EmpNo": 127,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f6"
+  },
+  "EmpNo": 127,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f7"
+  },
+  "EmpNo": 127,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f8"
+  },
+  "EmpNo": 127,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86f9"
+  },
+  "EmpNo": 127,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86fa"
+  },
+  "EmpNo": 127,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86fb"
+  },
+  "EmpNo": 129,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86fc"
+  },
+  "EmpNo": 129,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86fd"
+  },
+  "EmpNo": 130,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86fe"
+  },
+  "EmpNo": 130,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb86ff"
+  },
+  "EmpNo": 131,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8700"
+  },
+  "EmpNo": 131,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8701"
+  },
+  "EmpNo": 134,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8702"
+  },
+  "EmpNo": 134,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8703"
+  },
+  "EmpNo": 134,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8704"
+  },
+  "EmpNo": 134,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8705"
+  },
+  "EmpNo": 134,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8706"
+  },
+  "EmpNo": 137,
+  "Ind": "C",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8707"
+  },
+  "EmpNo": 137,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8708"
+  },
+  "EmpNo": 138,
+  "Ind": "c",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8709"
+  },
+  "EmpNo": 138,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb870a"
+  },
+  "EmpNo": 138,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb870b"
+  },
+  "EmpNo": 162,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb870c"
+  },
+  "EmpNo": 162,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb870d"
+  },
+  "EmpNo": 162,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb870e"
+  },
+  "EmpNo": 162,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb870f"
+  },
+  "EmpNo": 162,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8710"
+  },
+  "EmpNo": 162,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8711"
+  },
+  "EmpNo": 162,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8712"
+  },
+  "EmpNo": 162,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8713"
+  },
+  "EmpNo": 189,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8714"
+  },
+  "EmpNo": 189,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8715"
+  },
+  "EmpNo": 189,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8716"
+  },
+  "EmpNo": 189,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8717"
+  },
+  "EmpNo": 189,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8718"
+  },
+  "EmpNo": 189,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8719"
+  },
+  "EmpNo": 189,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb871a"
+  },
+  "EmpNo": 199,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb871b"
+  },
+  "EmpNo": 199,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb871c"
+  },
+  "EmpNo": 199,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb871d"
+  },
+  "EmpNo": 199,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb871e"
+  },
+  "EmpNo": 199,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb871f"
+  },
+  "EmpNo": 199,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8720"
+  },
+  "EmpNo": 212,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8721"
+  },
+  "EmpNo": 212,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8722"
+  },
+  "EmpNo": 212,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8723"
+  },
+  "EmpNo": 212,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8724"
+  },
+  "EmpNo": 212,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8725"
+  },
+  "EmpNo": 212,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8726"
+  },
+  "EmpNo": 212,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8727"
+  },
+  "EmpNo": 212,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8728"
+  },
+  "EmpNo": 318,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8729"
+  },
+  "EmpNo": 318,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb872a"
+  },
+  "EmpNo": 318,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb872b"
+  },
+  "EmpNo": 318,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb872c"
+  },
+  "EmpNo": 318,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb872d"
+  },
+  "EmpNo": 332,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb872e"
+  },
+  "EmpNo": 332,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb872f"
+  },
+  "EmpNo": 332,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8730"
+  },
+  "EmpNo": 332,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8731"
+  },
+  "EmpNo": 332,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8732"
+  },
+  "EmpNo": 333,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8733"
+  },
+  "EmpNo": 333,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8734"
+  },
+  "EmpNo": 333,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8735"
+  },
+  "EmpNo": 333,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8736"
+  },
+  "EmpNo": 333,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8737"
+  },
+  "EmpNo": 333,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8738"
+  },
+  "EmpNo": 333,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8739"
+  },
+  "EmpNo": 333,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb873a"
+  },
+  "EmpNo": 333,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb873b"
+  },
+  "EmpNo": 338,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb873c"
+  },
+  "EmpNo": 338,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb873d"
+  },
+  "EmpNo": 338,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb873e"
+  },
+  "EmpNo": 338,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb873f"
+  },
+  "EmpNo": 338,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8740"
+  },
+  "EmpNo": 363,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8741"
+  },
+  "EmpNo": 363,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8742"
+  },
+  "EmpNo": 363,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8743"
+  },
+  "EmpNo": 363,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8744"
+  },
+  "EmpNo": 363,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8745"
+  },
+  "EmpNo": 363,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8746"
+  },
+  "EmpNo": 363,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8747"
+  },
+  "EmpNo": 363,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8748"
+  },
+  "EmpNo": 419,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8749"
+  },
+  "EmpNo": 419,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb874a"
+  },
+  "EmpNo": 419,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb874b"
+  },
+  "EmpNo": 419,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb874c"
+  },
+  "EmpNo": 419,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb874d"
+  },
+  "EmpNo": 419,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb874e"
+  },
+  "EmpNo": 419,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb874f"
+  },
+  "EmpNo": 419,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8750"
+  },
+  "EmpNo": 419,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8751"
+  },
+  "EmpNo": 430,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8752"
+  },
+  "EmpNo": 430,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8753"
+  },
+  "EmpNo": 430,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8754"
+  },
+  "EmpNo": 430,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8755"
+  },
+  "EmpNo": 430,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8756"
+  },
+  "EmpNo": 430,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8757"
+  },
+  "EmpNo": 430,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8758"
+  },
+  "EmpNo": 430,
+  "Ind": "N",
+  "OrdinalNo": 9
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8759"
+  },
+  "EmpNo": 430,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb875a"
+  },
+  "EmpNo": 430,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb875b"
+  },
+  "EmpNo": 446,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb875c"
+  },
+  "EmpNo": 455,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb875d"
+  },
+  "EmpNo": 455,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb875e"
+  },
+  "EmpNo": 455,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb875f"
+  },
+  "EmpNo": 455,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8760"
+  },
+  "EmpNo": 455,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8761"
+  },
+  "EmpNo": 455,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8762"
+  },
+  "EmpNo": 510,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8763"
+  },
+  "EmpNo": 512,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8764"
+  },
+  "EmpNo": 512,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8765"
+  },
+  "EmpNo": 512,
+  "Ind": "y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8766"
+  },
+  "EmpNo": 512,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8767"
+  },
+  "EmpNo": 512,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8768"
+  },
+  "EmpNo": 512,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8769"
+  },
+  "EmpNo": 512,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb876a"
+  },
+  "EmpNo": 512,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb876b"
+  },
+  "EmpNo": 517,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb876c"
+  },
+  "EmpNo": 517,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb876d"
+  },
+  "EmpNo": 517,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb876e"
+  },
+  "EmpNo": 517,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb876f"
+  },
+  "EmpNo": 517,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8770"
+  },
+  "EmpNo": 517,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8771"
+  },
+  "EmpNo": 517,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8772"
+  },
+  "EmpNo": 517,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8773"
+  },
+  "EmpNo": 518,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8774"
+  },
+  "EmpNo": 518,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8775"
+  },
+  "EmpNo": 518,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8776"
+  },
+  "EmpNo": 518,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8777"
+  },
+  "EmpNo": 518,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8778"
+  },
+  "EmpNo": 518,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8779"
+  },
+  "EmpNo": 518,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb877a"
+  },
+  "EmpNo": 518,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb877b"
+  },
+  "EmpNo": 519,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb877c"
+  },
+  "EmpNo": 519,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb877d"
+  },
+  "EmpNo": 519,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb877e"
+  },
+  "EmpNo": 519,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb877f"
+  },
+  "EmpNo": 519,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8780"
+  },
+  "EmpNo": 520,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8781"
+  },
+  "EmpNo": 520,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8782"
+  },
+  "EmpNo": 520,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8783"
+  },
+  "EmpNo": 520,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8784"
+  },
+  "EmpNo": 520,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8785"
+  },
+  "EmpNo": 520,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8786"
+  },
+  "EmpNo": 520,
+  "Ind": "N",
+  "OrdinalNo": 14
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8787"
+  },
+  "EmpNo": 520,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8788"
+  },
+  "EmpNo": 523,
+  "Ind": "c",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8789"
+  },
+  "EmpNo": 523,
+  "Ind": "M",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb878a"
+  },
+  "EmpNo": 523,
+  "Ind": "o",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb878b"
+  },
+  "EmpNo": 534,
+  "Ind": "P",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb878c"
+  },
+  "EmpNo": 534,
+  "Ind": "F",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb878d"
+  },
+  "EmpNo": 534,
+  "Ind": "1",
+  "OrdinalNo": 3
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb878e"
+  },
+  "EmpNo": 534,
+  "Ind": "Y",
+  "OrdinalNo": 4
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb878f"
+  },
+  "EmpNo": 534,
+  "Ind": "1",
+  "OrdinalNo": 5
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8790"
+  },
+  "EmpNo": 534,
+  "Ind": "Y",
+  "OrdinalNo": 6
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8791"
+  },
+  "EmpNo": 534,
+  "Ind": "5",
+  "OrdinalNo": 8
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8792"
+  },
+  "EmpNo": 534,
+  "Ind": "N",
+  "OrdinalNo": 15
+},
+{
+  "_id": {
+    "$oid": "65fc3ba142f3922849cb8793"
+  },
+  "EmpNo": 534,
+  "Ind": "N",
+  "OrdinalNo": 16
+},
+{
+  "_id": {
+    "$oid": "66b63c196a2dba3ea3b307dd"
+  },
+  "EmpNo": 58,
+  "Ind": "f",
+  "OrdinalNo": 2
+},
+{
+  "_id": {
+    "$oid": "66b63ee36a2dba3ea3b307df"
+  },
+  "EmpNo": 58,
+  "Ind": "k",
+  "OrdinalNo": 1
+},
+{
+  "_id": {
+    "$oid": "66b8f0aa6a2dba3ea3b307e3"
+  },
+  "EmpNo": 58,
+  "Ind": "j",
+  "OrdinalNo": 3
+}]

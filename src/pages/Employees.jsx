@@ -54,18 +54,22 @@ export default function Employees() {
               } md:translate-x-0 md:relative bg-sidebar`}
           >
 
-            <Sidebar.Items className='pb-5 h-full gap-y-5 mb-10 bg-white '>
-              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 space-y-8 '>
+            <Sidebar.Items className='pb-5 h-full gap-y-5 mb-10 bg-white hover:text-blue-600'>
+              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 space-y-8 hover:text-blue-600'>
 
                 <NavLink
+                end
                   to={{
                     pathname: "/employees",
                   }}
                   onClick={() => setIsSidebarOpen(false)}
-                  className="flex items-center gap-1 pb-3 text-black ml-1"
-                >
-                  <HiHome className="w-6 h-6 text-blue-300 transition duration-75  text-grape" />
-                  <span className="ml-3">Home</span>
+                  className={({ isActive }) => {
+                    return isActive
+                    ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                    : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
+                }}                >
+                  <HiHome className="w-6 h-6 text-blue-300 transition duration-75  text-grape " />
+                  <span className="ml-3 ">Employee</span>
                 </NavLink>
 
                 <NavLink
@@ -73,9 +77,9 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
-                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
-                  }}
+                    ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                    : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
+                }}
                 >
                   <BiSolidInstitution className="w-6 h-6 text-blue-400 transition duration-75 text-grape " />
                   <span className={` ml-3`}>Company</span>
@@ -86,8 +90,8 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition group"
-                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                      ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
                   }}
                 >
                   <IoInformationCircle className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
@@ -99,8 +103,8 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
-                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                      ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
                   }}
                 >
                   <BsBank className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
@@ -112,11 +116,11 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
-                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                      ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
                   }}
                 >
-                  <CgAlbum className="w-6 h-6 text-blue-300 transition duration-75  text-grape" />
+                  <CgAlbum className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
                   <span className="ml-3">Indicators</span>
                 </NavLink>
 
@@ -125,8 +129,8 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? "bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition group"
-                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                      ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
                   }}
                 >
                   <VscReferences className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
@@ -138,8 +142,8 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
-                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                      ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
                   }}
                 >
                   <BsCalendarDate className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />
@@ -151,8 +155,8 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
-                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
+                      ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
                   }}
                 >
                   <RiMoneyDollarBoxFill className="w-6 h-6 text-blue-400 transition duration-75  text-grape" />

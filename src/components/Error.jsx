@@ -1,6 +1,33 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 
 export default function Error({message}) {
+    const [showError, setShowError] = useState(false)
+    // const [errorMesage, setErrorMessage] = useState("")
+  
+    useEffect(() => {
+      let timer;
+      if (showError) {
+        timer = setTimeout(() => {
+          setShowError(false);
+        }, 10000); // hides the error after 10 seconds
+      }
+  
+      const handleClick = () => {
+        setShowError(false);
+      };
+  
+      // Add event listener when showError is true
+      if (showError) {
+        document.addEventListener('click', handleClick);
+      }
+  
+      // Remove event listener when showError is false and cleanup on unmount
+      return () => {
+        clearTimeout(timer);
+        document.removeEventListener('click', handleClick);
+      };
+    }, [showError]);
+    
     return (
         <div role="alert" className="alert alert-error">
             <svg

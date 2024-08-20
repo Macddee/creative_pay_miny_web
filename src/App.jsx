@@ -30,6 +30,8 @@ import Login from './auth/Login';
 import RequireAuth from './auth/RequireAuth';
 import ViewBatches from './components/transactions_page/ViewBatches';
 import Footer from './components/home/Footer';
+import { DataProvider } from './ContextProviders/DataContexts';
+import Register from './auth/Register';
 
 function App() {
   return (
@@ -37,30 +39,35 @@ function App() {
       <AuthProvider>
         <Router>
           <Navbar />
-          <Routes className="relative">
-            <Route path="/utilities" element={<Utilities />} />
-            <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/reports" element={<Reports />} />
-            <Route path="/processes" element={<Processes />} />
-            <Route path="/transactions" element={<TransactionsHome />}>
-              <Route path="" element={<TransactionTopNav />} />
-              <Route path="view-batches" element={<ViewBatches />} />
-            </Route>
+          <DataProvider>
 
-            <Route path="/employees" element={<Employees />}>
-              <Route path="" element={<EmpNav />} />
-              <Route path="company" element={<CompanyNav />} />
-              <Route path="tax-information" element={<Taxinfo />} />
-              <Route path="banking" element={<Banking />} />
-              <Route path="indicators" element={<Indicators />} />
-              <Route path="dates" element={<Dates />} />
-              <Route path="references" element={<Reference />} />
-              <Route path="amounts" element={<AmountsNav />} />
-            </Route>
+            <Routes className="relative">
+              <Route path="/utilities" element={<Utilities />} />
+              <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Register />} />
+              <Route path="/reports" element={<Reports />} />
+              <Route path="/processes" element={<Processes />} />
+              <Route path="/transactions" element={<TransactionsHome />}>
+                <Route path="" element={<TransactionTopNav />} />
+                <Route path="view-batches" element={<ViewBatches />} />
+              </Route>
 
-            <Route path="/" element={<Mainpage />} />
-          </Routes>
+              <Route path="/employees" element={<RequireAuth><Employees /></RequireAuth>}>
+                <Route path="" element={<EmpNav />} />
+                <Route path="company" element={<CompanyNav />} />
+                <Route path="tax-information" element={<Taxinfo />} />
+                <Route path="banking" element={<Banking />} />
+                <Route path="indicators" element={<Indicators />} />
+                <Route path="dates" element={<Dates />} />
+                <Route path="references" element={<Reference />} />
+                <Route path="amounts" element={<AmountsNav />} />
+              </Route>
+
+              <Route path="/" element={<Login />} />
+            </Routes>
+            
+          </DataProvider>
           <div className='h-20'></div>
           <Footer />
         </Router>

@@ -1,25 +1,39 @@
-import React, { useState, useEffect } from "react";
 import Input from "../../../styled/inputs"
+import { useDataContexts } from "../../../ContextProviders/DataContexts";
+import { convertFromDateTimeToJulian, convertFromJulianToDateTime } from "../../logic/EmployeeLogic";
 
 export default function Empstoppay() {
-  const [data, setData] = useState({
-    eventName: "",
-    description: '',
-    location: "",
-    date: '',
-  });
+  const { 
+    setAllEmployees,
+    employee, setEmployee } = useDataContexts()
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
 
-    setData((data) => ({
-      ...data,
-      [name]: value,
-    }));
-  };
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      let newVal = value;
+  
+      if (name.includes("Date")) {
+        newVal = convertFromDateTimeToJulian(value);
+        console.log(newVal);
+      }
+  
+      setEmployee((employee) => ({
+        ...employee,
+        [name]: newVal,
+      }));
+    };
+
+  function updateEmployeeDetails(updatedEmployee) {
+    setAllEmployees(prevEmployees =>
+      prevEmployees.map(employee =>
+        employee.EmpNo === updatedEmployee.EmpNo ? updatedEmployee : employee
+      )
+    );
+  }
 
   const handleSubmit = (e) => {
-    console.log(data)
+    e.preventDefault()
+    updateEmployeeDetails(employee)
   }
   return (
     <>
@@ -32,18 +46,18 @@ export default function Empstoppay() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Stop From"
-                    value={data.comStop}
+                    value={employee.StopFrom}
                     type="date"
-                    inputId="comStop"
-                    name="comStop"
+                    inputId="StopFrom"
+                    name="StopFrom"
                     placeholder="XX/XX/20XX"
                     onChange={handleChange} />
                   <Input
                     title="Stop To"
-                    value={data.comTo}
+                    value={employee.StopTo}
                     type="date"
-                    inputId="comTo"
-                    name="comTo"
+                    inputId="StopTo"
+                    name="StopTo"
                     placeholder="XX/XX/20XX"
                     onChange={handleChange} />
                 </div>
@@ -55,7 +69,7 @@ export default function Empstoppay() {
             type="submit"
             className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600"
           >
-            Submit
+            Save
           </button>
         </form>
       </div></>

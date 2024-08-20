@@ -1,30 +1,34 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { FaArrowLeft } from "react-icons/fa6";
-
+import { useDataContexts } from "../../../ContextProviders/DataContexts";
 import Input from "../../../styled/inputs"
 
 export default function Empaddress() {
-  const [data, setData] = useState({
-    eventName: "",
-    description: '',
-    location: "",
-    date: '',
-  });
+  const  {employeeDetails, setemployeeDetails} = useDataContexts()  
+  const  {setAllEmployeeDetails} = useDataContexts()  
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setData((data) => ({
-      ...data,
+    setemployeeDetails((employee) => ({
+      ...employee,
       [name]: value,
     }));
   };
+    
+  console.log(employeeDetails);
 
-
+  function updateEmployeeDetails(updatedEmployeeDetails) {
+    setAllEmployeeDetails(prevEmployees =>
+      prevEmployees.map(employee =>
+        employeeDetails.EmpNo === updatedEmployeeDetails.EmpNo ? updatedEmployeeDetails : employee
+      )
+    );
+  }
 
   const handleSubmit = (e) => {
-
+    e.preventDefault()
+    updateEmployeeDetails(employeeDetails)
   }
 
   return (
@@ -38,18 +42,18 @@ export default function Empaddress() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Home Number"
-                    value={data.empHome}
+                    value={employeeDetails.PhoneHome}
                     type="text"
-                    inputId="empHome"
-                    name="empHome"
+                    inputId="PhoneHome"
+                    name="PhoneHome"
                     placeholder="Home Number"
                     onChange={handleChange} />
                   <Input
                     title="Mobile Number"
-                    value={data.empMobile}
+                    value={employeeDetails.PhoneCell}
                     type="number"
-                    inputId="mobile"
-                    name="mobile"
+                    inputId="PhoneCell"
+                    name="PhoneCell"
                     placeholder="Mobile Number"
                     onChange={handleChange} />
                 </div>
@@ -57,18 +61,18 @@ export default function Empaddress() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Business Number"
-                    value={data.empBusiness}
+                    value={employeeDetails.PhoneBusiness}
                     type="number"
-                    inputId="business"
-                    name="business"
+                    inputId="PhoneBusiness"
+                    name="PhoneBusiness"
                     placeholder="Business Number"
                     onChange={handleChange} />
                   <Input
                     title="Email Address"
-                    value={data.empEmail}
+                    value={employeeDetails.EmailAddress}
                     type="email"
-                    inputId="email"
-                    name="email"
+                    inputId="EmailAddress"
+                    name="EmailAddress"
                     placeholder="Email Address"
                     onChange={handleChange} />
                 </div>
@@ -77,11 +81,11 @@ export default function Empaddress() {
                   <div style={{ flex: '0 0 48%' }}>
                     <Input
                       title="Fax Number"
-                      value={data.empFax}
+                      value={employeeDetails.PhoneFax}
                       type="number"
-                      inputId="initials"
-                      name="initials"
-                      placeholder="initials"
+                      inputId="PhoneFax"
+                      name="PhoneFax"
+                      placeholder="Phone Fax"
                       onChange={handleChange} />
                   </div>
                 </div>

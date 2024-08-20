@@ -1,58 +1,62 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { reset } from "./redux/authSlice";
-import { toast } from "react-toastify";
-
+import { useLocation } from "react-router-dom";
+import { useAuth } from "./auth";
+import { useDataContexts } from "../ContextProviders/DataContexts";
 
 export default function Register() {
-  const [data, setData] = useState({
+
+  const {
+    auth
+  } = useAuth();
+  
+  const {
+    showError, setShowError,
+  } = useDataContexts();
+
+  const [errorMesage, setErrorMessage] = useState("")
+  
+
+  
+  const [user, setUser] = useState({
     username: "",
     user_email: "",
     password: "",
     confirmPassword: "",
-  });
-
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
-
-  const { user, isLoading, isError, message, isSuccess } = useSelector(
-    (state) => state.auth
-  );
-
-  const handleChange = (e) => {
-    setData((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  useEffect(() => {
-    if (isError) {
-      toast.error(message);
+  });  
+  
+    const handleChange = (e) => {
+      setUser((prevState) => ({
+        ...prevState,
+        [e.target.name]: e.target.value,
+      }));
+    };
+  
+    const redirectPath = location.state?.path || "login"
+  
+    const handleSignup = async (event) => {
+      event.preventDefault()
+  
+      try {
+        await auth.signup(user)
+        navigate(redirectPath, { replace: true })
+        
+      } catch (error) {
+        setErrorMessage(error)
+        setShowError(true)
+      }
     }
-    if (isSuccess) {
-      // toast.success(message)
-      navigate("/login");
-      toast.success("Registered Successifully");
-    }
-
-    dispatch(reset());
-  }, [user, isError, message, isSuccess, navigate, dispatch]);
-
+  
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (data.password !== data.confirmPassword) {
-      toast.error("Passwords do not match");
-    } else {
-     
+    if (user.password !== user.confirmPassword) {
+      setErrorMessage("Passwords do not match");
+      setShowError(true)
     }
   };
 
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
   return (
     <div className="flex items-center justify-center h-[100vh]">
       <div className="bg-mint-cream shadow-lg p-5 max-w-[500px] rounded-lg w-[90%] md:w-[50%] block m-auto">
@@ -69,7 +73,7 @@ export default function Register() {
             <input
               type="text"
               onChange={handleChange}
-              value={data.username}
+              value={user.username}
               id="username"
               name="username"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
@@ -87,7 +91,7 @@ export default function Register() {
             <input
               type="text"
               onChange={handleChange}
-              value={data.user_email}
+              value={user.user_email}
               id="email"
               name="user_email"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
@@ -105,7 +109,7 @@ export default function Register() {
             <input
               type="password"
               onChange={handleChange}
-              value={data.password}
+              value={user.password}
               id="password"
               name="password"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
@@ -124,7 +128,7 @@ export default function Register() {
             <input
               type="password"
               onChange={handleChange}
-              value={data.confirmPassword}
+              value={user.confirmPassword}
               id="email"
               name="confirmPassword"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
@@ -132,6 +136,12 @@ export default function Register() {
               required
             />
           </div>
+
+          {showError &&
+              <div className="pb-6 pt-3">
+                <Error message={errorMesage} />
+              </div>
+            }
 
           <button
             type="submit"

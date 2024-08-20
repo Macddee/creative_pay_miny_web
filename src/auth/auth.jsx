@@ -5,50 +5,72 @@ const AuthContext = createContext(null)
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(() => {
         const savedUser = localStorage.getItem('user');
-        return savedUser ? JSON.parse(savedUser) : null;
-    })
+        return savedUser && savedUser !== "undefined" ? JSON.parse(savedUser) : null;
+    });
 
-    const login = async (user) => {
-
+    const login = async (enteredUser) => {
         const storedUser = localStorage.getItem('user');
-        if (storedUser) {
-            console.log('User already logged in');
-            return;
+        if (storedUser && storedUser !== "undefined") {
+            const parsedUser = JSON.parse(storedUser);
+            if (parsedUser.user_email === enteredUser.user_email && parsedUser.password === enteredUser.password) {
+                console.log('User already logged in');
+                return;
+            }
         }
-
-        console.log(user)
-        const response = await fetch('https://ess-creativehr-backend.creativehr.co.zw/api/login', {
+    
+        const response = await fetch('https://payroll-dinson-backend.creativehr.co.zw/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email: user.user_email,
-                password: user.password
+                email: enteredUser.user_email,
+                password: enteredUser.password
+            }),
+        });
+    
+        if (!response.ok) {
+            throw new Error('Invalid username or password');
+        }
+    
+        const data = await response.json();
+    
+        localStorage.setItem('user', JSON.stringify(data.employee));
+    
+        setUser(data.employee)
+    }
+
+    const signup = async (user) => {
+
+        const response = await fetch('https://payroll-dinson-backend.creativehr.co.zw/api/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                "employee_number": 0,
+                "surname": "Admin",
+                "name": "Super",
+                "initials": "M",
+                "email": "test@creativehr.co.zw",
+                "password": "password",
+                "payroll_number": "1",
             }),
         });
 
         if (!response.ok) {
-            throw new Error('Invalid username or password');
+            throw new Error(response.message);
         }
-
         const data = await response.json();
         console.log(data)
-
-        localStorage.setItem('user', JSON.stringify(data.employee));
-
-        // Here you might want to do something with the response data,
-        // like storing the user's token or updating the user state.
-        setUser(data.employee)
     }
 
     const logout = () => {
         localStorage.removeItem('user');
         setUser(null)
     }
-
     return (
-        <AuthContext.Provider value={{ user, login, logout }}>
+        <AuthContext.Provider value={{ user, login, logout, signup }}>
             {children}
         </AuthContext.Provider>
     )

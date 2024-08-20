@@ -1,46 +1,61 @@
 import { useEffect, useState } from "react";
 import Input from "../../styled/inputs";
-import { CgMore, CgSearch } from "react-icons/cg";
+import { CgMore, CgMoreAlt, CgMoreVertical, CgSearch } from "react-icons/cg";
 import Error from "../Error";
+import { TransactionCostCodePopup, TransactionEmployeePopup, TransactionParmCodesPopup } from "../SearchPopup";
+import { useDataContexts } from "../../ContextProviders/DataContexts";
 
 export default function Transactions() {
 
-  const [data, setData] = useState({
-    dgNum: '',
-    dgCode: '',
-    dgAmount: 0,
-    dgReplace: false,
+  const [errorMesage, setErrorMessage] = useState("")
+  const [inputedBatches, setInputedBatches] = useState([])
 
-  });
+  const {
+    employee, setEmployee,
+    allEmployees,
+    parmCodes,
+    costCodes,
+    showError, setShowError,
+    inputedTransactions, setInputedTransactions,
+    savedTransactions, setSavedTransactions,
+  } = useDataContexts()
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setData((data) => ({
-      ...data,
+    setInputedTransactions((currentTrans) => ({
+      ...currentTrans,
       [name]: value,
     }));
-
   };
 
-  const [transactioBatches, settransactioBatches] = useState([])
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(data);
+  // function updateEmployee(updatedEmployee) {
+  //   setEmployee(prevEmployees =>
+  //     prevEmployees.map(employee =>
+  //       employee.EmpNo === updatedEmployee.EmpNo ? updatedEmployee : employee
+  //     )
+  //   );
+  // }
 
-    const existingItem = transactioBatches.find(item => item.dgNum === data.dgNum && item.dgCode === data.dgCode);
+
+  const handleSubmit = ((e) => {
+    e.preventDefault();
+
+    // updateEmployee(employee)
+    const existingItem = inputedBatches.find(item => item.EmpNo === inputedTransactions.EmpNo && item.CodeName === inputedTransactions.CodeName);
+    console.log(inputedBatches);
     if (existingItem) {
 
-      if (data.dgReplace) {
+      if (inputedTransactions.toReplace) {
 
-        if (existingItem.dgAmount != data.dgAmount) {
-          settransactioBatches(prevBatches =>
+        if (existingItem.Amt != inputedTransactions.Amt) {
+          setInputedBatches(prevBatches =>
             prevBatches.map(item =>
-              item.dgNum === data.dgNum && item.dgCode === data.dgCode
+              item.EmpNo === inputedTransactions.EmpNo && item.CodeName === inputedTransactions.CodeName
                 ? {
                   ...item,
-                  dgAmount: parseFloat(item.dgAmount) + parseFloat(data.dgAmount),
-                  dgReplace: data.dgReplace
+                  Amt: parseFloat(item.Amt) + parseFloat(inputedTransactions.Amt),
+                  toReplace: inputedTransactions.toReplace
                 }
                 : item
             )
@@ -56,63 +71,40 @@ export default function Transactions() {
       }
 
     } else {
-      settransactioBatches(prevBatches => [...prevBatches, data]);
+      setInputedBatches(prevBatches => [...prevBatches, inputedTransactions]);
     }
-    console.log(transactioBatches);
-    // Document.getElementById("transactionsModal").close()
-  };
+    console.log(inputedTransactions)
+    console.log(inputedBatches)
+  }
+  )
 
-  const [searchList, setsetsearchList] = useState([])
-  const [selectedSearchRow, setSelectedSearchRow] = useState(null);
+  function handleTransactionBatch(savedBatch) {
+    // Create a new array with the desired modifications
+    let modifiedBatch = savedBatch.map(item => {
+      // Create a copy of the object to avoid mutating the original
+      let itemCopy = { ...item };
+      // update time field
+      // Set the date field to the current date
+      let currentDate = new Date();
+      itemCopy.batchNo = currentDate.toLocaleDateString('en-US');
+      itemCopy.time = currentDate.toLocaleTimeString('en-US', { hour12: false });
+      // Remove the RefNoName key and value
+      delete itemCopy.CodeName;
+      delete itemCopy.BreakDesc;
+      // Return the modified object
+      return itemCopy;
+    });
 
-  const [codeMore, setCodeMore] = useState([])
-  const [selectedCodeRow, setselectedCodeRow] = useState(null);
-
-
-  useEffect(() => {
-    fetch('/data/cp-employee.json')
-      .then(response => response.json())
-      .then(data => setsetsearchList(data));
-  }, [])
-
-  useEffect(() => {
-    fetch('/data/cp-parm-codes.json')
-      .then(response => response.json())
-      .then(data => setCodeMore(data));
-  }, [])
-
-  const [showError, setShowError] = useState(false)
-  const [errorMesage, setErrorMessage] = useState("")
-
-  useEffect(() => {
-    let timer;
-    if (showError) {
-      timer = setTimeout(() => {
-        setShowError(false);
-      }, 10000); // hides the error after 10 seconds
-    }
-
-    const handleClick = () => {
-      setShowError(false);
-    };
-
-    // Add event listener when showError is true
-    if (showError) {
-      document.addEventListener('click', handleClick);
-    }
-
-    // Remove event listener when showError is false and cleanup on unmount
-    return () => {
-      clearTimeout(timer);
-      document.removeEventListener('click', handleClick);
-    };
-  }, [showError]);
+    // Append the updated array to the savedTransactions
+    setSavedTransactions(prevRef => prevRef.concat(modifiedBatch));
+    console.log(savedTransactions);
+  }
 
   return (
     <>
       <div className="overflow-x-auto m-0 p-0">
         <div className="flex flex-col h-[28rem] overflow-y-auto overflow-x-auto bg-slate-200 p-5 m-8 rounded-lg">
-          <table className="table overflow-y-auto">
+          <table className="table overflow-y-auto overflow-x-auto">
             <thead>
               <tr>
                 <th>#</th>
@@ -123,20 +115,28 @@ export default function Transactions() {
               </tr>
             </thead>
             <tbody>
-              {
-                transactioBatches.map((item, index) => (
-                  <tr className="hover no-select " key={index}>
-                    <td>{index + 1}</td>
-                    <td>{item.dgNum}</td>
-                    <th>{item.dgCode}</th>
-                    <td>{item.dgAmount}</td>
-                    <td>{item.dgReplace ? "True" : "False"}</td>
-                  </tr>
-                ))
+              {/* EmpNo: "",
+              OrdinalNo: "",
+              Amt: "",
+              toReplace: false,
+              batchNo: "",
+              costCodes: "",
+              time: "",
+              CodeName: "",
+              BreakDesc: "", */}
+              {inputedBatches.map((item, index) => (
+                <tr className="hover no-select " key={index}>
+                  <td>{index + 1}</td>
+                  <td>{item.EmpNo}</td>
+                  <th>{item.CodeName}</th>
+                  <td>{item.Amt}</td>
+                  <td>{item.dgCostCode}</td>
+                  <td>{item.toReplace ? "True" : "False"}</td>
+                </tr>
+              ))
               }
             </tbody>
           </table>
-
         </div>
 
         <button
@@ -151,6 +151,7 @@ export default function Transactions() {
         <button
           type="submit"
           className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600 m-4 ml-8"
+          onClick={() => handleTransactionBatch(inputedBatches)}
         >
           Submit Transaction Batches
         </button>
@@ -165,7 +166,11 @@ export default function Transactions() {
               <button className="btn btn-sm btn-circle btn-ghost  mb-5">✕</button>
             </form>
           </div>
-          <form onSubmit={handleSubmit}>
+
+          <form onSubmit={(e) => {
+            handleSubmit(e);
+            // document.getElementById('transactionModal').close();
+          }}>
             <div className="md:flex gap-20 flex-wrap">
               <div className="flex-1">
                 <div className="mt-10">
@@ -173,47 +178,59 @@ export default function Transactions() {
                     <div className="md:flex w-full gap-10">
                       <Input
                         title="Employee Number"
-                        value={data.dgNum}
+                        value={inputedTransactions.EmpNo}
                         type="text"
-                        inputId="dgNum"
-                        name="dgNum"
+                        inputId="EmpNo"
+                        name="EmpNo"
                         placeholder="Employee number"
                         onChange={handleChange}
                         Icon={CgSearch}
-                        onIconClick={() => document.getElementById('selectEmpModal').showModal()} />
+                        onIconClick={() => document.getElementById('transactionEmpModal').showModal()} />
 
                     </div>
                     <div className="md:flex w-full gap-10">
                       <Input
                         title="Enter Code"
-                        value={data.dgCode}
-                        type="number"
-                        inputId="dgCode"
-                        name="dgCode"
+                        value={inputedTransactions.OrdinalNo + " " + inputedTransactions.CodeName}
+                        type="text"
+                        inputId="OrdinalNo"
+                        name="OrdinalNo"
                         placeholder="Enter Code"
                         onChange={handleChange}
                         Icon={CgMore}
-                        onIconClick={() => document.getElementById('moreDropdownModal').showModal()} />
+                        onIconClick={() => document.getElementById('ParmCodeModal').showModal()} />
                     </div>
                     <div className="md:flex w-full gap-10">
                       <Input
                         title="Amount"
-                        value={data.dgAmount}
+                        value={inputedTransactions.Amt}
                         type="number"
-                        inputId="dgAmount"
-                        name="dgAmount"
+                        inputId="Amt"
+                        name="Amt"
                         step="0.01"
                         placeholder="Enter Employee Amount"
                         onChange={handleChange}
                       />
                     </div>
+                    <div className="md:flex w-full gap-10">
+                      <Input
+                        title="Cost Code"
+                        value={inputedTransactions.costCodes + " " + inputedTransactions.BreakDesc}
+                        type="text"
+                        inputId="CostCodes"
+                        name="CostCodes"
+                        placeholder="Cost Code"
+                        onChange={handleChange}
+                        Icon={CgMore}
+                        onIconClick={() => document.getElementById('CostCodeModal').showModal()} />
+                    </div>
                     <div className="form-control mx-auto py-3">
                       <label className="label cursor-pointer">
                         <input
                           type="checkbox"
-                          name="dgReplace"
-                          checked={data.dgReplace}
-                          onChange={e => setData({ ...data, dgReplace: e.target.checked })}
+                          name="toReplace"
+                          checked={inputedTransactions.toReplace}
+                          onChange={e => setInputedTransactions({ ...inputedTransactions, toReplace: e.target.checked })}
                           className="checkbox checkbox-primary mr-4"
                         />
                         <span className="label-text gap-">Replace</span>
@@ -239,82 +256,9 @@ export default function Transactions() {
           </form>
         </div>
       </dialog>
-
-
-      {/* the table thats only called when you press the search icon */}
-      <dialog id="selectEmpModal" className="modal flex-auto">
-        <div className=" bg-slate-200 pb-16 pt-10 px-16 rounded-xl">
-          <div className="inline-flex justify-between w-full ">
-            <h1 className="text-3xl text-center mb-5 font-bold ">Select an employee </h1>
-            <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost mb-5">✕</button>
-            </form>
-          </div>
-          <div className="max-h-[25rem] overflow-y-auto">
-            <table className="table ">
-              <thead>
-                <tr>
-                  <th>EmpNo</th>
-                  <th>Initials</th>
-                  <th>Surname</th>
-                  <th>Name</th>
-                </tr>
-              </thead>
-              <tbody>
-                {searchList.map((item) => (
-                  <tr className="hover no-select" key={item.EmpNo} onClick={() => {
-                    setSelectedSearchRow(item);
-                    setData(prevData => ({ ...prevData, dgNum: item.EmpNo }));
-                    document.getElementById('selectEmpModal').close()
-                  }}>
-                    <th>{item.EmpNo}</th>
-                    <td>{item.Inits}</td>
-                    <td>{item.Surname}</td>
-                    <td>{item.GivenNames}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </dialog>
-
-      {/* the table thats only called when you press the more on enter code input */}
-
-
-      <dialog id="moreDropdownModal" className="modal flex-auto">
-        <div className=" bg-slate-200 pb-16 pt-10 px-16 rounded-xl">
-          <div className="inline-flex justify-between w-full ">
-            <h1 className="text-3xl text-center mb-5 font-bold mr-5 ">Select codename </h1>
-            <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost mb-5">✕</button>
-            </form>
-          </div>
-          <div className="max-h-[25rem] overflow-y-auto">
-            <table className="table ">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Codename</th>
-                </tr>
-              </thead>
-              <tbody>
-                {codeMore.map((item) => (
-                  <tr className="hover no-select" key={item.OrdinalNo} onClick={() => {
-                    setselectedCodeRow(item)
-                    setData(prevData => ({ ...prevData, dgCode: item.OrdinalNo }));
-                    document.getElementById('moreDropdownModal').close()
-                  }}>
-                    <th>{item.OrdinalNo}</th>
-                    <td>{item.CodeName}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </dialog>
-
+      <TransactionEmployeePopup />
+      <TransactionCostCodePopup />
+      <TransactionParmCodesPopup />
 
     </>
   )

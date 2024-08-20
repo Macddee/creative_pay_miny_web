@@ -1,0 +1,1652 @@
+[{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6639"
+  },
+  "BankName": "CABS",
+  "BankSortCode": "0000",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "J/MOYO",
+  "CountryCode": "ZW",
+  "SwiftCode": ""
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb663a"
+  },
+  "BankName": "",
+  "BankSortCode": "002326",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK BELMONT BYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb663b"
+  },
+  "BankName": "",
+  "BankSortCode": "002342",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK L TAKAWIRA BYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb663c"
+  },
+  "BankName": "",
+  "BankSortCode": "002358",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK SAVINGS BYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb663d"
+  },
+  "BankName": "",
+  "BankSortCode": "002505",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK MHANGURA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb663e"
+  },
+  "BankName": "",
+  "BankSortCode": "002510",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK KADOMA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb663f"
+  },
+  "BankName": "",
+  "BankSortCode": "002511",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK GWERU",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6640"
+  },
+  "BankName": "",
+  "BankSortCode": "002513",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK MUTARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6641"
+  },
+  "BankName": "",
+  "BankSortCode": "002518",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK BINDURA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6642"
+  },
+  "BankName": "",
+  "BankSortCode": "002519",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK GWANDA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6643"
+  },
+  "BankName": "",
+  "BankSortCode": "002520",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK GOKWE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6644"
+  },
+  "BankName": "",
+  "BankSortCode": "002524",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK ZVISHAVANE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6645"
+  },
+  "BankName": "",
+  "BankSortCode": "002525",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK CHINHOYI",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6646"
+  },
+  "BankName": "",
+  "BankSortCode": "002527",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK MARONDERA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6647"
+  },
+  "BankName": "",
+  "BankSortCode": "002529",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK CHEGUTU",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6648"
+  },
+  "BankName": "",
+  "BankSortCode": "002531",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK RUSAPE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6649"
+  },
+  "BankName": "",
+  "BankSortCode": "002535",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK HWANGE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb664a"
+  },
+  "BankName": "",
+  "BankSortCode": "002536",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK KARIBA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb664b"
+  },
+  "BankName": "",
+  "BankSortCode": "002539",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK REDCLIFF",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb664c"
+  },
+  "BankName": "",
+  "BankSortCode": "002545",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK MHANGURA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb664d"
+  },
+  "BankName": "",
+  "BankSortCode": "002548",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK NORTON",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb664e"
+  },
+  "BankName": "",
+  "BankSortCode": "002558",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK SERVICE CENTRE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb664f"
+  },
+  "BankName": "",
+  "BankSortCode": "002592",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK TRIANGLE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6650"
+  },
+  "BankName": "",
+  "BankSortCode": "002593",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK BEITBRIDGE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6651"
+  },
+  "BankName": "",
+  "BankSortCode": "002594",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK KAROI",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6652"
+  },
+  "BankName": "",
+  "BankSortCode": "002595",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK CHIREDZI",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6653"
+  },
+  "BankName": "",
+  "BankSortCode": "002596",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK CHIPINGE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6654"
+  },
+  "BankName": "",
+  "BankSortCode": "002598",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BARCLAYS BANK VICTORIA FALLS",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6655"
+  },
+  "BankName": "",
+  "BankSortCode": "003101",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC NELSON MANDELA HARARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6656"
+  },
+  "BankName": "",
+  "BankSortCode": "003102",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC PARKLANE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6657"
+  },
+  "BankName": "",
+  "BankSortCode": "003103",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC BELGRAVIA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6658"
+  },
+  "BankName": "",
+  "BankSortCode": "003109",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC CENTRAL WEST",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6659"
+  },
+  "BankName": "",
+  "BankSortCode": "003110",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC WESTGATE BRANCH HARARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb665a"
+  },
+  "BankName": "",
+  "BankSortCode": "003115",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC SAMORA MACHEL HARARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb665b"
+  },
+  "BankName": "",
+  "BankSortCode": "003120",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC SOUTHERTON",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb665c"
+  },
+  "BankName": "",
+  "BankSortCode": "003125",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC MINERVA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb665d"
+  },
+  "BankName": "",
+  "BankSortCode": "003302",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC BULAWAYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb665e"
+  },
+  "BankName": "",
+  "BankSortCode": "003303",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC BELMONT BULAWAYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb665f"
+  },
+  "BankName": "",
+  "BankSortCode": "003503",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC GWERU",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6660"
+  },
+  "BankName": "",
+  "BankSortCode": "003504",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC MUTARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6661"
+  },
+  "BankName": "",
+  "BankSortCode": "003514",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC KWEKWE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6662"
+  },
+  "BankName": "",
+  "BankSortCode": "003515",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANBIC CHITUNGWIZA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6663"
+  },
+  "BankName": "",
+  "BankSortCode": "004112",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK FIRST ST HARARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6664"
+  },
+  "BankName": "",
+  "BankSortCode": "004113",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK AVONDALE HARARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6665"
+  },
+  "BankName": "",
+  "BankSortCode": "004118",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK CHISIPITE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6666"
+  },
+  "BankName": "",
+  "BankSortCode": "004120",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK GRANITESIDE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6667"
+  },
+  "BankName": "",
+  "BankSortCode": "004125",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK UNION AVENUE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6668"
+  },
+  "BankName": "",
+  "BankSortCode": "004127",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK ANGWA CITY",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6669"
+  },
+  "BankName": "",
+  "BankSortCode": "004129",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK BORROWDALE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb666a"
+  },
+  "BankName": "",
+  "BankSortCode": "004130",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK ANGWA ST HARARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb666b"
+  },
+  "BankName": "",
+  "BankSortCode": "004134",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK MASASA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb666c"
+  },
+  "BankName": "",
+  "BankSortCode": "004135",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK WESTGATE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb666d"
+  },
+  "BankName": "",
+  "BankSortCode": "004139",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK BIRMINGHAM",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb666e"
+  },
+  "BankName": "",
+  "BankSortCode": "004140",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK SAMORA MACHEL",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb666f"
+  },
+  "BankName": "",
+  "BankSortCode": "004143",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK AIRPORT HARARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6670"
+  },
+  "BankName": "",
+  "BankSortCode": "004144",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK ROTTEN ROW",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6671"
+  },
+  "BankName": "",
+  "BankSortCode": "004151",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK WEST END",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6672"
+  },
+  "BankName": "",
+  "BankSortCode": "004157",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK DOUGLAS RD HARARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6673"
+  },
+  "BankName": "",
+  "BankSortCode": "004180",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK CENTRAL ADMIN",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6674"
+  },
+  "BankName": "",
+  "BankSortCode": "004184",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK BLOCKED FUNDS",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6675"
+  },
+  "BankName": "",
+  "BankSortCode": "004302",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK FIFE ST BULAWAYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6676"
+  },
+  "BankName": "",
+  "BankSortCode": "004303",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK CENTRAL BULAWAYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6677"
+  },
+  "BankName": "",
+  "BankSortCode": "004304",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK BELMONT BULAWAYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6678"
+  },
+  "BankName": "",
+  "BankSortCode": "004307",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK JASON MOYO ST",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6679"
+  },
+  "BankName": "",
+  "BankSortCode": "004511",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK PLUMTREE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb667a"
+  },
+  "BankName": "",
+  "BankSortCode": "004515",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK VICTORIA FALLS",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb667b"
+  },
+  "BankName": "",
+  "BankSortCode": "004527",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK JULIASDALE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb667c"
+  },
+  "BankName": "",
+  "BankSortCode": "004528",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK MARONDERA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb667d"
+  },
+  "BankName": "",
+  "BankSortCode": "004532",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK MUTARE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb667e"
+  },
+  "BankName": "",
+  "BankSortCode": "004537",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK GWERU",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb667f"
+  },
+  "BankName": "",
+  "BankSortCode": "004552",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK CHITUNGWIZA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6680"
+  },
+  "BankName": "",
+  "BankSortCode": "004555",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK BEITBRIDGE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6681"
+  },
+  "BankName": "",
+  "BankSortCode": "004556",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK KWEKWE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6682"
+  },
+  "BankName": "",
+  "BankSortCode": "004558",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK SANYATI",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6683"
+  },
+  "BankName": "",
+  "BankSortCode": "004561",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK GUTU",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6684"
+  },
+  "BankName": "",
+  "BankSortCode": "004563",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK MUROMBEDZI",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6685"
+  },
+  "BankName": "",
+  "BankSortCode": "004564",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK MASVINGO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6686"
+  },
+  "BankName": "",
+  "BankSortCode": "004565",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK CHINHOYI",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6687"
+  },
+  "BankName": "",
+  "BankSortCode": "004566",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK MT DARWIN",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6688"
+  },
+  "BankName": "",
+  "BankSortCode": "004569",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZB BANK ZVISHAVANE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6689"
+  },
+  "BankName": "",
+  "BankSortCode": "004588",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBANK KADOMA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb668a"
+  },
+  "BankName": "",
+  "BankSortCode": "005101",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK AVONDALE HRE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb668b"
+  },
+  "BankName": "",
+  "BankSortCode": "005102",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK PBC HARARE CITY",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb668c"
+  },
+  "BankName": "",
+  "BankSortCode": "005110",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK WESTGATE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb668d"
+  },
+  "BankName": "",
+  "BankSortCode": "005116",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD MUTUAL CENTRE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb668e"
+  },
+  "BankName": "",
+  "BankSortCode": "005124",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK KARIGAMOMBE HRE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb668f"
+  },
+  "BankName": "",
+  "BankSortCode": "005128",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK BORROWDALE HRE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6690"
+  },
+  "BankName": "",
+  "BankSortCode": "005132",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK R MUGABE RD HRE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6691"
+  },
+  "BankName": "",
+  "BankSortCode": "005136",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK WEST END",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6692"
+  },
+  "BankName": "",
+  "BankSortCode": "005140",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK AFRICA UNITY SQ",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6693"
+  },
+  "BankName": "",
+  "BankSortCode": "005148",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK SOUTHERTON",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6694"
+  },
+  "BankName": "",
+  "BankSortCode": "005152",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK NELSON MANDELA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6695"
+  },
+  "BankName": "",
+  "BankSortCode": "005156",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK HIGHLANDS",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6696"
+  },
+  "BankName": "",
+  "BankSortCode": "005305",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK BELMONT BYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6697"
+  },
+  "BankName": "",
+  "BankSortCode": "005337",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK BULAWAYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6698"
+  },
+  "BankName": "",
+  "BankSortCode": "005557",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STANDARD BANK GWANDA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb6699"
+  },
+  "BankName": "",
+  "BankSortCode": "006302",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "CBZ BULAWAYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb669a"
+  },
+  "BankName": "",
+  "BankSortCode": "009201",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "METROPOLITAN BANK BULAWAYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb669b"
+  },
+  "BankName": "",
+  "BankSortCode": "009301",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "METROPOLITAN VICTORIA FALLS",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb669c"
+  },
+  "BankName": "",
+  "BankSortCode": "009500",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "POSB",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb669d"
+  },
+  "BankName": "",
+  "BankSortCode": "010115",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "AGRI BANK TREASURY",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb669e"
+  },
+  "BankName": "",
+  "BankSortCode": "010304",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "AGRI BANK H/CHITEPO BYO",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb669f"
+  },
+  "BankName": "",
+  "BankSortCode": "010512",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "AGRI BANK GOKWE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a0"
+  },
+  "BankName": "",
+  "BankSortCode": "010516",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "AGRI BANK GWANDA",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a1"
+  },
+  "BankName": "",
+  "BankSortCode": "011102",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "NMB ANGWA CITY",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a2"
+  },
+  "BankName": "",
+  "BankSortCode": "011311",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "NMB BULAWAYO CENTRE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a3"
+  },
+  "BankName": "",
+  "BankSortCode": "013512",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "CENTURY ZVISHAVANE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a4"
+  },
+  "BankName": "",
+  "BankSortCode": "020020",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "BEVERLEY BUILDING SOCIETY",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a5"
+  },
+  "BankName": "",
+  "BankSortCode": "021021",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "CABS BUILDING SOCIETY",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a6"
+  },
+  "BankName": "",
+  "BankSortCode": "023023",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "FIRST NATIONAL B/SOCIETY",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a7"
+  },
+  "BankName": "",
+  "BankSortCode": "024024",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "ZIMBABWE BUILDING SOCIETY",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a8"
+  },
+  "BankName": "",
+  "BankSortCode": "069006",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "P.O.S.B. - ZVISHAVANE",
+  "CountryCode": null,
+  "SwiftCode": null
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66a9"
+  },
+  "BankName": "Banc ABC",
+  "BankSortCode": "120",
+  "BranchAddr1": "Banc ABC",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "MT PLEASANT HARARE",
+  "CountryCode": "ZW",
+  "SwiftCode": ""
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66aa"
+  },
+  "BankName": "STEWARD BANK",
+  "BankSortCode": "20000",
+  "BranchAddr1": "STEWARD BANK",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "STEWARD BANK",
+  "CountryCode": "",
+  "SwiftCode": ""
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66ab"
+  },
+  "BankName": "NBS",
+  "BankSortCode": "3231",
+  "BranchAddr1": "BULAWAYO",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "JM NKOMO",
+  "CountryCode": "",
+  "SwiftCode": ""
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66ac"
+  },
+  "BankName": "NBS",
+  "BankSortCode": "3231-",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "NBS JM",
+  "CountryCode": "",
+  "SwiftCode": ""
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66ad"
+  },
+  "BankName": "CBZ",
+  "BankSortCode": "649",
+  "BranchAddr1": "GWANDA",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "GWANDA",
+  "CountryCode": "",
+  "SwiftCode": ""
+},
+{
+  "_id": {
+    "$oid": "65fc3ba042f3922849cb66ae"
+  },
+  "BankName": "FBC",
+  "BankSortCode": "870",
+  "BranchAddr1": "",
+  "BranchAddr2": "",
+  "BranchAddr3": "",
+  "BranchAddr4": "",
+  "BranchName": "FBC ROBERT MUGABE",
+  "CountryCode": "",
+  "SwiftCode": "ZWL"
+}]

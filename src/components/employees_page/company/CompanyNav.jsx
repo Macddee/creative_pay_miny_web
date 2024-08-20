@@ -5,6 +5,21 @@ import Empcompany from './Empcompany'
 import Empstoppay from './Empstoppay'
 
 export default function CompanyNav() {
+  
+  const updateEmployee = () => {
+    fetch('https://payroll-dinson-backend.creativehr.co.zw/api/edit-masterfile', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer 2|Oeu868oclTu3vH4xB0Mhv2NLOGA8jbMP20823IFZ43649fa8`
+      },
+      body: JSON.stringify({ "cp_employee": [employee] })
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+  }
+
   return (
     <div className="bg-slate-100 rounded h-full">
       <Tabs>
@@ -20,6 +35,16 @@ export default function CompanyNav() {
             selectedClassName="bg-blue-300 text-black rounded-md p-2">
               StopPay
           </Tab>
+
+          <div className='ml-auto pr-6'>
+            <button
+              type="button"
+              className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600"
+              onClick={updateEmployee}
+            >
+              Upload Changes
+            </button>
+          </div>
         
         </TabList>
 
