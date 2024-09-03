@@ -3,13 +3,18 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
 import { useAuth } from '../auth/auth';
 
 const DataContexts = createContext();
+console.log("why are we in data contexts");
+
 
 export function DataProvider({ children }) {
 
+
   const [showError, setShowError] = useState(false)
+  const [showPopupMsg, setShowPopupMsg] = useState(false)
+  const [popupContent, setPopupContent] = useState("Employee Details Successifuly Updated.")
   const [isLoading, setIsLoading] = useState(false)
   const [transactions, setTransactions] = useState([]);
-  const [savedTransactions, setSavedTransactions] = useState([]);
+  // const [savedTransactions, setSavedTransactions] = useState([]);
   const [inputedTransactions, setInputedTransactions] = useState({
     EmpNo: "",
     OrdinalNo: "",
@@ -25,8 +30,10 @@ export function DataProvider({ children }) {
   const [costCodes, setCostCodes] = useState([])
   const [occupationCodes, setOccupationCodes] = useState([])
   const [payPoint, setPayPoint] = useState([])
-  const [employeeDetails, setemployeeDetails] = useState({})
   const [allEmployeeDetails, setAllEmployeeDetails] = useState([])
+  const [employeeDetails, setemployeeDetails] = useState({
+    
+  })
   const [allBanksData, setAllBanksData] = useState([])
   const [employeesBankDetails, setEmployeesBankDetails] = useState([])
 
@@ -65,8 +72,9 @@ export function DataProvider({ children }) {
   const [inputedAmounts, setInputedAmounts] = useState({
     EmpNo: "",
     OrdinalNo: "",
-    Amt: "",
-    CodeName: ""
+    Amt: 0,
+    CodeName: "",
+    EmpNames:"",
   })
 
 
@@ -123,12 +131,12 @@ export function DataProvider({ children }) {
     DestinBankAccountName: "",
     DestinBankAccountNumber: "",
     DestinBankSortCode: "",
-    EmpNo: "",
-    OrdinalNo: "",
+    EmpNo: 0,
+    OrdinalNo: 1,
     PayMode: "",
     SARSBankAccount: "",
     SourceBankAccountNumber: "",
-    SplitPayCode: "",
+    SplitPayCode: 0,
 
     BranchName: "",
     Holder: "",
@@ -150,27 +158,74 @@ export function DataProvider({ children }) {
     { symbol: "T", mode: "Teba" },
   ]
 
-  const { user } = useAuth()
+  const { waitForToken, } = useAuth()  
 
   const postUrl = "https://payroll-dinson-backend.creativehr.co.zw/api/edit-masterfile"
   const getUrl = "https://payroll-dinson-backend.creativehr.co.zw/api/get-masterfile"
-  // const token = user? user.token :null
-  const token = "2|pga4xpni346iU62FjABlJUGwVZilviWUeO6oK9gR002e74b6"
 
+  const [token, setToken] = useState("")
+
+  const [selectePayroll, setSelectePayroll] = useState("")
+
+  const putRequest = (table, data) => {
+    setIsLoading(true)
+    fetch(postUrl, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`,
+      },
+
+      body: JSON.stringify({ table: [data] })
+    })
+      .then(response => response.json())
+      .then(data => {
+        setShowPopupMsg(true);
+        setPopupContent(data.message);
+        setIsLoading(false);
+
+      })
+      .catch(error => {
+        setShowPopupMsg(true);
+        setPopupContent(error.message);
+        setIsLoading(false);
+      });
+
+  }
 
   useEffect(() => {
+    const storedToken = localStorage.getItem('token');
+    setToken(storedToken)
+  }, [waitForToken])
 
+  useEffect(() => {
+    const storedPayroll = localStorage.getItem('selectedPayroll');
+    if (storedPayroll) {
+      setSelectePayroll(storedPayroll);
+    }
+  }, []); // This useEffect runs only once when the component mounts
+  
+  useEffect(() => {
+    if (!selectePayroll && !token) return;
+    console.log(selectePayroll)
+    console.log(token)
     const fetchData = async () => {
+      
       setIsLoading(true); // Set loading to true before starting the fetch request
       try {
-
         const response = await fetch(getUrl, {
-          method: 'GET',
+          method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json'
-          }
+          },
+          body: JSON.stringify({ payroll: selectePayroll })
         });
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.message}`);
+        }
+        setPopupContent("Payroll Information Successifuly Fetched!.");
+        setShowPopupMsg(true);
         const data = await response.json();
         setAllEmployees(data.cp_employee);
         setAllEmployeeDetails(data.cp_employee_details);
@@ -185,92 +240,25 @@ export function DataProvider({ children }) {
         setEmployeesIndicators(data.cp_indicators_data);
         setReferencesData(data.cp_references);
         setReferences(data.cp_ref_values);
-        setDates(data.cp_dates);
-        setDatesData(data.cp_dates_data);
+        setDates(data.cp_dates_data);
+        setDatesData(data.cp_dates);
         setAmounts(data.cp_amounts);
         setTransactions(data.cp_batch_inputs);
       } catch (error) {
-        console.error('Error:', error);
+        if (error.message === 'Failed to fetch') {
+          setPopupContent('Network error: Please check your internet connection.');
+        } else {
+          setPopupContent('Error:', error);
+        }
+        setShowPopupMsg(true);
+
       } finally {
         setIsLoading(false); // Set loading to false after the request completes
       }
     };
 
-
     fetchData();
-    // console.log(isLoading);
-
-    // fetch('/data/John.cp-employee.json')
-    //   .then(response => response.json())
-    //   .then(data => { setAllEmployees(data); })
-    //   .catch(error => console.error("error", error));
-
-    //   fetch('/data/John.cp-employee-details.json')
-    //   .then(response => response.json())
-    //   .then(data => { setAllEmployeeDetails(data); })
-    //   .catch(error => console.error("error", error));
-
-    // fetch('/data/John.cp-parm-codes.json')
-    //   .then(response => response.json())
-    //   .then(data => { setParmCodes(data); });
-
-    // fetch('/data/John.cp-cost-code.json')
-    //   .then(response => response.json())
-    //   .then(data => { setCostCodes(data); });
-
-    // fetch('/data/John.cp-paypont.json')
-    //   .then(response => response.json())
-    //   .then(data => { setPayPoint(data); });
-
-    // fetch('/data/John.cp-occupationCodes.json')
-    //   .then(response => response.json())
-    //   .then(data => { setOccupationCodes(data); });
-
-    // fetch('/data/John.cp-bank-data.json')
-    //   .then(response => response.json())
-    //   .then(data => { setAllBanksData(data); });
-
-    // fetch('/data/John.cp-bank-details.json')
-    //   .then(response => response.json())
-    //   .then(data => { setEmployeesBankDetails(data); });
-
-    // fetch('/data/John.cp-indicators.json')
-    //   .then(response => response.json())
-    //   .then(data => { setPrimaryIndicators(data); });
-
-    // fetch('/data/John.cp-indicators-subs.json')
-    //   .then(response => response.json())
-    //   .then(data => { setallIndicators(data); });
-
-    // fetch('/data/John.cp-indicators-data.json')
-    //   .then(response => response.json())
-    //   .then(data => { setEmployeesIndicators(data); });
-
-    // fetch('/data/John.cp-refences.json')
-    //   .then(response => response.json())
-    //   .then(data => { setReferencesData(data); });
-
-    // fetch('/data/John.cp-ref-values.json')
-    //   .then(response => response.json())
-    //   .then(data => { setReferences(data); });
-
-    // fetch('/data/John.cp-dates-data.json')
-    //   .then(response => response.json())
-    //   .then(data => { setDates(data); });
-
-    // fetch('/data/John.cp_dates.json')
-    //   .then(response => response.json())
-    //   .then(data => { setDatesData(data); });
-
-    // fetch('/data/John.cp-amounts.json')
-    //   .then(response => response.json())
-    //   .then(data => { setAmounts(data); });
-
-    // fetch('/data/John.cp-batch_inputs.json')
-    //   .then(response => response.json())
-    //   .then(data => { setTransactions(data); });
-
-  }, [])
+  }, [selectePayroll, token])
 
 
   useEffect(() => {
@@ -297,20 +285,36 @@ export function DataProvider({ children }) {
     };
   }, [showError]);
 
-  // this is now being done in SearchPopup.jsx because thats the only way to put any particular employee in employee state
-  //also give take the details of the selected employee and put them in their own varrr.
-  // useEffect(() => {
-  //   const employeeDetail = allEmployeeDetails.find(detail => detail.empNo === employee.EmpNo);
-  //   setemployeeDetails(employeeDetail);
-  //   console.log(employeeDetails)
-  // }, [employee]); // This  effect runs whenever `employee` changes
 
+  useEffect(() => {
+    let timer;
+    if (showPopupMsg) {
+      timer = setTimeout(() => {
+        setShowPopupMsg(false);
+      }, 7000); // hides the popup message after 10 seconds
+    }
+
+    const handleClick = () => {
+      setShowPopupMsg(false);
+    };
+
+    // Add event listener when showPopupMsg is true
+    if (showPopupMsg) {
+      document.addEventListener('click', handleClick);
+    }
+
+    // Remove event listener when showPopupMsg is false and cleanup on unmount
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener('click', handleClick);
+    };
+  }, [showPopupMsg]);
 
   return (
     <DataContexts.Provider value={{
       showError, setShowError,
       transactions, setTransactions,
-      savedTransactions, setSavedTransactions,
+      // savedTransactions, setSavedTransactions,
       employee, setEmployee,
       allEmployees, setAllEmployees,
       employeeDetails, setemployeeDetails,
@@ -339,6 +343,11 @@ export function DataProvider({ children }) {
       inputedAmounts, setInputedAmounts,
       token, postUrl,
       isLoading, setIsLoading,
+      showPopupMsg, setShowPopupMsg,
+      popupContent, setPopupContent,
+      putRequest,
+      selectePayroll, setSelectePayroll,
+
     }}>
       {children}
     </DataContexts.Provider>

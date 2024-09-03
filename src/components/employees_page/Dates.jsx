@@ -4,15 +4,24 @@ import { useDataContexts } from '../../ContextProviders/DataContexts'
 import Input from '../../styled/inputs'
 import { CgMore, CgSearch } from 'react-icons/cg'
 import DatePicker from 'react-datepicker'
+import Loading from '../Loading'
+import PopupMsg from '../PopupMsg'
 
 
 
 export default function Dates() {
-  const { showError } = useDataContexts()
-  const { employee } = useDataContexts()
-  const { inputedDate, setInputedDate } = useDataContexts()
-  const { dates, setDates } = useDataContexts()
-  const { datesData } = useDataContexts()
+  const {
+    showError,
+    employee,
+    inputedDate, setInputedDate,
+    dates, setDates,
+    datesData,
+    token, postUrl,
+    isLoading,
+    setIsLoading,
+    showPopupMsg, setShowPopupMsg,
+    popupContent, setPopupContent,
+  } = useDataContexts();
   //   dates, setDates
   // datesData, setDatesData
   // inputedDate, setInputedDate
@@ -41,11 +50,48 @@ export default function Dates() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    updateEmployee()
     updateEmployeesDate(inputedDate)
   }
 
+  const updateEmployee = () => {
+    setIsLoading(true)
+
+    const requestBody = JSON.stringify({
+      "cp_dates_data": [inputedDate],
+    });
+
+    console.log(requestBody); 
+
+    fetch(postUrl, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`,
+      },
+
+      body: requestBody
+    })
+      .then(response => response.json())
+      .then(data => {
+        setShowPopupMsg(true),
+          setPopupContent(data.message)
+          console.log(data.message)
+        setIsLoading(false)
+      })
+      .catch(error => {
+        setShowPopupMsg(true),
+          setPopupContent(error.message)
+          console.log(error.message)
+        setIsLoading(false)
+      });
+  }
+
+
   return (
-    <>
+    isLoading
+      ? <Loading />
+      : <>
       <div className="overflow-x-auto  p-4">
       <div className="flex flex-col h-[28rem] overflow-y-auto overflow-x-auto bg-slate-200 p-5 m-8 rounded-lg">
           <table className="table overflow-y-auto overflow-x-auto">
@@ -109,8 +155,8 @@ export default function Dates() {
                   <div className="flex flex-col">
                     <div className="md:flex w-full gap-10">
                       <Input
-                        title="Select Date Name"
-                        value={inputedDate.OrdinalNo + " " + inputedDate.DateName}
+                        title={"Select Date Name: " + inputedDate.OrdinalNo + " " + inputedDate.DateName}
+                        value={inputedDate.OrdinalNo||""}
                         type="text"
                         inputId="OrdinalNo"
                         name="OrdinalNo"
@@ -156,6 +202,9 @@ export default function Dates() {
         </div>
       </dialog>
 
+      {showPopupMsg &&
+          <PopupMsg message={popupContent} />
+        }
       <AddDatePopup />
 
     </>

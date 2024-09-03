@@ -23,6 +23,7 @@ export default function Navbar() {
                     <li><Link to="/processes">Processes</Link></li>
                     <li><Link to="/reports">Reports</Link></li>
                     <li><Link to="/utilities">Utilities</Link></li>
+                    <li><Link to="/adminstrators">Admin</Link></li>
                     <li><Link to="/profile">Profile</Link></li>
                 </ul>
             </div>

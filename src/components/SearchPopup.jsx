@@ -19,9 +19,9 @@ export default function SearchPopup() {
         <div className=" bg-slate-200 pb-16 pt-10 px-16 rounded-xl">
           <div className="inline-flex justify-between w-full ">
             <h1 className="text-3xl text-center mb-5 font-bold ">Select an employee </h1>
-            <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost mb-5">✕</button>
-            </form>
+            <div>
+              <button className="btn btn-sm btn-circle btn-ghost mb-5" onClick={() => document.getElementById('selectEmpModal').close()}>✕</button>
+            </div>
           </div>
           <div className="max-h-[25rem] overflow-y-auto">
             <table className="table ">
@@ -77,6 +77,7 @@ export function CreateNewEmployee() {
     showError,
   } = useDataContexts()
   const [runOnce, setRunOnce] = useState(true)
+  const [newEmp, setNewEmp] = useState({})
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -86,8 +87,9 @@ export function CreateNewEmployee() {
       newVal = convertFromDateTimeToJulian(value);
       console.log(newVal);
     }
-    
-    if(runOnce){
+
+    // so that the handle change wont keep adding the emp number when a change is done on the form.
+    if (runOnce) {
       let lastEmpNo = allEmployees[allEmployees.length - 1];
       lastEmpNo = lastEmpNo.EmpNo + 1;
 
@@ -168,6 +170,17 @@ export function CreateNewEmployee() {
                     </div>
                     <div className="md:flex w-full gap-10">
                       <Input
+                        title="ID Number"
+                        value={"employee.IDNo"}
+                        type="text"
+                        inputId="IDNo"
+                        name="IDNo"
+                        placeholder="XX-XXXXXXXKXX"
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="md:flex w-full gap-10">
+                      <Input
                         title="Date of Birth"
                         value={convertFromJulianToDateTime(employee.BirthDate)}
                         type="date"
@@ -212,6 +225,57 @@ export function CreateNewEmployee() {
   )
 }
 
+export function MasterfileEmployeePopup() {
+  const {
+    allEmployees,
+    inputedAmounts, setInputedAmounts
+  } = useDataContexts()
+  return (
+    <div>
+      <dialog id="masterfileEmpModal" className="modal flex-auto">
+        <div className=" bg-slate-200 pb-16 pt-10 px-16 rounded-xl">
+          <div className="inline-flex justify-between w-full ">
+            <h1 className="text-3xl text-center mb-5 font-bold ">Masterfile Batch Maintance</h1>
+            <form method="dialog">
+              <button className="btn btn-sm btn-circle btn-ghost mb-5">✕</button>
+            </form>
+          </div>
+          <div className="max-h-[25rem] overflow-y-auto">
+            <table className="table ">
+              <thead>
+                <tr>
+                  <th>EmpNo</th>
+                  <th>Initials</th>
+                  <th>Surname</th>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                {allEmployees.map((item) => {
+                  return (
+                    <tr className="hover no-select" key={item.EmpNo} onClick={() => {
+                      setInputedAmounts({
+                        ...inputedAmounts,
+                        EmpNo: item.EmpNo,
+                        EmpNames: item.Surname + " " + item.GivenNames
+                      });
+                      document.getElementById('masterfileEmpModal').close();
+                    }}>
+                      <th>{item.EmpNo}</th>
+                      <td>{item.Inits}</td>
+                      <td>{item.Surname}</td>
+                      <td>{item.GivenNames}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  )
+}
 export function TransactionEmployeePopup() {
   const {
     allEmployees,
@@ -266,11 +330,7 @@ export function TransactionEmployeePopup() {
 
 export function TransactionParmCodesPopup() {
   const {
-    employee, setEmployee,
-    allEmployees,
     parmCodes,
-    costCodes,
-    showError, setShowError,
     inputedTransactions, setInputedTransactions,
   } = useDataContexts()
 
@@ -292,22 +352,72 @@ export function TransactionParmCodesPopup() {
                 </tr>
               </thead>
               <tbody>
-                {parmCodes.map((item) => {
-
-                  return (
+                {parmCodes
+                  .filter(item => item.QmfDisplayInd === "N")
+                  .map((item) => (
                     <tr className="hover no-select" key={item.OrdinalNo} onClick={() => {
                       setInputedTransactions({
                         ...inputedTransactions,
                         CodeName: item.CodeName,
                         OrdinalNo: item.OrdinalNo,
+                        Limit: item.Limit,
                       });
                       document.getElementById('ParmCodeModal').close();
+                    }}>
+                      <td>{item.OrdinalNo + "  " + item.CodeName}</td>
+                    </tr>
+                  )
+                  )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </dialog>
+    </>
+  )
+}
+
+export function MasterfileParmCodesPopup() {
+  const {
+    parmCodes,
+    inputedTransactions, setInputedTransactions,
+  } = useDataContexts()
+
+  return (
+    <>
+      <dialog id="MasterfileParmCodeModal" className="modal flex-auto">
+        <div className=" bg-slate-200 pb-16 pt-10 px-16 rounded-xl">
+          <div className="inline-flex justify-between w-full ">
+            <h1 className="text-3xl text-center mb-5 font-bold mr-5 ">Select Parmeter Code</h1>
+            <form method="dialog">
+              <button className="btn btn-sm btn-circle btn-ghost mb-5">✕</button>
+            </form>
+          </div>
+          <div className="max-h-[25rem] overflow-y-auto">
+            <table className="table ">
+              <thead>
+                <tr>
+                  <th>Paramater Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                {parmCodes
+                  .filter(item => item.QmfDisplayInd === "Y")
+                  .map((item) => (
+                    <tr className="hover no-select" key={item.OrdinalNo} onClick={() => {
+                      setInputedTransactions({
+                        ...inputedTransactions,
+                        CodeName: item.CodeName,
+                        OrdinalNo: item.OrdinalNo,
+                        Limit: item.Limit,
+                      });
+                      document.getElementById('MasterfileParmCodeModal').close();
                       console.log(inputedTransactions);
                     }}>
                       <td>{item.OrdinalNo + "  " + item.CodeName}</td>
                     </tr>
-                  );
-                })}
+                  )
+                  )}
               </tbody>
             </table>
           </div>
@@ -319,11 +429,7 @@ export function TransactionParmCodesPopup() {
 
 export function TransactionCostCodePopup() {
   const {
-    employee, setEmployee,
-    allEmployees,
-    parmCodes,
     costCodes,
-    showError, setShowError,
     inputedTransactions, setInputedTransactions,
   } = useDataContexts()
 
@@ -369,7 +475,7 @@ export function TransactionCostCodePopup() {
   )
 }
 
-export function CompanyCostCodePopup() {
+export function CompanyCostCodePopup({ fromEditRights = false, handleCostCodeSelectCallback = null }) {
 
   const {
     costCodes,
@@ -394,18 +500,30 @@ export function CompanyCostCodePopup() {
               </thead>
               <tbody>
                 {costCodes.map((item, index) => {
-                  return (
-                    <tr className="hover no-select" key={index} onClick={() => {
-                      setEmployee({
-                        ...employee,
-                        CostCodes: item.BreakCode
-                      });
-                      document.getElementById('CompanyCodeModal').close();
+                  if (!fromEditRights) {
+                    return (
+                      <tr className="hover no-select" key={index} onClick={() => {
+                        setEmployee({
+                          ...employee,
+                          CostCodes: item.BreakCode
+                        });
+                        document.getElementById('CompanyCodeModal').close();
+                      }}>
+                        <td>{item.BreakCode + "  " + item.BreakDesc}</td>
+                      </tr>
+                    );
+                  } else {
+                    // console.log("did we make it here");
 
-                    }}>
-                      <td>{item.BreakCode + "  " + item.BreakDesc}</td>
-                    </tr>
-                  );
+                    return (
+                      <tr className="hover no-select" key={index} onClick={() => {
+                        handleCostCodeSelectCallback(item.BreakCode)
+                        document.getElementById('CompanyCodeModal').close();
+                      }}>
+                        <td>{item.BreakCode + "  " + item.BreakDesc}</td>
+                      </tr>
+                    );
+                  }
                 })}
               </tbody>
             </table>
@@ -416,7 +534,7 @@ export function CompanyCostCodePopup() {
   )
 }
 
-export function PayPointPopup() {
+export function PayPointPopup({ handlePayPointSelectCallback = null, availablePaypoints = [] }) {
   const {
     employee, setEmployee,
     payPoint } = useDataContexts()
@@ -439,20 +557,36 @@ export function PayPointPopup() {
                 </tr>
               </thead>
               <tbody>
-                {payPoint.map((item, index) => {
-                  return (
-                    <tr className="hover no-select" key={item.OrdinalNo} onClick={() => {
-                      setEmployee({
-                        ...employee,
-                        PayPoint: item.PaypointName
-                      });
-                      document.getElementById('PayPointModal').close();
+                {
+                  !handlePayPointSelectCallback 
+                    ? payPoint.map((item, index) => {
 
-                    }}>
-                      <td>{item.OrdinalNo + "  " + item.PaypointName}</td>
-                    </tr>
-                  );
-                })}
+                      return (
+                        <tr className="hover no-select" key={item.OrdinalNo} onClick={() => {
+                          setEmployee({
+                            ...employee,
+                            PayPoint: item.PaypointName
+                          });
+                          document.getElementById('PayPointModal').close();
+                        }}>
+                          <td>{item.OrdinalNo + "  " + item.PaypointName}</td>
+                        </tr>
+                      );
+                    })
+                    
+                    : availablePaypoints.map((item, index) => {
+                      return (
+                        <tr className="hover no-select" key={index} onClick={() => {
+                          handlePayPointSelectCallback(item)
+                          document.getElementById('PayPointModal').close();
+                        }}>
+                          <td>{index +" "+ item}</td>
+                        </tr>
+                      );
+
+                    })
+                }
+
               </tbody>
             </table>
           </div>
@@ -850,12 +984,12 @@ export function AddDatePopup() {
 }
 
 
-export function AddAmountPopup() {
-  const { employee } = useDataContexts()
-  const { showError } = useDataContexts()
-  const { amounts, setAmounts } = useDataContexts()
-  const { parmCodes } = useDataContexts()
-  const { inputedAmounts, setInputedAmounts, } = useDataContexts()
+export function AddAmountPopup(fromMaster = "no") {
+  const {
+    employee,
+    parmCodes,
+    inputedAmounts, setInputedAmounts, }
+    = useDataContexts()
 
   return (
     <>
@@ -875,21 +1009,34 @@ export function AddAmountPopup() {
                 </tr>
               </thead>
               <tbody>
-                {parmCodes.map((item) => {
-                  return (
+                {parmCodes
+                  .filter(item => item.QmfDisplayInd === "Y")
+                  .map((item) => (
                     <tr className="hover no-select" key={item.OrdinalNo} onClick={() => {
-                      setInputedAmounts({
-                        ...inputedAmounts,
-                        OrdinalNo: item.OrdinalNo,
-                        CodeName: item.CodeName,
-                        EmpNo: employee.EmpNo
-                      })
+
+                      if (fromMaster.fromMaster === "no") {
+                        setInputedAmounts({
+                          ...inputedAmounts,
+                          OrdinalNo: item.OrdinalNo,
+                          CodeName: item.CodeName,
+                          Limit: item.Limit,
+                          EmpNo: employee.EmpNo,
+                        });
+                      } else {
+                        setInputedAmounts({
+                          ...inputedAmounts,
+                          OrdinalNo: item.OrdinalNo,
+                          CodeName: item.CodeName,
+                          Limit: item.Limit,
+
+                        });
+                      }
                       document.getElementById('AddCodeModal').close();
                     }}>
                       <td>{item.OrdinalNo + "  " + item.CodeName}</td>
                     </tr>
-                  );
-                })}
+
+                  ))}
               </tbody>
             </table>
           </div>

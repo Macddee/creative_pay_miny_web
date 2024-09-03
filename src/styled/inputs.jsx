@@ -1,5 +1,4 @@
 import React from "react";
-import { FaRegFaceDizzy } from "react-icons/fa6";
 
 export default function Input({
   title,
@@ -13,6 +12,8 @@ export default function Input({
   onIconClick = null,
   step = null,
   required = null,
+  onKeyDown = null,
+  ref = null
 }) {
   return (
     <div className="mb-4 w-full">
@@ -28,7 +29,9 @@ export default function Input({
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
           placeholder={placeholder}
           onChange={onChange}
+          onKeyDown={onKeyDown}
           required={required}
+          ref={ref}
           {...(step && { step: "0.01", min: "0" })}
         />
         {Icon && (

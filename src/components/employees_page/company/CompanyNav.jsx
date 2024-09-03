@@ -3,25 +3,55 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Empcompany from './Empcompany'
 import Empstoppay from './Empstoppay'
+import { useDataContexts } from '../../../ContextProviders/DataContexts';
+import Loading from '../../Loading';
+import PopupMsg from '../../PopupMsg';
+import { FaCloudUploadAlt } from 'react-icons/fa';
 
 export default function CompanyNav() {
-  
+  const {
+    employee,
+    token, postUrl,
+    isLoading,
+    setIsLoading,
+    showPopupMsg, setShowPopupMsg,
+    popupContent, setPopupContent,
+  } = useDataContexts();
+
   const updateEmployee = () => {
-    fetch('https://payroll-dinson-backend.creativehr.co.zw/api/edit-masterfile', {
+    setIsLoading(true)
+    const requestBody = JSON.stringify({
+      "cp_employee": [employee]
+    });
+
+    console.log(requestBody); 
+
+    fetch(postUrl, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer 2|Oeu868oclTu3vH4xB0Mhv2NLOGA8jbMP20823IFZ43649fa8`
+        'Authorization': `Bearer ${token}`,
       },
-      body: JSON.stringify({ "cp_employee": [employee] })
+
+      body: requestBody
     })
       .then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error('Error:', error));
+      .then(data => {
+        setPopupContent(data.message)
+        setShowPopupMsg(true)
+        setIsLoading(false)
+      })
+      .catch(error => {
+        setPopupContent(error.message)
+        setShowPopupMsg(true)
+        setIsLoading(false)
+      });
   }
 
   return (
-    <div className="bg-slate-100 rounded h-full">
+    isLoading
+    ? <Loading />
+    : <div className="bg-slate-100 rounded h-full">
       <Tabs>
         <TabList className="flex justify-start list-none p-4 gap-10 bg-slate-100 pl-8">
           <Tab 
@@ -40,9 +70,11 @@ export default function CompanyNav() {
             <button
               type="button"
               className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600"
-              onClick={updateEmployee}
+              onClick = {() => {
+                updateEmployee()
+              }}
             >
-              Upload Changes
+              <span className='text-black text-2xl'><FaCloudUploadAlt /></span>Upload Changes
             </button>
           </div>
         
@@ -50,13 +82,15 @@ export default function CompanyNav() {
 
         <TabPanel>
           <Empcompany />
-          {/* <Empcompany /> */}
         </TabPanel>
 
         <TabPanel>
           <Empstoppay />
         </TabPanel>
       </Tabs>
+      {showPopupMsg &&
+          <PopupMsg message={popupContent} />
+        }
     </div>
   )
 }

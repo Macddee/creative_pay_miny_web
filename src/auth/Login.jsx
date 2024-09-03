@@ -2,18 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./auth";
+import Choosepayrol from "../components/Choosepayrol";
 import { useDataContexts } from "../ContextProviders/DataContexts";
 
 export default function Login() {
+  const{
+      login,
+      showPayrollSelection,
+    } = useAuth()
 
-  const auth = useAuth()
-  const navigate = useNavigate()
-  const location = useLocation()
   const [errorMsg, setErrorMsg] = useState("")
   const [loading, setLoading] = useState(false)
-  const { showError, setShowError } = useDataContexts()
-
-
 
   const handleChange = (e) => {
     setUser((prevState) => ({
@@ -28,17 +27,13 @@ export default function Login() {
     password: "",
   });
 
-  const redirectPath = location.state?.path || "/employees"
-
   const handleLogin = async (event) => {
     event.preventDefault()
     setLoading(true)
 
     try {
-      await auth.login(user)
-      navigate(redirectPath, { replace: true })
-      const savedUser = localStorage.getItem('user');
-      console.log(savedUser);
+      await login(user)
+      document.getElementById('ChoosePayrol').showModal()
 
     } catch (error) {
       console.log(error)
@@ -62,7 +57,8 @@ export default function Login() {
           </div>
         ) : (
           <>
-            <h1 className="text-3xl text-center mb-5 font-bold">Sign In</h1><form onSubmit={handleLogin}>
+            <h1 className="text-3xl text-center mb-5 font-bold">Sign In</h1>
+            <form onSubmit={handleLogin}>
               <div className="mb-5">
                 <label
                   htmlFor="title"
@@ -98,11 +94,11 @@ export default function Login() {
                   required />
               </div>
 
-              {showError &&
+              {/* {showError &&
                 <div className="pb-6 pt-3">
                   <Error message={errorMsg.message} />
                 </div>
-              }
+              } */}
 
               <button
                 type="submit"
@@ -120,6 +116,11 @@ export default function Login() {
           </>
         )}
       </div>
+
+      {showPayrollSelection &&
+        document.getElementById('ChoosePayrol').showModal()
+      }
+      <Choosepayrol />
     </div>
   )
 }

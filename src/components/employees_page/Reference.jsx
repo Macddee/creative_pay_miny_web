@@ -2,16 +2,26 @@ import React, { useState } from 'react'
 import { AddRefPopup } from '../SearchPopup'
 import { useDataContexts } from '../../ContextProviders/DataContexts'
 import Input from '../../styled/inputs'
-import { CgMore, CgSearch } from 'react-icons/cg'
+import { CgMore, } from 'react-icons/cg'
+import PopupMsg from '../PopupMsg'
+import Loading from '../Loading'
 
 
 
 export default function Reference() {
-  const { showError } = useDataContexts()
-  const { employee } = useDataContexts()
-  const { inputedRef, setInputedRef } = useDataContexts()
-  const { references, setReferences } = useDataContexts()
-  const { referencesData } = useDataContexts()
+  const {
+    showError,
+    employee,
+    inputedRef, setInputedRef, 
+    references, setReferences,
+    referencesData,
+    token, postUrl,
+    isLoading,
+    setIsLoading,
+    showPopupMsg, setShowPopupMsg,
+    popupContent, setPopupContent,
+  } = useDataContexts();
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,11 +43,49 @@ export default function Reference() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    updateEmployee()
     updateEmployeesRef(inputedRef)
   }
+  
+
+  const updateEmployee = () => {
+    setIsLoading(true)
+
+    const requestBody = JSON.stringify({
+      "cp_ref_values": [inputedRef],
+    });
+
+    console.log(requestBody); 
+
+    fetch(postUrl, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`,
+      },
+
+      body: requestBody
+    })
+      .then(response => response.json())
+      .then(data => {
+        setShowPopupMsg(true),
+          setPopupContent(data.message)
+          console.log(data.message)
+        setIsLoading(false)
+      })
+      .catch(error => {
+        setShowPopupMsg(true),
+          setPopupContent(error.message)
+          console.log(error.message)
+        setIsLoading(false)
+      });
+  }
+
 
   return (
-    <>
+    isLoading
+      ? <Loading />
+      : <>
       <div className="overflow-x-auto  p-4">
         <div className="flex flex-col h-[28rem] overflow-y-auto overflow-x-auto bg-slate-200 p-5 m-8 rounded-lg">
           <table className="table overflow-y-auto overflow-x-auto">
@@ -144,6 +192,9 @@ export default function Reference() {
         </div>
       </dialog>
 
+      {showPopupMsg &&
+          <PopupMsg message={popupContent} />
+        }
       <AddRefPopup />
 
     </>

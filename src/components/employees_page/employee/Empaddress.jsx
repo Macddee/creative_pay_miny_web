@@ -2,10 +2,16 @@ import React, { useState, useEffect } from "react";
 import Input from "../../../styled/inputs"
 import { useDataContexts } from "../../../ContextProviders/DataContexts";
 
-
 export default function Empaddress() {
-  const  {employeeDetails, setemployeeDetails} = useDataContexts()  
-  const  {setAllEmployeeDetails} = useDataContexts()  
+  const {
+    employeeDetails, setemployeeDetails,  
+    setAllEmployeeDetails,
+    token, postUrl,
+    isLoading,
+    setIsLoading,
+    showPopupMsg, setShowPopupMsg,
+    popupContent, setPopupContent,
+  } = useDataContexts()  
   
 
   const handleChange = (e) => {
@@ -29,7 +35,8 @@ export default function Empaddress() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    updateEmployeeDetails(employeeDetails)
+    updateEmployeeDetails(employeeDetails)  
+    setShowPopupMsg(true);
   }
   return (
     <>
@@ -42,7 +49,7 @@ export default function Empaddress() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Postal Line 1"
-                    value={employeeDetails.Post_Line1}
+                    value={employeeDetails.Post_Line1 || ""}
                     type="text"
                     inputId="Post_Line1"
                     name="Post_Line1"
@@ -50,7 +57,7 @@ export default function Empaddress() {
                     onChange={handleChange} />
                   <Input
                     title="Postal Line 2"
-                    value={employeeDetails.Post_Line2}
+                    value={employeeDetails.Post_Line2 || ""}
                     type="address"
                     inputId="Post_Line2"
                     name="Post_Line2"
@@ -60,7 +67,7 @@ export default function Empaddress() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Postal Line 3"
-                    value={employeeDetails.Post_Line3}
+                    value={employeeDetails.Post_Line3 || ""}
                     type="text"
                     inputId="Post_Line3" 
                     name="Post_Line3"
@@ -68,7 +75,7 @@ export default function Empaddress() {
                     onChange={handleChange} />
                   <Input
                     title="Postal Line 4"
-                    value={employeeDetails.Post_Line4}
+                    value={employeeDetails.Post_Line4 || ""}
                     type="text"
                     inputId="Post_Line4"
                     name="Post_Line4"

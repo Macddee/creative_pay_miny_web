@@ -22,7 +22,7 @@ export default function Employees() {
   };
   return (
     <>
-      <section className="sticky md:flex bg-white p-0 m-0">
+      <section className="sticky md:flex bg-white p-0 m-0 flex-grow">
         <div>
           <button
             data-drawer-target="default-sidebar"

@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
 import { useDataContexts } from "../../../ContextProviders/DataContexts";
 import Input from "../../../styled/inputs"
 
 export default function Empaddress() {
-  const  {employeeDetails, setemployeeDetails} = useDataContexts()  
-  const  {setAllEmployeeDetails} = useDataContexts()  
+  const  {
+  employeeDetails, setemployeeDetails,
+  setAllEmployeeDetails,
+  setPopupContent,
+  setShowPopupMsg,
+} = useDataContexts()  
   
 
   const handleChange = (e) => {
@@ -29,6 +32,7 @@ export default function Empaddress() {
   const handleSubmit = (e) => {
     e.preventDefault()
     updateEmployeeDetails(employeeDetails)
+    setShowPopupMsg(true);
   }
 
   return (
@@ -42,7 +46,7 @@ export default function Empaddress() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Home Number"
-                    value={employeeDetails.PhoneHome}
+                    value={employeeDetails.PhoneHome || ""}
                     type="text"
                     inputId="PhoneHome"
                     name="PhoneHome"
@@ -50,7 +54,7 @@ export default function Empaddress() {
                     onChange={handleChange} />
                   <Input
                     title="Mobile Number"
-                    value={employeeDetails.PhoneCell}
+                    value={employeeDetails.PhoneCell || ""}
                     type="number"
                     inputId="PhoneCell"
                     name="PhoneCell"
@@ -61,7 +65,7 @@ export default function Empaddress() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Business Number"
-                    value={employeeDetails.PhoneBusiness}
+                    value={employeeDetails.PhoneBusiness || ""}
                     type="number"
                     inputId="PhoneBusiness"
                     name="PhoneBusiness"
@@ -69,7 +73,7 @@ export default function Empaddress() {
                     onChange={handleChange} />
                   <Input
                     title="Email Address"
-                    value={employeeDetails.EmailAddress}
+                    value={employeeDetails.EmailAddress || ""}
                     type="email"
                     inputId="EmailAddress"
                     name="EmailAddress"
@@ -81,7 +85,7 @@ export default function Empaddress() {
                   <div style={{ flex: '0 0 48%' }}>
                     <Input
                       title="Fax Number"
-                      value={employeeDetails.PhoneFax}
+                      value={employeeDetails.PhoneFax|| ""}
                       type="number"
                       inputId="PhoneFax"
                       name="PhoneFax"

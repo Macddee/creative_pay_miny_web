@@ -4,9 +4,11 @@ import { CgMore } from "react-icons/cg";
 import { CompanyCostCodePopup, OccupationCodePopup, PayPointPopup } from "../../SearchPopup";
 import { useDataContexts } from "../../../ContextProviders/DataContexts";
 import { convertFromDateTimeToJulian, convertFromJulianToDateTime } from "../../logic/EmployeeLogic";
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 export default function Empcompany() {
   const { 
+    setShowPopupMsg, setPopupContent,
     setAllEmployees,
     employee, setEmployee } = useDataContexts()
 
@@ -37,10 +39,12 @@ export default function Empcompany() {
   const handleSubmit = (e) => {
     e.preventDefault()
     updateEmployeeDetails(employee)
+    setPopupContent("Employee Details Successifuly Updated.")
+    setShowPopupMsg(true)
   }
   return (
     <>
-      <div className="bg-blue-100 max-w-[1300px] p-5 md:p-15 py-10 rounded-lg w-[95%] relative block mt-1 m-auto">
+      <div className="bg-blue-100 p-5 py-10 rounded-lg relative block mt-1 ml-8 mr-8 flex-grow ">
         {/* <h1 className="text-3xl text-center font-bold">Update Employeee Details</h1> */}
         <form onSubmit={handleSubmit} >
           <div className="md:flex gap-20 flex-wrap">
@@ -146,7 +150,7 @@ export default function Empcompany() {
             type="submit"
             className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600"
           >
-            Submit
+          Submit
           </button>
         </form>
 

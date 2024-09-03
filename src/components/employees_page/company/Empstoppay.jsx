@@ -1,10 +1,12 @@
 import Input from "../../../styled/inputs"
 import { useDataContexts } from "../../../ContextProviders/DataContexts";
-import { convertFromDateTimeToJulian, convertFromJulianToDateTime } from "../../logic/EmployeeLogic";
+import { convertFromDateTimeToJulian } from "../../logic/EmployeeLogic";
 
 export default function Empstoppay() {
-  const { 
+  const {
+    setShowPopupMsg,
     setAllEmployees,
+    setPopupContent,
     employee, setEmployee } = useDataContexts()
 
 
@@ -34,6 +36,8 @@ export default function Empstoppay() {
   const handleSubmit = (e) => {
     e.preventDefault()
     updateEmployeeDetails(employee)
+    // setPopupContent("Maste")
+    setShowPopupMsg(true);
   }
   return (
     <>
@@ -46,7 +50,7 @@ export default function Empstoppay() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Stop From"
-                    value={employee.StopFrom}
+                    value={employee.StopFrom || ""}
                     type="date"
                     inputId="StopFrom"
                     name="StopFrom"
@@ -54,7 +58,7 @@ export default function Empstoppay() {
                     onChange={handleChange} />
                   <Input
                     title="Stop To"
-                    value={employee.StopTo}
+                    value={employee.StopTo || ""}
                     type="date"
                     inputId="StopTo"
                     name="StopTo"
