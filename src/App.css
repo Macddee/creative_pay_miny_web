@@ -67,10 +67,15 @@ input[type="number"]::-webkit-outer-spin-button {
 /* table selection */
 .no-select {
   user-select: none;
+  
 }
 
 .modal2 {
   max-height: 10px; /* Set your desired maximum height */
   overflow-y: auto;  /* Enable vertical scrolling */
   background-color: aquamarine;
+}
+
+.table {
+  @apply text-black;
 }

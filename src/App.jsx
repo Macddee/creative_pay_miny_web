@@ -32,7 +32,7 @@ import Register from './auth/Register';
 import AdminNav from './components/admin_page/AdminNav';
 function App() {
   return (
-    <div className="App flex flex-col min-h-screen">
+    <div className="App flex flex-col min-h-screen bg-white text-black">
       <AuthProvider>
         <Router>
           <header>
@@ -41,7 +41,6 @@ function App() {
 
           <main className="flex-grow">
             <DataProvider>
-
               <Routes className="relative">
                 <Route path="/utilities" element={<Utilities />} />
                 <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />

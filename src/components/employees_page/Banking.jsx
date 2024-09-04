@@ -6,7 +6,7 @@ import { MdModeEditOutline } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import Loading from '../Loading';
 import PopupMsg from '../PopupMsg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Banking() {
   const {
@@ -24,7 +24,19 @@ export default function Banking() {
   } = useDataContexts()
 
   const [udatingFlag, setUdatingFlag] = useState(false)
-  const [finalIndex, setFinalIndex] = useState(0);
+  const filterdDetails = employeesBankDetails.filter(item => item.EmpNo === employee.EmpNo)
+  const finalIndex = filterdDetails.length + 1;
+
+
+  useEffect(() => {
+    setInputedBankData(prevData => ({
+      ...prevData,
+      OrdinalNo: prevData.OrdinalNo + 1,
+      EmpNo: employee.EmpNo
+    }));
+  }, [finalIndex])
+
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,7 +60,6 @@ export default function Banking() {
         })
       );
     } else {
-      setInputedBankData(...inputedBankData, finalIndex += 1)
       setEmployeesBankDetails(prevDetails => prevDetails.concat(inputedBankData));
     }
   };
@@ -95,7 +106,7 @@ export default function Banking() {
         DestinBankAccountNumber: "",
         DestinBankSortCode: "",
         EmpNo: null,
-        OrdinalNo: "",
+        OrdinalNo: null,
         PayMode: "",
         SARSBankAccount: "",
         SourceBankAccountNumber: "",
@@ -127,11 +138,12 @@ export default function Banking() {
                 </tr>
               </thead>
               <tbody>
-                {employeesBankDetails.filter(item => item.EmpNo === employee.EmpNo).map((item, index) => {
+                {filterdDetails.map((item, index) => {
                   const bank = allBanksData.find(bankitem => bankitem.BankSortCode === item.DestinBankSortCode);
                   const type = accHolder.find(holder => holder.OrdinalNo === item.AccountHolderStatus);
                   const paymode = payMode.find(mode => mode.symbol === item.PayMode);
-                  setFinalIndex(index)
+
+
                   return (
                     <tr className="hover no-select" key={index} onClick={() => {
                     }}>
@@ -165,9 +177,7 @@ export default function Banking() {
                 })}
               </tbody>
             </table>
-
           </div>
-
           <button
             type="submit"
             className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600 m-4 ml-8"
@@ -291,14 +301,12 @@ export default function Banking() {
             </form>
           </div>
         </dialog>
-
         {showPopupMsg &&
           <PopupMsg message={popupContent} />
         }
         <BankSortCodePopup />
         <BankPayModePopup />
         <BankAccHolderPopup />
-
       </>
   )
 }

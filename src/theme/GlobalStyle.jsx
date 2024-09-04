@@ -25,7 +25,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+  display: block; 
 }
 
 body {
@@ -51,11 +51,13 @@ blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
+  color: black;
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  
 }
 `;
 

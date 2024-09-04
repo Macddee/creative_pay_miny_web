@@ -80,7 +80,8 @@ export default function Taxinfo() {
     isLoading
       ? <Loading />
       : <>
-        <div className="bg-blue-100 max-w-[1300px] p-5 md:p-15 py-10 rounded-lg w-[95%] relative block mt-1 m-auto">
+      <div className="p-8"></div>
+        <div className="bg-blue-100 max-w-[1300px] p-5 md:p-15 py-8 rounded-lg w-[95%] relative block mt-1 mx-auto ">
           <form onSubmit={handleSubmit} >
             <div className="md:flex gap-20 flex-wrap">
               <div className="flex-1">

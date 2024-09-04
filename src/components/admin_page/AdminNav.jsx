@@ -12,7 +12,7 @@ export default function TransactionNav() {
           <Tab 
             className="text-lg font-semibold text-gray-700 transition-colors duration-200 hover:text-blue-600 no-select p-2" 
             selectedClassName="bg-blue-300 text-black rounded-md p-2">
-              Create Admin Users
+              Create Users
           </Tab>
 
           <Tab 
