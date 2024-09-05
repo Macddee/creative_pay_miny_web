@@ -1,9 +1,9 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 const AuthContext = createContext(null)
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
-    const savedUser = localStorage.getItem('user');
+    const savedUser = sessionStorage.getItem('user');
     return savedUser && savedUser !== "undefined" ? JSON.parse(savedUser) : null;
   });
   const [showPayrollSelection, setShowPayrollSelection] = useState(false)
@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
 
 
   const login = async (enteredUser) => {
-    const storedUser = localStorage.getItem('user');
+    const storedUser = sessionStorage.getItem('user');
     if (storedUser && storedUser !== "undefined") {
       const parsedUser = JSON.parse(storedUser);
       if (parsedUser.user_email === enteredUser.user_email && parsedUser.password === enteredUser.password) {
@@ -38,8 +38,8 @@ export const AuthProvider = ({ children }) => {
     setShowPayrollSelection(true)
     const data = await response.json();
     
-    localStorage.setItem('user', JSON.stringify(data.user));
-    localStorage.setItem('token', data.token);
+    sessionStorage.setItem('user', JSON.stringify(data.user));
+    sessionStorage.setItem('token', data.token);
     
     setPayroll(data.payroll_rights.available_payrolls)
     setShowPayrollSelection(true)
@@ -49,7 +49,6 @@ export const AuthProvider = ({ children }) => {
   }
 
   const signup = async (user) => {
-
     const response = await fetch('https://payroll-dinson-backend.creativehr.co.zw/api/register', {
       method: 'POST',
       headers: {
@@ -74,11 +73,12 @@ export const AuthProvider = ({ children }) => {
   }
 
   const logout = () => {
-    localStorage.removeItem('user');
-    localStorage.removeItem('selectedPayroll');
-    localStorage.removeItem('token');
+    sessionStorage.removeItem('user');
+    sessionStorage.removeItem('selectedPayroll');
+    sessionStorage.removeItem('token');
     setUser(null)
   }
+
   return (
     <AuthContext.Provider value={{ user, login, logout, signup, payroll, showPayrollSelection,
       waitForToken, setWaitForToken,

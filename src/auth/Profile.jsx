@@ -8,7 +8,7 @@ export default function Profile() {
 
     const handleLogout = () => {
         auth.logout()
-        navigate('/')
+        navigate('/login')
     }
   return (
     <div>

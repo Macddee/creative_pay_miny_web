@@ -36,7 +36,6 @@ export default function Choosepayrol({fromAdmin=false, allPayrolls=[], callbackF
                       className="hover no-select"
                       key={index}
                       onClick={() => {
-                        console.log("clicked");
                         callbackFunc(item)
                       }}
                     >
@@ -51,7 +50,7 @@ export default function Choosepayrol({fromAdmin=false, allPayrolls=[], callbackF
                       onClick={() => {
                         setSelectePayroll(item);
                         navigate(redirectPath, { replace: true });
-                        localStorage.setItem('selectedPayroll', item);
+                        sessionStorage.setItem('selectedPayroll', item);
                         document.getElementById('ChoosePayrol').close();
                       }}
                     >

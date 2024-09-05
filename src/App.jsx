@@ -3,8 +3,8 @@ import './App.css'
 import {
   BrowserRouter as Router,
   Route,
-
-  Routes
+  Routes,
+  Navigate,
 } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Employees from './pages/Employees'
@@ -65,10 +65,9 @@ function App() {
                   <Route path="amounts" element={<AmountsNav />} />
                 </Route>
 
-                <Route path="/" element={<Login />} />
-
+                <Route path="/login" element={<Login />} />
+                <Route path="/" element={<RequireAuth> <Navigate to="/employees"/> </RequireAuth>} />
               </Routes>
-
             </DataProvider>
           </main>
           {/* <div className='h-20 bg-red-500 fixed bottom'></div> */}

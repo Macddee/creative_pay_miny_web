@@ -117,9 +117,10 @@ export default function Login() {
         )}
       </div>
 
-      {showPayrollSelection &&
-        document.getElementById('ChoosePayrol').showModal()
-      }
+      {/* {showPayrollSelection
+      ? document.getElementById('ChoosePayrol').showModal()
+      : ""
+      } */}
       <Choosepayrol />
     </div>
   )

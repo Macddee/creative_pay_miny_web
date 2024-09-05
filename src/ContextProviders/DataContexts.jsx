@@ -194,12 +194,12 @@ export function DataProvider({ children }) {
   }
 
   useEffect(() => {
-    const storedToken = localStorage.getItem('token');
+    const storedToken = sessionStorage.getItem('token');
     setToken(storedToken)
   }, [waitForToken])
 
   useEffect(() => {
-    const storedPayroll = localStorage.getItem('selectedPayroll');
+    const storedPayroll = sessionStorage.getItem('selectedPayroll');
     if (storedPayroll) {
       setSelectePayroll(storedPayroll);
     }

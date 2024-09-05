@@ -18,18 +18,18 @@ export default function EditRights() {
   const [keyPress, setKeyPress] = useState()
   const [clickOnce, setClickOnce] = useState(true)
   const [compledRows, setCompletedRows] = useState([])
+  const [ isERLoading, setIsERLoading,] = useState(false)
+  
 
   const {
     token,
-    isLoading,
-    setIsLoading,
     showPopupMsg, setShowPopupMsg,
     popupContent, setPopupContent,
   } = useDataContexts();
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true); // Set loading to true before starting the fetch request
+      setIsERLoading(true); // Set loading to true before starting the fetch request
       try {
         const response = await fetch("https://payroll-dinson-backend.creativehr.co.zw/api/get-payroll-data", {
           method: 'GET',
@@ -59,7 +59,7 @@ export default function EditRights() {
         setShowPopupMsg(true);
 
       } finally {
-        setIsLoading(false); // Set loading to false after the request completes
+        setIsERLoading(false); // Set loading to false after the request completes
       }
     };
     fetchData();
@@ -77,7 +77,7 @@ export default function EditRights() {
 
 
   function handleSubmit() {
-    setIsLoading(true)
+    setIsERLoading(true)
     const requestBody = JSON.stringify({
       "rows": compledRows
     });
@@ -97,14 +97,14 @@ export default function EditRights() {
       .then(data => {
         setShowPopupMsg(true)
         setPopupContent(data.message)
-        setIsLoading(false)
+        setIsERLoading(false)
         // setPopupContent("Admin user successfully created!")
       })
       .catch(error => {
         setShowPopupMsg(true),
           setPopupContent(error.message)
         console.log(error.message)
-        setIsLoading(false)
+        setIsERLoading(false)
       });
   }
 
@@ -211,7 +211,7 @@ export default function EditRights() {
   // }
 
   return (
-    isLoading
+    isERLoading
       ? <Loading />
       : <>
         <div className="flex flex-col h-[28rem] overflow-y-auto overflow-x-auto bg-slate-200 p-5 m-8 rounded-lg">
