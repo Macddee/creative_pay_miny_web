@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "./auth";
 import Choosepayrol from "../components/Choosepayrol";
 import { useDataContexts } from "../ContextProviders/DataContexts";
+import Loading from "../components/Loading";
 
 export default function Login() {
   const{
       login,
-      showPayrollSelection,
     } = useAuth()
 
   const [errorMsg, setErrorMsg] = useState("")
@@ -46,17 +46,14 @@ export default function Login() {
 
 
   return (
-    <div className="flex items-center justify-center h-[100vh]">
-      <div className="bg-mint-cream max-w-[500px] shadow-lg p-5 rounded-lg w-[90%] md:w-[50%] block m-auto">
+    <div>
+    
         {loading ? (
-          <div>
-            <span className="loading loading-ball loading-xs"></span>
-            <span className="loading loading-ball loading-sm"></span>
-            <span className="loading loading-ball loading-md"></span>
-            <span className="loading loading-ball loading-lg"></span>
-          </div>
+          < Loading />
         ) : (
           <>
+          <div className="flex items-center justify-center h-[100vh]">
+          <div className="bg-mint-cream max-w-[500px] shadow-lg p-5 rounded-lg w-[90%] md:w-[50%] block m-auto">
             <h1 className="text-3xl text-center mb-5 font-bold">Sign In</h1>
             <form onSubmit={handleLogin}>
               <div className="mb-5">
@@ -113,15 +110,18 @@ export default function Login() {
                 Register
               </Link>
             </p>
+            </div>
+            </div>
           </>
         )}
-      </div>
+      
 
       {/* {showPayrollSelection
       ? document.getElementById('ChoosePayrol').showModal()
       : ""
       } */}
       <Choosepayrol />
+    
     </div>
   )
 }

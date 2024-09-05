@@ -28,17 +28,23 @@ export default function Banking() {
   const finalIndex = filterdDetails.length + 1;
 
 
-  useEffect(() => {
-    setInputedBankData(prevData => ({
-      ...prevData,
-      OrdinalNo: prevData.OrdinalNo + 1,
-      EmpNo: employee.EmpNo
-    }));
-  }, [finalIndex])
+  // useEffect(() => {
+  //   console.log('did this even run?');
+  //   console.log(finalIndex);
+    
+    
+  //   setInputedBankData(prevData => ({
+  //     ...prevData,
+  //     OrdinalNo: prevData.OrdinalNo + 1,
+  //     EmpNo: employee.EmpNo
+  //   }));
+  // }, [finalIndex])
 
 
 
   const handleChange = (e) => {
+    console.log(inputedBankData);
+    
     const { name, value } = e.target;
 
     setInputedBankData((bankDetail) => ({
@@ -127,7 +133,7 @@ export default function Banking() {
                   <th></th>
                   <th>Sort Code</th>
                   <th>Bank Name</th>
-                  <th>Axcount name</th>
+                  <th>Account name</th>
                   <th>Account#</th>
                   <th>Account type</th>
                   <th>Pay Mode</th>
@@ -184,6 +190,12 @@ export default function Banking() {
             onClick={() => {
               prepareNewBankingDetail()
               document.getElementById('AddBankDetailModal').showModal()
+
+              setInputedBankData(prevData => ({
+                ...prevData,
+                OrdinalNo: finalIndex,
+                EmpNo: employee.EmpNo
+              }));
             }
             }
           >
