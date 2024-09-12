@@ -32,7 +32,7 @@ export default function Navbar() {
             <li className={`hover:bg-blue-200 hover:rounded-lg ${selectedItem === '/transactions' ? 'bg-blue-200 rounded-lg' : ''}`}>
               <Link to="/transactions" onClick={() => handleItemClick('/transactions')}>Transactions</Link>
             </li>
-            <li className={`hover:bg-blue-200 hover:rounded-lg ${selectedItem === '/processes' ? 'bg-blue-200 rounded-lg' : ''}`}>
+            {/* <li className={`hover:bg-blue-200 hover:rounded-lg ${selectedItem === '/processes' ? 'bg-blue-200 rounded-lg' : ''}`}>
               <Link to="/processes" onClick={() => handleItemClick('/processes')}>Processes</Link>
             </li>
             <li className={`hover:bg-blue-200 hover:rounded-lg ${selectedItem === '/reports' ? 'bg-blue-200 rounded-lg' : ''}`}>
@@ -40,7 +40,7 @@ export default function Navbar() {
             </li>
             <li className={`hover:bg-blue-200 hover:rounded-lg ${selectedItem === '/utilities' ? 'bg-blue-200 rounded-lg' : ''}`}>
               <Link to="/utilities" onClick={() => handleItemClick('/utilities')}>Utilities</Link>
-            </li>
+            </li> */}
             <li className={`hover:bg-blue-200 hover:rounded-lg ${selectedItem === '/adminstrators' ? 'bg-blue-200 rounded-lg' : ''}`}>
               <Link to="/adminstrators" onClick={() => handleItemClick('/adminstrators')}>Admin</Link>
             </li>
@@ -50,7 +50,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-      
     ) : null
   );
 }

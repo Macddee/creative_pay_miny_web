@@ -6,6 +6,7 @@ import { AddAmountPopup, MasterfileEmployeePopup, } from '../SearchPopup'
 import Loading from '../Loading'
 import PopupMsg from '../PopupMsg'
 import Error from '../Error'
+import { MdDelete, MdModeEditOutline } from 'react-icons/md'
 
 
 
@@ -23,10 +24,8 @@ export default function Amounts() {
     popupContent, setPopupContent,
   } = useDataContexts();
 
-  const [replacing, setReplacing] = useState(false);
-  const [prevAmt, setPrevAmt] = useState(0);
+  const [editingFlag, setEditingFlag] = useState(false);
   const [errorMesage, setErrorMessage] = useState("");
-  const existingAmt = amounts.find(item => item.OrdinalNo === inputedAmounts.OrdinalNo && item.EmpNo === inputedAmounts.EmpNo);
   const [masterFileBatch, setMasterFileBatch] = useState([]);
   // const amtInBatch = masterFileBatch.find(item => item.OrdinalNo === inputedAmounts.OrdinalNo && item.EmpNo === inputedAmounts.EmpNo);
 
@@ -39,70 +38,49 @@ export default function Amounts() {
     }));
   };
 
-  const handleReplace = (k) => {
-    setReplacing(k.target.checked)
-    if (!replacing) {   //this is actually replacing. donno why js is making my variables objs.
-      if (existingAmt) setPrevAmt(existingAmt.Amt);
-      // if (amtInBatch) setPrevAmt(existingAmt.Amt);
-      const newAmt = Number(prevAmt) + Number(inputedAmounts.Amt)
-      setInputedAmounts(prevState => ({ ...prevState, Amt: newAmt }))
-    }
-
-    useEffect(() => {
-      console.log(inputedAmounts);
-      
-    }, [inputedAmounts])
-  }
 
   function prepareNewAmt() {
     setInputedAmounts({
-      EmpNo: "", OrdinalNo: "", Amt: "", CodeName: "", EmpNames: "", Limit: null,
+      EmpNo: "", OrdinalNo: "", Amt: "", CodeName: "", EmpNames: "", Limit: null, replacing: false
     })
-    setReplacing(false);
-    console.log(replacing);
-
   }
 
-  function updateEmployeesAmt(updatedEmployeeAmt) {
+
+  function correctAmt(updatedEmployeeAmt) {
     // Create a copy of the object to avoid mutating the original
     let temp = { ...updatedEmployeeAmt };
     // Remove the RefNoName key and value
     delete temp.CodeName;
     delete temp.Limit;
     delete temp.EmpNames;
-    console.log(temp);
 
-    setMasterFileBatch(prevAmt => {
-      const index = prevAmt.findIndex(item => item.ordinal === temp.ordinal);
-      if (index !== -1) {
-        // Replace existing item
-        const updatedAmt = [...prevAmt];
-        updatedAmt[index] = temp;
-        return updatedAmt;
-      } else {
-        // Append new item
-        return prevAmt.concat(temp);
-      }
-    });
-    
-    setAmounts(prevAmt => {
-      const index = prevAmt.findIndex(item => item.ordinal === temp.ordinal);
-      if (index !== -1) {
-        // Replace existing item
-        const updatedAmt = [...prevAmt];
-        updatedAmt[index] = temp;
-        return updatedAmt;
-      } else {
-        // Append new item
-        return prevAmt.concat(temp);
-      }
-    });
+    return temp;
   }
-  
+
+  const handleDelete = (index) => {
+    setMasterFileBatch(prevBatches => 
+      prevBatches.filter((_, i) => i !== index)
+    );
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // console.log(amtInBatch);
+
+    let existingAmt = amounts.find(item => item.OrdinalNo === inputedAmounts.OrdinalNo && item.EmpNo === inputedAmounts.EmpNo);
+    const fixedAmt = correctAmt(inputedAmounts);
+    const index = masterFileBatch.findIndex(item => item.OrdinalNo === fixedAmt.OrdinalNo && item.EmpNo === fixedAmt.EmpNo);
+
+    if (editingFlag) {
+      setMasterFileBatch(prevBatches =>
+        prevBatches.map(item =>
+          item.EmpNo === fixedAmt.EmpNo  && item.OrdinalNo === fixedAmt.OrdinalNo
+            ? { ...item, ...fixedAmt } // Replace the item with fixedAmt
+            : item
+        )
+      );
+      prepareNewAmt();
+      return;
+    }
 
     if (inputedAmounts.Amt > inputedAmounts.Limit) {
       setErrorMessage(`Amount should not be greater than the code limit of ${inputedAmounts.Limit}.`);
@@ -110,20 +88,37 @@ export default function Amounts() {
       return
     }
 
-    if (existingAmt) {
-      if (!replacing) {
-        setErrorMessage("An amount of this type already exists; Try replacing.");
-        setShowError(true);
-      } else {
-        updateEmployeesAmt(inputedAmounts)
-        prepareNewAmt()
-      }
+    // since we have 2 variables the original amounts and the new batch, we want to find if an item is in both amounts and batch
+    //  and if thats true, we put the one in batch to existing item so that we we use the most updated one.
 
-    } else {
-      updateEmployeesAmt(inputedAmounts)
-      prepareNewAmt()
+    if (index !== -1) {
+      existingAmt = { ...masterFileBatch[index] }
     }
 
+    if (existingAmt) {
+      if (inputedAmounts.replacing) {
+        setMasterFileBatch(prevBatches => [
+          ...prevBatches.slice(0, index), // Items before the updated item
+          fixedAmt,                       // The updated item
+          ...prevBatches.slice(index + 1) // Items after the updated item
+        ]);
+        prepareNewAmt()
+
+      } else {
+
+        const incrementedAmt = { ...fixedAmt, Amt: Number(existingAmt.Amt) + Number(fixedAmt.Amt) }
+
+        setMasterFileBatch(prevBatches => [
+          ...prevBatches.slice(0, index), // Items before the updated item
+          incrementedAmt,                       // The updated item
+          ...prevBatches.slice(index + 1) // Items after the updated item
+        ]);
+      }
+      prepareNewAmt()
+    } else {
+      setMasterFileBatch(allBetches => allBetches.concat(fixedAmt))
+      prepareNewAmt()
+    }
   }
 
   const handleUpload = () => {
@@ -175,7 +170,9 @@ export default function Amounts() {
                 <tr>
                   <th>Ordinal Number</th>
                   <th>Code Name</th>
+                  <th>Employee Number</th>
                   <th>Amount</th>
+                  <th>Replace</th>
                 </tr>
               </thead>
               <tbody>
@@ -188,7 +185,26 @@ export default function Amounts() {
                       <tr className="hover no-select" key={index}>
                         <td>{item.OrdinalNo}</td>
                         <td>{parmItem.CodeName}</td>
+                        <td>{item.EmpNo}</td>
                         <td>{item.Amt}</td>
+                        <td>{item.replacing ? "True" : "False"}</td>
+                        <td>
+                          <button type='button' onClick={() => {
+                            document.getElementById('AddAmountModal').showModal()
+                            setInputedAmounts(item)
+                            setEditingFlag(true)
+                          }}
+                            className=" text-green-600 text-2xl">
+                            <MdModeEditOutline />
+                          </button>
+                        </td>
+
+                        <td>
+                          <button type='button' onClick={() => { handleDelete(index=index) }} className=" text-red-500 text-2xl">
+                            <MdDelete />
+                          </button>
+                        </td>
+
                       </tr>
                     );
                   })}
@@ -213,6 +229,7 @@ export default function Amounts() {
             Submit Masterfile Batches
           </button>
         </div>
+
 
         <dialog id="AddAmountModal" className="modal flex-auto">
           <div className=" bg-slate-200 p-16 rounded-xl">
@@ -260,13 +277,14 @@ export default function Amounts() {
 
                       <div className="md:flex w-full gap-10">
                         <Input
-                          title={!replacing ? "Enter Amount" : (
-                            <>
-                              Old amount: {prevAmt} <br />
-                              New Amount: {inputedAmounts.Amt} <br />
-                              Final Amount: {Number(prevAmt) + Number(inputedAmounts.Amt)}
-                            </>
-                          )}
+                          title="Enter Amount"
+                          // title={!replacing ? "Enter Amount" : (
+                          //   <>
+                          //     Old amount: {prevAmt} <br />
+                          //     New Amount: {inputedAmounts.Amt} <br />
+                          //     Final Amount: {Number(prevAmt) + Number(inputedAmounts.Amt)}
+                          //   </>
+                          // )}
                           value={inputedAmounts.Amt}
                           type="number"
                           inputId="Amt"
@@ -281,8 +299,8 @@ export default function Amounts() {
                           <input
                             type="checkbox"
                             name="toReplace"
-                            checked={replacing}
-                            onChange={(k) => handleReplace(k)}
+                            checked={inputedAmounts.replacing}
+                            onChange={e => setInputedAmounts({ ...inputedAmounts, replacing: e.target.checked })}
                             className="checkbox checkbox-primary mr-4"
                           />
                           <span className="label-text gap-">Replace</span>

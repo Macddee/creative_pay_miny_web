@@ -3,11 +3,17 @@ import { NavLink, Outlet } from 'react-router-dom';
 import React from 'react';
 import { Sidebar } from 'flowbite-react';
 
+import { CgAlbum } from "react-icons/cg";
 import { HiHome } from 'react-icons/hi';
 import { BiSolidInstitution } from "react-icons/bi";
+import { VscReferences } from "react-icons/vsc";
+import { IoInformationCircle } from "react-icons/io5";
+import { BsBank } from "react-icons/bs";
+import { BsCalendarDate } from "react-icons/bs";
+import { RiMoneyDollarBoxFill } from "react-icons/ri";
 
 
-export default function TransactionsHome() {
+export default function Employees() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
 
 
@@ -16,7 +22,7 @@ export default function TransactionsHome() {
   };
   return (
     <>
-      <section className="sticky md:flex bg-white p-0 m-0">
+      <section className="sticky md:flex bg-white p-0 m-0 flex-grow">
         <div>
           <button
             data-drawer-target="default-sidebar"
@@ -48,18 +54,22 @@ export default function TransactionsHome() {
               } md:translate-x-0 md:relative bg-sidebar`}
           >
 
-            <Sidebar.Items className='pb-5 h-full gap-y-5 mb-10 bg-white '>
-              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 space-y-8 '>
+            <Sidebar.Items className='pb-5 h-full gap-y-5 mb-10 bg-white hover:text-blue-600'>
+              <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 space-y-8 hover:text-blue-600'>
 
                 <NavLink
+                end
                   to={{
                     pathname: "/transactions",
                   }}
                   onClick={() => setIsSidebarOpen(false)}
-                  className="flex items-center gap-1 pb-3 text-black ml-1"
-                >
-                  <HiHome className="w-6 h-6 text-blue-300 transition duration-75  text-grape" />
-                  <span className="ml-3">Batch Inputs</span>
+                  className={({ isActive }) => {
+                    return isActive
+                    ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                    : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
+                }}                >
+                  <HiHome className="w-6 h-6 text-blue-300 transition duration-75  text-grape " />
+                  <span className="ml-3 ">Transactions</span>
                 </NavLink>
 
                 <NavLink
@@ -67,9 +77,9 @@ export default function TransactionsHome() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                      ? " bg-gray-500 text-white flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray-500 hover:text-black transition  group"
-                      : "text-gray-800 flex items-center p-2 text-base font-normal  rounded-lg hover:bg-gray hover:text-[#000000] transition  group";
-                  }}
+                    ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                    : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
+                }}
                 >
                   <BiSolidInstitution className="w-6 h-6 text-blue-400 transition duration-75 text-grape " />
                   <span className={` ml-3`}>View Batches</span>

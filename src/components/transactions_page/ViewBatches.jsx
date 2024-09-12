@@ -27,7 +27,6 @@ export default function ViewBatches() {
             </thead>
             <tbody>
               {transactions.map((item, index) => {
-                console.log(item)
                 return (
                   <tr className="hover no-select" key={index}>
                     <td>{item.batchNo}</td>

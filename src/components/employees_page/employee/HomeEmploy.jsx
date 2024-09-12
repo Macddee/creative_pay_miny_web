@@ -11,6 +11,7 @@ export default function HomeEmploy() {
     employee, setEmployee,
     setAllEmployees,
     setShowPopupMsg,
+    popupContent, setPopupContent,
     employeeDetails, setemployeeDetails,
   } = useDataContexts()
 
@@ -36,8 +37,6 @@ export default function HomeEmploy() {
       [name]: value
     })
   }
-  
-  console.log(employeeDetails)
 
   function updateEmployee(updatedEmployee) {
     setAllEmployees(prevEmployees =>
@@ -49,8 +48,13 @@ export default function HomeEmploy() {
 
   const handleSubmit = ((e) => {
     e.preventDefault();
-    updateEmployee(employee)
+    // updateEmployee(employee)
+    setPopupContent("Changes saved, now Hit upload to synch your changes!")
     setShowPopupMsg(true);
+    console.log(employee);
+    console.log(employeeDetails);
+    
+
   })
   return (
     <>
@@ -130,7 +134,7 @@ export default function HomeEmploy() {
                     title="Contract End Date"
                     value={convertFromJulianToDateTime(employee.DischDate)}
                     type="date"
-                    inputId="end"
+                    inputId="DischDate"
                     name="DischDate"
                     placeholder="Contract end date"
                     onChange={handleChange} />

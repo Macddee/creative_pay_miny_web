@@ -3,6 +3,8 @@ import { useDataContexts } from '../ContextProviders/DataContexts';
 // import { convertFromJulianToDateTime ,convertFromDateTimeToJulian } from "../../logic/EmployeeLogic";
 import { convertFromJulianToDateTime, convertFromDateTimeToJulian } from './logic/EmployeeLogic';
 import Input from '../styled/inputs';
+import Error from './Error';
+import { DiSafari } from 'react-icons/di';
 
 
 export default function SearchPopup() {
@@ -72,12 +74,17 @@ export default function SearchPopup() {
 
 export function CreateNewEmployee() {
   const {
-    employee, setEmployee,
+    setEmployee,
     allEmployees, setAllEmployees,
-    showError,
+    setemployeeDetails,
+    setAllEmployeeDetails,
+    showError, setShowError,
   } = useDataContexts()
-  const [runOnce, setRunOnce] = useState(true)
-  const [newEmp, setNewEmp] = useState({})
+  const [autoNumber, setAutoNumber] = useState(true)
+  const [newEmployee, setNewEmployee] = useState({})
+  const [newEmployeeID, setNewEmployeeID] = useState({})
+  const [disbaleSave, setDisbaleSave] = useState(false)
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -85,36 +92,74 @@ export function CreateNewEmployee() {
 
     if (name.includes("Date")) {
       newVal = convertFromDateTimeToJulian(value);
-      console.log(newVal);
     }
 
-    // so that the handle change wont keep adding the emp number when a change is done on the form.
-    if (runOnce) {
-      let lastEmpNo = allEmployees[allEmployees.length - 1];
-      lastEmpNo = lastEmpNo.EmpNo + 1;
 
-      setEmployee(() => ({
-        ...employee,
-        EmpNo: lastEmpNo
+    if (name === "EmpNo") {
+      const index = allEmployees.findIndex(item => item.EmpNo === Number(value));
+
+      if (index !== -1) {
+        setShowError(true)
+        setDisbaleSave(true)
+      } else {
+        setShowError(false)
+        setDisbaleSave(false)
+      }
+
+
+      setNewEmployeeID(() => ({
+        ...newEmployeeID,
+        EmpNo: value
       }))
-      setRunOnce(false)
     }
 
-    setEmployee((employee) => ({
+    setNewEmployee((employee) => ({
       ...employee,
       [name]: newVal,
     }));
   };
 
+  useEffect(() => {
+    let lastEmpNo = allEmployees[allEmployees.length - 1];
+    if (!lastEmpNo) return;
+    lastEmpNo = lastEmpNo.EmpNo + 1;
 
-  function addEmployee(newEMployee) {
-    setAllEmployees(prevDetails => prevDetails.concat(newEMployee));
+    setNewEmployee(() => ({
+      ...newEmployee,
+      EmpNo: lastEmpNo
+    }))
+
+    setNewEmployeeID(() => ({
+      ...newEmployeeID,
+      EmpNo: lastEmpNo
+    }))
+  }, [autoNumber])
+
+
+  const handleIdChange = (e) => {
+    const { name, value } = e.target;
+    setNewEmployeeID({
+      ...newEmployeeID,
+      [name]: value
+    })
   }
+
 
   const handleSubmit = (e,) => {
     e.preventDefault();
-    addEmployee(employee);
-    setRunOnce(true)
+
+    setEmployee(data => ({
+      ...data,
+      ...newEmployee
+    }))
+
+    setemployeeDetails(data => ({
+      ...data,
+      ...newEmployeeID
+    }))
+
+    setAllEmployees(prevDetails => prevDetails.concat(newEmployee));
+    setAllEmployeeDetails(prevDetails => prevDetails.concat(newEmployeeID));
   }
 
   return (
@@ -122,9 +167,9 @@ export function CreateNewEmployee() {
       <dialog id="AddNewEmployeeModal" className="modal flex-auto">
         <div className=" bg-slate-200 p-16 rounded-xl">
           <div className="inline-flex">
-            <h1 className="text-3xl text-center mb-5 font-bold mr-6">Add Bank Details</h1>
+            <h1 className="text-3xl text-center mb-2 font-bold mr-60">Create An Employee </h1>
             <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost  mb-5">✕</button>
+              <button className="btn btn-sm btn-circle btn-ghost text-red-600  mb-5">✕</button>
             </form>
           </div>
           <form onSubmit={(e) => {
@@ -136,69 +181,109 @@ export function CreateNewEmployee() {
                 <div className="mt-10">
                   <div className="flex flex-col">
                     <div className="md:flex w-full gap-10">
-                      <Input
-                        title="Given Names"
-                        value={employee.GivenNames}
-                        type="text"
-                        inputId="GivenNames"
-                        name="GivenNames"
-                        placeholder="Name 1, Name 2..."
-                        onChange={handleChange}
-                      />
+                      <div className="md:flex w-full gap-10">
+                        <Input
+                          title="Given Names"
+                          value={newEmployee.GivenNames}
+                          type="text"
+                          inputId="GivenNames"
+                          name="GivenNames"
+                          placeholder="Name 1, Name 2..."
+                          onChange={handleChange}
+                          required={true}
+                        />
+                      </div>
+                      <div className="md:flex w-full gap-10">
+                        <Input
+                          title="Surname"
+                          value={newEmployee.Surname}
+                          type="text"
+                          inputId="Surname"
+                          name="Surname"
+                          placeholder="Family Name"
+                          required={true}
+                          onChange={handleChange}
+                        />
+                      </div>
                     </div>
                     <div className="md:flex w-full gap-10">
-                      <Input
-                        title="Surname"
-                        value={employee.Surname}
-                        type="text"
-                        inputId="Surname"
-                        name="Surname"
-                        placeholder="Family Name"
-                        onChange={handleChange}
-                      />
+                      <div className="md:flex w-full gap-10">
+                        <Input
+                          title="Initials"
+                          value={newEmployee.Inits}
+                          type="text"
+                          inputId="Inits"
+                          name="Inits"
+                          placeholder="M.M"
+                          required={true}
+                          onChange={handleChange}
+                        />
+                      </div>
+                      <div className="md:flex w-full gap-10">
+                        <Input
+                          title="ID Number"
+                          value={newEmployee.PassportCountry}
+                          type="text"
+                          inputId="PassportCountry"
+                          name="PassportCountry"
+                          placeholder="XX-XXXXXXXKXX"
+                          required={true}
+                          onChange={handleIdChange}
+                        />
+                      </div>
                     </div>
                     <div className="md:flex w-full gap-10">
-                      <Input
-                        title="Initials"
-                        value={employee.Inits}
-                        type="text"
-                        inputId="Inits"
-                        name="Inits"
-                        placeholder="M.M"
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className="md:flex w-full gap-10">
-                      <Input
-                        title="ID Number"
-                        value={"employee.IDNo"}
-                        type="text"
-                        inputId="IDNo"
-                        name="IDNo"
-                        placeholder="XX-XXXXXXXKXX"
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className="md:flex w-full gap-10">
-                      <Input
-                        title="Date of Birth"
-                        value={convertFromJulianToDateTime(employee.BirthDate)}
-                        type="date"
-                        inputId="BirthDate"
-                        name="BirthDate"
-                        onChange={handleChange}
-                      />
+                      <div className="md:flex w-full gap-10">
+                        <Input
+                          title="Date of Birth"
+                          value={convertFromJulianToDateTime(newEmployee.BirthDate)}
+                          type="date"
+                          inputId="BirthDate"
+                          name="BirthDate"
+                          required={true}
+                          onChange={handleChange}
+                        />
+                      </div>
+
+                      <div className="md:flex w-full gap-10">
+                        <Input
+                          title="Engagement Date"
+                          value={convertFromJulianToDateTime(newEmployee.EngageDate)}
+                          type="date"
+                          inputId="EngageDate"
+                          name="EngageDate"
+                          required={true}
+                          onChange={handleChange}
+                        />
+                      </div>
                     </div>
 
-                    <div className="md:flex w-full gap-10">
-                      <Input
-                        title="Engagement Date"
-                        value={convertFromJulianToDateTime(employee.EngageDate)}
-                        type="date"
-                        inputId="EngageDate"
-                        name="EngageDate"
-                        onChange={handleChange}
-                      />
+                    <div className="flex items-center gap-4">
+                      <div className="flex-1">
+                        <Input
+                          title="Employee Number: "
+                          value={newEmployee.EmpNo || ""}
+                          type="number"
+                          inputId="EmpNo"
+                          name="EmpNo"
+                          disabled={autoNumber}
+                          required={true}
+                          onChange={handleChange}
+                        />
+                      </div>
+
+                      <div className="form-control">
+                        <label className="label cursor-pointer flex items-center">
+                          <input
+                            type="checkbox"
+                            name="toReplace"
+                            checked={autoNumber}
+                            onChange={e => { setAutoNumber(e.target.checked) }}
+                            className="checkbox checkbox-primary mr-2"
+                          />
+                          <span className="label-text text-lg">Auto assign employee number</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -208,13 +293,14 @@ export function CreateNewEmployee() {
             {/* Error inoformation popup. */}
             {showError &&
               <div className="pb-6 pt-3">
-                <Error message={errorMesage} />
+                <Error message={"That ID number already exist, please choose another one."} />
               </div>
             }
 
             <button
               type="submit"
-              className=" w-full mx-auto btn bg-blue-400 hover:bg-blue-200 outline-blue-600 text-black border-blue-600"
+              className=" mt-4 w-full mx-auto btn bg-blue-400 hover:bg-blue-200 outline-blue-600 text-black border-blue-600"
+              disabled={disbaleSave}
             >
               Save
             </button>
@@ -558,7 +644,7 @@ export function PayPointPopup({ handlePayPointSelectCallback = null, availablePa
               </thead>
               <tbody>
                 {
-                  !handlePayPointSelectCallback 
+                  !handlePayPointSelectCallback
                     ? payPoint.map((item, index) => {
 
                       return (
@@ -573,14 +659,14 @@ export function PayPointPopup({ handlePayPointSelectCallback = null, availablePa
                         </tr>
                       );
                     })
-                    
+
                     : availablePaypoints.map((item, index) => {
                       return (
                         <tr className="hover no-select" key={index} onClick={() => {
                           handlePayPointSelectCallback(item)
                           document.getElementById('PayPointModal').close();
                         }}>
-                          <td>{index +" "+ item}</td>
+                          <td>{index + " " + item}</td>
                         </tr>
                       );
 

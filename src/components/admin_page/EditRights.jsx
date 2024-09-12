@@ -65,7 +65,6 @@ export default function EditRights() {
     fetchData();
   }, [])
 
-
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -74,7 +73,6 @@ export default function EditRights() {
       [name]: value,
     }));
   };
-
 
   function handleSubmit() {
     setIsERLoading(true)
@@ -98,7 +96,6 @@ export default function EditRights() {
         setShowPopupMsg(true)
         setPopupContent(data.message)
         setIsERLoading(false)
-        // setPopupContent("Admin user successfully created!")
       })
       .catch(error => {
         setShowPopupMsg(true),
@@ -108,7 +105,6 @@ export default function EditRights() {
       });
   }
 
-
   const handleCellClick = (foundRights, rowIndex, column) => {
     if (!clickOnce) return;
 
@@ -116,12 +112,6 @@ export default function EditRights() {
     setShowInput(({ row: rowIndex, column: column }))
     setClickOnce(false)
   };
-
-  // useEffect(() => {
-  //   if (selectedRow)
-  //     handleRowChangeSave()
-  // }, [selectedRow])
-
 
   useEffect(() => {
     console.log(currentRights);
@@ -148,7 +138,6 @@ export default function EditRights() {
       setClickOnce(true)
       setShowInput({})
     }
-
     handleRowChangeSave()
   };
 
@@ -175,9 +164,6 @@ export default function EditRights() {
       costcode: currentRights.costcode,
     };
 
-    console.log(newRights);
-
-
     setCompletedRows(prevRows => {
       const rowIndex = prevRows.findIndex(row => row.user_id === newRights.user_id);
 
@@ -193,22 +179,6 @@ export default function EditRights() {
     });
   };
 
-  // Log the updated completedRows state
-  useEffect(() => {
-    console.log(compledRows);
-  }, [compledRows]);
-
-  //   {
-  //     "rows": [
-  //         {
-  // "id" : currentRights.id,
-  // "user_id" : currentRights.user_id,
-  // "payroll" : currentRights.payroll,
-  // "paypoint" : currentRights.paypoiny,
-  // "costcode" : currentRights.costcode
-  //         }
-  //     ]
-  // }
 
   return (
     isERLoading

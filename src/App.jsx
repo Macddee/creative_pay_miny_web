@@ -30,6 +30,7 @@ import Footer from './components/home/Footer';
 import { DataProvider } from './ContextProviders/DataContexts';
 import Register from './auth/Register';
 import AdminNav from './components/admin_page/AdminNav';
+import Admin from './components/admin_page/Admin';
 function App() {
   return (
     <div className="App flex flex-col min-h-screen bg-white text-black">
@@ -48,8 +49,8 @@ function App() {
                 <Route path="/signup" element={<Register />} />
                 <Route path="/reports" element={<Reports />} />
                 <Route path="/processes" element={<Processes />} />
-                <Route path="/adminstrators" element={<AdminNav />} />
-                <Route path="/transactions" element={<TransactionsHome />}>
+                <Route path="/adminstrators" element={<RequireAuth><AdminNav /></RequireAuth>} />
+                <Route path="/transactions" element={<RequireAuth><TransactionsHome /></RequireAuth>}>
                   <Route path="" element={<TransactionTopNav />} />
                   <Route path="view-batches" element={<ViewBatches />} />
                 </Route>

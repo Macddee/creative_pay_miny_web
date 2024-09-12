@@ -13,7 +13,8 @@ export default function Input({
   step = null,
   required = null,
   onKeyDown = null,
-  ref = null
+  ref = null,
+  disabled= false
 }) {
   return (
     <div className="mb-4 w-full">
@@ -32,6 +33,7 @@ export default function Input({
           onKeyDown={onKeyDown}
           required={required}
           ref={ref}
+          disabled={disabled}
           {...(step && { step: "0.01", min: "0" })}
         />
         {Icon && (

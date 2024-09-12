@@ -6,11 +6,14 @@ import { TransactionCostCodePopup, TransactionEmployeePopup, TransactionParmCode
 import { useDataContexts } from "../../ContextProviders/DataContexts";
 import Loading from "../Loading";
 import PopupMsg from "../PopupMsg";
+import { MdDelete, MdModeEditOutline } from "react-icons/md";
 
 export default function Transactions() {
 
   const [errorMesage, setErrorMessage] = useState("")
   const [inputedBatches, setInputedBatches] = useState([])
+  const [editingFlag, setEditingFlag] = useState(false)
+  
 
   const {
     showError, setShowError,
@@ -46,8 +49,29 @@ export default function Transactions() {
     }));
   };
 
+  const handleDelete = (index) => {
+    setInputedBatches(prevBatches => 
+      prevBatches.filter((_, i) => i !== index)
+    );
+  };
+
   const handleSubmit = ((e) => {
     e.preventDefault();
+
+    if(editingFlag){
+      setInputedBatches(prevBatches =>
+        prevBatches.map(item =>
+          item.EmpNo === inputedTransactions.EmpNo && item.CodeName === inputedTransactions.CodeName
+            ? {
+              ...item,
+              ...inputedTransactions
+            }
+            : item
+        )
+      );
+      prepareTransaction()
+      return
+    }
 
     // updateEmployee(employee)
     const existingItem = inputedBatches.find(item => item.EmpNo === inputedTransactions.EmpNo && item.CodeName === inputedTransactions.CodeName);
@@ -59,29 +83,31 @@ export default function Transactions() {
     }
 
     if (existingItem) {
-
       if (inputedTransactions.toReplace) {
-
-        if (existingItem.Amt != inputedTransactions.Amt) {
-          setInputedBatches(prevBatches =>
-            prevBatches.map(item =>
-              item.EmpNo === inputedTransactions.EmpNo && item.CodeName === inputedTransactions.CodeName
-                ? {
-                  ...item,
-                  Amt: parseFloat(item.Amt) + parseFloat(inputedTransactions.Amt),
-                  toReplace: inputedTransactions.toReplace
-                }
-                : item
-            )
-          );
-        } else {
-          setErrorMessage("Record already replaced!.")
-          setShowError(() => (true))
-
-        }
+        setInputedBatches(prevBatches =>
+          prevBatches.map(item =>
+            item.EmpNo === inputedTransactions.EmpNo && item.CodeName === inputedTransactions.CodeName
+              ? {
+                ...item,
+                ...inputedTransactions,
+              }
+              : item
+          )
+        );
+        prepareTransaction()
       } else {
-        setErrorMessage("Cannot duplicate records. Try replacing.")
-        setShowError(() => (true))
+        setInputedBatches(prevBatches =>
+          prevBatches.map(item =>
+            item.EmpNo === inputedTransactions.EmpNo && item.CodeName === inputedTransactions.CodeName
+              ? {
+                ...item,
+                Amt: parseFloat(item.Amt) + parseFloat(inputedTransactions.Amt),
+                toReplace: inputedTransactions.toReplace
+              }
+              : item
+          )
+        );
+        prepareTransaction()
       }
     } else {
       setInputedBatches(prevBatches => [...prevBatches, inputedTransactions]);
@@ -110,9 +136,9 @@ export default function Transactions() {
       //aslo send send the fixed employees here since setting it in state is being problematic.
       return itemCopy
     });
-    
+
     updateEmployee(modifiedBatch)
-    console.log(modifiedBatch)
+
   }
 
   const updateEmployee = (processedTrans) => {
@@ -123,7 +149,7 @@ export default function Transactions() {
     });
 
     console.log(requestBody);
-    
+
     fetch(postUrl, {
       method: 'PUT',
       headers: {
@@ -174,6 +200,22 @@ export default function Transactions() {
                     <td>{item.Amt}</td>
                     <td>{item.dgCostCode}</td>
                     <td>{item.toReplace ? "True" : "False"}</td>
+                    <td>
+                      <button type='button' onClick={() => {
+                        document.getElementById('transactionModal').showModal()
+                        setInputedTransactions(item)
+                        setEditingFlag(true)
+                      }}
+                        className=" text-green-600 text-2xl">
+                        <MdModeEditOutline />
+                      </button>
+                    </td>
+
+                    <td>
+                      <button type='button' onClick={() => { handleDelete(index=index) }} className=" text-red-500 text-2xl">
+                        <MdDelete />
+                      </button>
+                    </td>
                   </tr>
                 ))
                 }
@@ -224,9 +266,9 @@ export default function Transactions() {
                     <div className="flex flex-col">
                       <div className="md:flex w-full gap-10">
                         <Input
-                          title="Employee Number"
-                          value={inputedTransactions.EmpNo}
-                          type="text"
+                          title={"Employee Number: " + inputedTransactions.EmpNo}
+                          value={inputedTransactions.EmpNo || ""}
+                          type="number"
                           inputId="EmpNo"
                           name="EmpNo"
                           placeholder="Employee number"
@@ -237,9 +279,9 @@ export default function Transactions() {
                       </div>
                       <div className="md:flex w-full gap-10">
                         <Input
-                          title="Enter Code"
-                          value={inputedTransactions.OrdinalNo + " " + inputedTransactions.CodeName}
-                          type="text"
+                          title={"Enter Code: " + inputedTransactions.OrdinalNo + " " + inputedTransactions.CodeName}
+                          value={inputedTransactions.OrdinalNo || ""}
+                          type="number"
                           inputId="OrdinalNo"
                           name="OrdinalNo"
                           placeholder="Enter Code"
@@ -261,11 +303,11 @@ export default function Transactions() {
                       </div>
                       <div className="md:flex w-full gap-10">
                         <Input
-                          title="Cost Code"
-                          value={inputedTransactions.costCodes + " " + inputedTransactions.BreakDesc}
+                          title={"Cost Code: " + inputedTransactions.costCodes + " " + inputedTransactions.BreakDesc}
+                          value={inputedTransactions.costCodes || ""}
                           type="text"
-                          inputId="CostCodes"
-                          name="CostCodes"
+                          inputId="costCodes"
+                          name="costCodes"
                           placeholder="Cost Code"
                           onChange={handleChange}
                           Icon={CgMore}
