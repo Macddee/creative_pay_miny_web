@@ -124,8 +124,8 @@ export default function Banking() {
     isLoading
       ? <Loading />
       : <>
-        <div className="overflow-x-auto  p-4">
-          <div className="flex flex-col h-[28rem] overflow-y-auto overflow-x-auto bg-slate-200 p-5 m-8 rounded-lg">
+        <div className="p-4">
+          <div className="flex flex-col h-[28rem] w-11/12 overflow-y-auto overflow-x-auto bg-slate-200 p-5 m-8 rounded-lg">
             <table className="table overflow-y-auto overflow-x-auto">
               {/* head */}
               <thead>
