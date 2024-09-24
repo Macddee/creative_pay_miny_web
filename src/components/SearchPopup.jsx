@@ -4,7 +4,7 @@ import { useDataContexts } from '../ContextProviders/DataContexts';
 import { convertFromJulianToDateTime, convertFromDateTimeToJulian } from './logic/EmployeeLogic';
 import Input from '../styled/inputs';
 import Error from './Error';
-import { DiSafari } from 'react-icons/di';
+import { CgMore } from 'react-icons/cg';
 
 
 export default function SearchPopup() {
@@ -17,7 +17,7 @@ export default function SearchPopup() {
 
   return (
     <div>
-      <dialog id="selectEmpModal" className="modal flex-auto">
+      <dialog id="selectEmpModal" className="modal flex-auto sidebar-item">
         <div className=" bg-slate-200 pb-16 pt-10 px-16 rounded-xl">
           <div className="inline-flex justify-between w-full ">
             <h1 className="text-3xl text-center mb-5 font-bold ">Select an employee </h1>
@@ -74,9 +74,9 @@ export default function SearchPopup() {
 
 export function CreateNewEmployee() {
   const {
-    setEmployee,
+    employee, setEmployee,
     allEmployees, setAllEmployees,
-    setemployeeDetails,
+    employeeDetails, setemployeeDetails,
     setAllEmployeeDetails,
     showError, setShowError,
   } = useDataContexts()
@@ -106,7 +106,6 @@ export function CreateNewEmployee() {
         setDisbaleSave(false)
       }
 
-
       setNewEmployeeID(() => ({
         ...newEmployeeID,
         EmpNo: value
@@ -117,6 +116,8 @@ export function CreateNewEmployee() {
       ...employee,
       [name]: newVal,
     }));
+
+    console.log(employeeDetails);
   };
 
   useEffect(() => {
@@ -126,7 +127,8 @@ export function CreateNewEmployee() {
 
     setNewEmployee(() => ({
       ...newEmployee,
-      EmpNo: lastEmpNo
+      EmpNo: lastEmpNo,
+      Payroll: sessionStorage.getItem('selectedPayroll')
     }))
 
     setNewEmployeeID(() => ({
@@ -135,7 +137,6 @@ export function CreateNewEmployee() {
     }))
   }, [autoNumber])
 
-
   const handleIdChange = (e) => {
     const { name, value } = e.target;
     setNewEmployeeID({
@@ -143,7 +144,6 @@ export function CreateNewEmployee() {
       [name]: value
     })
   }
-
 
   const handleSubmit = (e,) => {
     e.preventDefault();
@@ -157,19 +157,18 @@ export function CreateNewEmployee() {
       ...data,
       ...newEmployeeID
     }))
-
     setAllEmployees(prevDetails => prevDetails.concat(newEmployee));
     setAllEmployeeDetails(prevDetails => prevDetails.concat(newEmployeeID));
   }
 
   return (
     <div>
-      <dialog id="AddNewEmployeeModal" className="modal flex-auto">
-        <div className=" bg-slate-200 p-16 rounded-xl">
+      <dialog id="AddNewEmployeeModal" className="modal flex-auto sidebar-item">
+        <div className=" bg-slate-200 p-14 pt-6 pb-10 rounded-xl">
           <div className="inline-flex">
-            <h1 className="text-3xl text-center mb-2 font-bold mr-60">Create An Employee </h1>
+            <h1 className="text-3xl text-center font-bold mr-60">Create An Employee </h1>
             <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost text-red-600  mb-5">✕</button>
+              <button className="btn btn-sm btn-circle btn-ghost text-red-600 ">✕</button>
             </form>
           </div>
           <form onSubmit={(e) => {
@@ -222,7 +221,7 @@ export function CreateNewEmployee() {
                       <div className="md:flex w-full gap-10">
                         <Input
                           title="ID Number"
-                          value={newEmployee.PassportCountry}
+                          value={newEmployeeID.PassportCountry}
                           type="text"
                           inputId="PassportCountry"
                           name="PassportCountry"
@@ -256,6 +255,19 @@ export function CreateNewEmployee() {
                           onChange={handleChange}
                         />
                       </div>
+                    </div>
+
+                    <div className="md:flex w-full gap-10">
+                      <Input
+                        title="Payroll associated to the new employee: "
+                        value={newEmployee.Payroll}
+                        type="text"
+                        inputId="Payroll"
+                        name="Payroll"
+                        required={true}
+                        disabled={true}
+                        onChange={handleChange}
+                      />
                     </div>
 
                     <div className="flex items-center gap-4">
@@ -307,6 +319,118 @@ export function CreateNewEmployee() {
           </form>
         </div>
       </dialog>
+    </div>
+  )
+}
+
+export function TerminateEmployee() {
+  const {
+    employee, setEmployee,
+    employeeDetails, setemployeeDetails,
+    showError, setShowError,
+  } = useDataContexts()
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    let newVal = value;
+
+    if (name.includes("Date")) {
+      newVal = convertFromDateTimeToJulian(value);
+    }
+
+    setEmployee((employee) => ({
+      ...employee,
+      [name]: newVal,
+    }));
+
+    console.log(employeeDetails);
+  };
+
+  function handleSubmit(e) {
+    console.log("deleted haha");
+
+  }
+
+  return (
+    <div>
+      <dialog id="TerminateEmployeeModal" className="modal flex-auto sidebar-item">
+        <div className=" bg-slate-200 p-14 pt-6 pb-10 rounded-xl">
+          <div className="inline-flex">
+            <h1 className="text-3xl text-center font-bold mr-28">Terminate An Employee </h1>
+            <form method="dialog">
+              <button className="btn btn-sm btn-circle btn-ghost text-red-600 ">✕</button>
+            </form>
+          </div>
+          <form onSubmit={(e) => {
+            handleSubmit(e);
+            document.getElementById('TerminateEmployeeModal').close();
+          }}>
+            <div className="md:flex gap-20 flex-wrap">
+              <div className="flex-1">
+                <div className="mt-10">
+                  <div className="flex flex-col">
+
+                    <div className="md:flex w-full gap-10">
+                      <Input
+                        title="Employee Number"
+                        value={employee.EmpNo}
+                        type="number"
+                        inputId="EmpNo"
+                        name="EmpNo"
+                        placeholder=""
+                        onChange={handleChange}
+                        required={true}
+                        Icon={CgMore}
+                        onIconClick={() => document.getElementById('selectEmpModal').showModal()}
+                      />
+                    </div>
+                    <div className="md:flex w-full gap-10">
+                      <Input
+                        title="Termination Date"
+                        value={employee.DischRsn}
+                        type="text"
+                        inputId="DischRsn"
+                        name="DischRsn"
+                        placeholder="Reason for termination"
+                        required={true}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="md:flex w-full gap-10">
+                      <Input
+                        title="Date of termination"
+                        value={convertFromJulianToDateTime(employee.DischDate)}
+                        type="date"
+                        inputId="DischDate"
+                        name="DischDate"
+                        required={true}
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Error inoformation popup. */}
+            {showError &&
+              <div className="pb-6 pt-3">
+                <Error message={"That ID number already exist, please choose another one."} />
+              </div>
+            }
+
+            <button
+              type="submit"
+              className=" mt-4 w-full mx-auto btn bg-blue-400 hover:bg-blue-200 outline-blue-600 text-black border-blue-600"
+            // disabled={disbaleSave}
+            >
+              Terminate Employee
+            </button>
+          </form>
+        </div>
+      </dialog>
+      <SearchPopup />
     </div>
   )
 }

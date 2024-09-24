@@ -4,15 +4,11 @@ import { useDataContexts } from "../../../ContextProviders/DataContexts";
 
 export default function Empaddress() {
   const {
-    employeeDetails, setemployeeDetails,  
+    employeeDetails, setemployeeDetails,
     setAllEmployeeDetails,
-    token, postUrl,
-    isLoading,
-    setIsLoading,
-    showPopupMsg, setShowPopupMsg,
-    popupContent, setPopupContent,
-  } = useDataContexts()  
-  
+    setShowPopupMsg,
+  } = useDataContexts()
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,27 +18,12 @@ export default function Empaddress() {
       [name]: value,
     }));
   };
-    
-  console.log(employeeDetails);
 
-  function updateEmployeeDetails(updatedEmployeeDetails) {
-    setAllEmployeeDetails(prevEmployees =>
-      prevEmployees.map(employee =>
-        employee.EmpNo === updatedEmployeeDetails.EmpNo ? updatedEmployeeDetails : employee
-      )
-    );
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    updateEmployeeDetails(employeeDetails)  
-    setShowPopupMsg(true);
-  }
   return (
     <>
       <div className="bg-blue-100 max-w-[1300px] p-5 md:p-15 py-10 rounded-lg w-[95%] relative block mt-1 m-auto">
         {/* className="text-3xl text-center font-bold">Update Employeee Details */}
-        <form onSubmit={handleSubmit} >
+        <form>
           <div className="md:flex gap-20 flex-wrap">
             <div className="flex-1">
               <div className="flex flex-col">
@@ -69,7 +50,7 @@ export default function Empaddress() {
                     title="Postal Line 3"
                     value={employeeDetails.Post_Line3 || ""}
                     type="text"
-                    inputId="Post_Line3" 
+                    inputId="Post_Line3"
                     name="Post_Line3"
                     placeholder="Postal Line 3"
                     onChange={handleChange} />
@@ -97,12 +78,6 @@ export default function Empaddress() {
               </div>
             </div>
           </div>
-          <button
-            type="submit"
-            className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600"
-          >
-            Submit
-          </button>
         </form>
       </div>
     </>

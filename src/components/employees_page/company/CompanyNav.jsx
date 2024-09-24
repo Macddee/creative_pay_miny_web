@@ -40,12 +40,23 @@ export default function CompanyNav() {
         setPopupContent(data.message)
         setShowPopupMsg(true)
         setIsLoading(false)
+        updateAllLists()
       })
       .catch(error => {
         setPopupContent(error.message)
         setShowPopupMsg(true)
         setIsLoading(false)
       });
+  }
+
+  const updateAllLists = () => {
+    setAllEmployees(prevEmployees =>
+      prevEmployees.map(emp =>
+        emp.EmpNo === employee.EmpNo
+          ? { ...emp, employee }
+          : emp
+      )
+    )
   }
 
   return (

@@ -4,12 +4,9 @@ import { CgMore } from "react-icons/cg";
 import { CompanyCostCodePopup, OccupationCodePopup, PayPointPopup } from "../../SearchPopup";
 import { useDataContexts } from "../../../ContextProviders/DataContexts";
 import { convertFromDateTimeToJulian, convertFromJulianToDateTime } from "../../logic/EmployeeLogic";
-import { FaCloudUploadAlt } from "react-icons/fa";
 
 export default function Empcompany() {
   const { 
-    setShowPopupMsg, setPopupContent,
-    setAllEmployees,
     employee, setEmployee } = useDataContexts()
 
 
@@ -27,26 +24,11 @@ export default function Empcompany() {
         [name]: newVal,
       }));
     };
-
-  function updateEmployeeDetails(updatedEmployee) {
-    setAllEmployees(prevEmployees =>
-      prevEmployees.map(employee =>
-        employee.EmpNo === updatedEmployee.EmpNo ? updatedEmployee : employee
-      )
-    );
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    updateEmployeeDetails(employee)
-    setPopupContent("Employee Details Successifuly Updated.")
-    setShowPopupMsg(true)
-  }
   return (
     <>
       <div className="bg-blue-100 p-5 py-10 rounded-lg relative block mt-1 ml-8 mr-8 flex-grow ">
         {/* <h1 className="text-3xl text-center font-bold">Update Employeee Details</h1> */}
-        <form onSubmit={handleSubmit} >
+        <form>
           <div className="md:flex gap-20 flex-wrap">
             <div className="flex-1">
               <div className="flex flex-col">
@@ -146,12 +128,6 @@ export default function Empcompany() {
 
             </div>
           </div>
-          <button
-            type="submit"
-            className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600"
-          >
-          Submit
-          </button>
         </form>
 
       </div>

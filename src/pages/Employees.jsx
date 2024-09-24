@@ -11,10 +11,13 @@ import { IoInformationCircle } from "react-icons/io5";
 import { BsBank } from "react-icons/bs";
 import { BsCalendarDate } from "react-icons/bs";
 import { RiMoneyDollarBoxFill } from "react-icons/ri";
+import { useDataContexts } from '../ContextProviders/DataContexts';
 
 
 export default function Employees() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
+  const { showSideBar } = useDataContexts();
+
 
 
   const toggleSidebar = () => {
@@ -48,6 +51,7 @@ export default function Employees() {
             </svg>
           </button>
 
+
           <Sidebar
             aria-label="Sidebar with logo branding example"
             className={`sticky top-0 left-0 z-40 w-64 transition-transform${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
@@ -58,16 +62,16 @@ export default function Employees() {
               <Sidebar.ItemGroup className='m-0 pb-8 pt-7 pl-3 space-y-8 hover:text-blue-600'>
 
                 <NavLink
-                end
+                  end
                   to={{
                     pathname: "/employees",
                   }}
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                    ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
-                    : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
-                }}                >
+                      ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
+                  }}                >
                   <HiHome className="w-6 h-6 text-blue-300 transition duration-75  text-grape " />
                   <span className="ml-3 ">Employee</span>
                 </NavLink>
@@ -77,9 +81,9 @@ export default function Employees() {
                   onClick={() => setIsSidebarOpen(false)}
                   className={({ isActive }) => {
                     return isActive
-                    ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
-                    : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
-                }}
+                      ? "bg-blue-200 text-black flex items-center p-3 text-base font-bold rounded-lg  transition group"
+                      : "text-gray-800 flex items-center p-2 text-base font-normal hover:text-blue-600 hover:bg-blue-200 hover:p-3 hover:rounded-lg transition group";
+                  }}
                 >
                   <BiSolidInstitution className="w-6 h-6 text-blue-400 transition duration-75 text-grape " />
                   <span className={` ml-3`}>Company</span>
@@ -166,6 +170,8 @@ export default function Employees() {
               </Sidebar.ItemGroup>
             </Sidebar.Items>
           </Sidebar>
+
+
         </div>
         <div
           className={

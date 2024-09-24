@@ -21,12 +21,14 @@ export default function EmpNav() {
     setIsLoading,
     showPopupMsg, setShowPopupMsg,
     popupContent, setPopupContent,
+    setAllEmployeeDetails,
+    setAllEmployees
   } = useDataContexts();
   const [selectedTab, setSelectedTab] = useState(0)
   const handleSelect = (index) => {
     setSelectedTab(index);
   };
-  
+
 
   const updateEmployee = () => {
     setIsLoading(true)
@@ -36,7 +38,7 @@ export default function EmpNav() {
       "cp_employee_details": [employeeDetails]
     });
 
-    console.log(requestBody); 
+    console.log(requestBody);
 
     fetch(postUrl, {
       method: 'PUT',
@@ -51,13 +53,14 @@ export default function EmpNav() {
       .then(data => {
         setShowPopupMsg(true),
           setPopupContent(data.message)
-          console.log(data.message)
+        console.log(data.message)
         setIsLoading(false)
+        updateAllLists();
       })
       .catch(error => {
         setShowPopupMsg(true),
           setPopupContent(error.message)
-          console.log(error.message)
+        console.log(error.message)
         setIsLoading(false)
       });
   }
@@ -70,17 +73,17 @@ export default function EmpNav() {
         Addr2: "",
         Addr3: "",
         Addr4: "",
-        BirthDate: "",
+        BirthDate: 0,
         ClockNo: "",
         CostCodes: "",
         DirAmt: "",
         DirPercent: "",
-        DischDate: "",
+        DischDate: 0,
         DischRsn: "",
         DischThisPeriodInd: "",
         Email: "",
-        EmpNo: "",
-        EngageDate: "",
+        EmpNo: null,
+        EngageDate: 0,
         EngageThisPeriodInd: "",
         GivenNames: "",
         HusbNames: "",
@@ -95,8 +98,8 @@ export default function EmpNav() {
         PostCode: "",
         PrevEmpNo: "",
         PrevPayroll: "",
-        StopFrom: "",
-        StopTo: "",
+        StopFrom: 0,
+        StopTo: 0,
         StrDeptCode: "",
         Surname: "",
         TakeOnClass: "",
@@ -108,53 +111,72 @@ export default function EmpNav() {
         TaxStatusDate: "",
         TelephoneNo: "",
         Title: ""
-    })
-    setemployeeDetails({ "Bu1_Unit": "",
-      "Bu2_Complex": "",
-      "Bu3_StreetNo": "",
-      "Bu4_StreetName": "",
-      "Bu5_Suburb": "",
-      "Bu6_Town": "",
-      "Bu7_PostCode": "",
-      "Bu8_CountryCode": "",
-      "CountryCode": "",
-      "EmailAddress": "",
-      "EmailPDF": "",
-      "EmpNo": "",
-      "PassportCountry": "",
-      "PhoneBusiness": "",
-      "PhoneCell": "",
-      "PhoneFax": "",
-      "PhoneHome": "",
-      "Po_AddrType": "0",
-      "Po_CareOfName": "",
-      "Po_COAddr": "",
-      "Po1_Unit": "",
-      "Po10_POBranch": "",
-      "Po11_PostCode": "",
-      "Po12_CountryCode": "null",
-      "Po2_Complex": "",
-      "Po3_StreetNo": "",
-      "Po4_StreetName": "",
-      "Po5_Suburb": "",
-      "Po6_Town": "",
-      "Po7_BoxBagNo": "",
-      "Po8_AgencySubUnit": "",
-      "Po9_SpecialService": "",
-      "Post_Line1": "",
-      "Post_Line2": "",
-      "Post_Line3": "",
-      "Post_Line4": "",
-      "PostCode": "",
-      "Re1_Unit": "",
-      "Re2_Complex": "",
-      "Re3_StreetNo": "",
-      "Re4_StreetName": "",
-      "Re5_Suburb": "",
-      "Re6_Town": "",
-      "Re7_PostCode": "",
-      "ResAsPostal": ""
+      })
+    setemployeeDetails({
+      Bu1_Unit: "",
+      Bu2_Complex: "",
+      Bu3_StreetNo: "",
+      Bu4_StreetName: "",
+      Bu5_Suburb: "",
+      Bu6_Town: "",
+      Bu7_PostCode: "",
+      Bu8_CountryCode: "",
+      CountryCode: "",
+      EmailAddress: "",
+      EmailPDF: "",
+      EmpNo: null,
+      PassportCountry: "",
+      PhoneBusiness: "",
+      PhoneCell: "",
+      PhoneFax: "",
+      PhoneHome: "",
+      Po_AddrType: "0",
+      Po_CareOfName: "",
+      Po_COAddr: "",
+      Po1_Unit: "",
+      Po10_POBranch: "",
+      Po11_PostCode: "",
+      Po12_CountryCode: "null",
+      Po2_Complex: "",
+      Po3_StreetNo: "",
+      Po4_StreetName: "",
+      Po5_Suburb: "",
+      Po6_Town: "",
+      Po7_BoxBagNo: "",
+      Po8_AgencySubUnit: "",
+      Po9_SpecialService: "",
+      Post_Line1: "",
+      Post_Line2: "",
+      Post_Line3: "",
+      Post_Line4: "",
+      PostCode: "",
+      Re1_Unit: "",
+      Re2_Complex: "",
+      Re3_StreetNo: "",
+      Re4_StreetName: "",
+      Re5_Suburb: "",
+      Re6_Town: "",
+      Re7_PostCode: "",
+      ResAsPostal: "",
     });
+  }
+
+  const updateAllLists = () => {
+    setAllEmployeeDetails(prevDetails =>
+      prevDetails.map(detail =>
+        detail.EmpNo === employeeDetails.EmpNo
+          ? { ...detail, ...employeeDetails }
+          : detail
+      )
+    );
+
+    setAllEmployees(prevEmployees =>
+      prevEmployees.map(emp =>
+        emp.EmpNo === employee.EmpNo
+          ? { ...emp, employee }
+          : emp
+      )
+    )
   }
 
 

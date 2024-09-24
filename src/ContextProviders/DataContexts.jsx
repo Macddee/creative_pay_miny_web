@@ -14,7 +14,6 @@ export function DataProvider({ children }) {
   const [popupContent, setPopupContent] = useState("Employee Details Successifuly Updated.")
   const [isLoading, setIsLoading] = useState(false)
   const [transactions, setTransactions] = useState([]);
-  // const [savedTransactions, setSavedTransactions] = useState([]);
   const [inputedTransactions, setInputedTransactions] = useState({
     EmpNo: "",
     OrdinalNo: "",
@@ -32,7 +31,51 @@ export function DataProvider({ children }) {
   const [payPoint, setPayPoint] = useState([])
   const [allEmployeeDetails, setAllEmployeeDetails] = useState([])
   const [employeeDetails, setemployeeDetails] = useState({
-    
+    Bu1_Unit: "",
+    Bu2_Complex: "",
+    Bu3_StreetNo: "",
+    Bu4_StreetName: "",
+    Bu5_Suburb: "",
+    Bu6_Town: "",
+    Bu7_PostCode: "",
+    Bu8_CountryCode: "",
+    CountryCode: "",
+    EmailAddress: "",
+    EmailPDF: "",
+    EmpNo: null,
+    PassportCountry: "",
+    PhoneBusiness: "",
+    PhoneCell: "",
+    PhoneFax: "",
+    PhoneHome: "",
+    Po_AddrType: "0",
+    Po_CareOfName: "",
+    Po_COAddr: "",
+    Po1_Unit: "",
+    Po10_POBranch: "",
+    Po11_PostCode: "",
+    Po12_CountryCode: "null",
+    Po2_Complex: "",
+    Po3_StreetNo: "",
+    Po4_StreetName: "",
+    Po5_Suburb: "",
+    Po6_Town: "",
+    Po7_BoxBagNo: "",
+    Po8_AgencySubUnit: "",
+    Po9_SpecialService: "",
+    Post_Line1: "",
+    Post_Line2: "",
+    Post_Line3: "",
+    Post_Line4: "",
+    PostCode: "",
+    Re1_Unit: "",
+    Re2_Complex: "",
+    Re3_StreetNo: "",
+    Re4_StreetName: "",
+    Re5_Suburb: "",
+    Re6_Town: "",
+    Re7_PostCode: "",
+    ResAsPostal: "",
   })
   const [allBanksData, setAllBanksData] = useState([])
   const [employeesBankDetails, setEmployeesBankDetails] = useState([])
@@ -194,6 +237,10 @@ export function DataProvider({ children }) {
 
   }
 
+
+  const [showSideBar, setShowSideBar] = useState(false);
+
+
   useEffect(() => {
     const storedToken = sessionStorage.getItem('token');
     setToken(storedToken)
@@ -258,7 +305,9 @@ export function DataProvider({ children }) {
       }
     };
 
-    fetchData();
+    if (allEmployees.length === 0){
+      fetchData();
+    }
   }, [selectePayroll, token])
 
 
@@ -348,6 +397,8 @@ export function DataProvider({ children }) {
       popupContent, setPopupContent,
       putRequest,
       selectePayroll, setSelectePayroll,
+
+      showSideBar, setShowSideBar,
 
     }}>
       {children}

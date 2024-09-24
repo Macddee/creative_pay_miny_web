@@ -130,7 +130,6 @@ export default function Banking() {
               {/* head */}
               <thead>
                 <tr>
-                  <th></th>
                   <th>Sort Code</th>
                   <th>Bank Name</th>
                   <th>Account name</th>
@@ -139,8 +138,6 @@ export default function Banking() {
                   <th>Pay Mode</th>
                   <th>Split Code</th>
                   <th>Account Holder</th>
-                  <th>Update</th>
-                  <th>Delete</th>
                 </tr>
               </thead>
               <tbody>
@@ -153,7 +150,7 @@ export default function Banking() {
                   return (
                     <tr className="hover no-select" key={index} onClick={() => {
                     }}>
-                      <td>{index + 1}</td>
+                      {/* <td>{index + 1}</td> */}
                       <td>{item.DestinBankSortCode}</td>
                       <td>{bank.BranchName}</td>
                       <td>{item.DestinBankAccountName}</td>
@@ -174,7 +171,7 @@ export default function Banking() {
                       </td>
 
                       <td>
-                        <button type='button' onClick={() => { }} className=" text-red-500 text-2xl">
+                        <button type='button' onClick={() => {}} className=" text-red-500 text-2xl">
                           <MdDelete />
                         </button>
                       </td>

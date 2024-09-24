@@ -9,9 +9,6 @@ export default function HomeEmploy() {
 
   const {
     employee, setEmployee,
-    setAllEmployees,
-    setShowPopupMsg,
-    popupContent, setPopupContent,
     employeeDetails, setemployeeDetails,
   } = useDataContexts()
 
@@ -23,7 +20,7 @@ export default function HomeEmploy() {
       newVal = convertFromDateTimeToJulian(value);
       console.log(newVal);
     }
-
+    
     setEmployee((employee) => ({
       ...employee,
       [name]: newVal,
@@ -38,29 +35,11 @@ export default function HomeEmploy() {
     })
   }
 
-  function updateEmployee(updatedEmployee) {
-    setAllEmployees(prevEmployees =>
-      prevEmployees.map(employee =>
-        employee.EmpNo === updatedEmployee.EmpNo ? updatedEmployee : employee
-      )
-    );
-  }
-
-  const handleSubmit = ((e) => {
-    e.preventDefault();
-    // updateEmployee(employee)
-    setPopupContent("Changes saved, now Hit upload to synch your changes!")
-    setShowPopupMsg(true);
-    console.log(employee);
-    console.log(employeeDetails);
-    
-
-  })
   return (
     <>
       <div className="bg-blue-100 p-5 py-10 rounded-lg relative block mt-1 ml-8 mr-8 flex-grow ">
         {/* <h1 className="text-3xl text-center font-bold">Update Employeee Details</h1> */}
-        <form onSubmit={handleSubmit} >
+        <form >
           <div className="md:flex gap-20 flex-wrap">
             <div className="flex-1">
               <div className="flex flex-col">
@@ -124,7 +103,7 @@ export default function HomeEmploy() {
                 <div className="md:flex w-full gap-10">
                   <Input
                     title="Birth Date"
-                    value={convertFromJulianToDateTime(employee.BirthDate)}
+                    value={convertFromJulianToDateTime(employee.BirthDate) || ""}
                     type="date"
                     inputId="bdate"
                     name="BirthDate"
@@ -132,7 +111,7 @@ export default function HomeEmploy() {
                     onChange={handleChange} />
                   <Input
                     title="Contract End Date"
-                    value={convertFromJulianToDateTime(employee.DischDate)}
+                    value={convertFromJulianToDateTime(employee.DischDate)|| ""}
                     type="date"
                     inputId="DischDate"
                     name="DischDate"
@@ -159,13 +138,6 @@ export default function HomeEmploy() {
             </div>
           </div>
           <div className="flex ">
-            <button
-              type="submit"
-              className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600"
-            // onClick={updateEmployee}
-            >
-              Save
-            </button>
             {/* <Findemployee /> */}
           </div>
         </form>

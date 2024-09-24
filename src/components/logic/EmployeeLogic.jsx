@@ -1,9 +1,7 @@
 import moment from 'moment';
 
 export function convertFromJulianToDateTime(julian_time, required_format = 'YYYY-MM-DD') {
-  // if (!julian_time || isNaN(julian_time)) {
-  //   return moment().format(required_format); // Current date
-  // }
+  if(julian_time === 0) return "";
 
   try {
     julian_time = parseFloat(julian_time) - 1; // Subtract 1 from the Julian date
@@ -15,8 +13,6 @@ export function convertFromJulianToDateTime(julian_time, required_format = 'YYYY
     let day = String(converted_date.getUTCDate()).padStart(2, '0');
     let month = String(converted_date.getUTCMonth() + 1).padStart(2, '0'); // Months are zero indexed
     let year = converted_date.getUTCFullYear();
-    // console.log(julian_time);
-    // console.log(day, month, year);
     return `${year}-${month}-${day}`; // Return the date in DD/MM/YYYY format
   } catch (e) {
     return console.log(e);

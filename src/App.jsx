@@ -31,17 +31,17 @@ import { DataProvider } from './ContextProviders/DataContexts';
 import Register from './auth/Register';
 import AdminNav from './components/admin_page/AdminNav';
 import Admin from './components/admin_page/Admin';
+import AdditionalSettings from './components/AdditionalSettings';
+
 function App() {
   return (
     <div className="App flex flex-col min-h-screen bg-white text-black">
       <AuthProvider>
         <Router>
-          <header>
-            <Navbar />
-          </header>
 
           <main className="flex-grow">
             <DataProvider>
+              <Navbar />
               <Routes className="relative">
                 <Route path="/utilities" element={<Utilities />} />
                 <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth>} />
@@ -50,11 +50,11 @@ function App() {
                 <Route path="/reports" element={<Reports />} />
                 <Route path="/processes" element={<Processes />} />
                 <Route path="/adminstrators" element={<RequireAuth><AdminNav /></RequireAuth>} />
+                <Route path="/additional-settings" element={<RequireAuth><AdditionalSettings /></RequireAuth>} />
                 <Route path="/transactions" element={<RequireAuth><TransactionsHome /></RequireAuth>}>
                   <Route path="" element={<TransactionTopNav />} />
                   <Route path="view-batches" element={<ViewBatches />} />
                 </Route>
-
                 <Route path="/employees" element={<RequireAuth><Employees /></RequireAuth>}>
                   <Route path="" element={<EmpNav />} />
                   <Route path="company" element={<CompanyNav />} />
@@ -67,7 +67,7 @@ function App() {
                 </Route>
 
                 <Route path="/login" element={<Login />} />
-                <Route path="/" element={<RequireAuth> <Navigate to="/employees"/> </RequireAuth>} />
+                <Route path="/" element={<RequireAuth> <Navigate to="/employees" /> </RequireAuth>} />
               </Routes>
             </DataProvider>
           </main>

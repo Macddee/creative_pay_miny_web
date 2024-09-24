@@ -12,34 +12,17 @@ export default function Empaddress() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setemployeeDetails((employee) => ({
       ...employee,
       [name]: value,
     }));
   };
-    
-  console.log(employeeDetails);
-
-  function updateEmployeeDetails(updatedEmployeeDetails) {
-    setAllEmployeeDetails(prevEmployees =>
-      prevEmployees.map(employee =>
-        employeeDetails.EmpNo === updatedEmployeeDetails.EmpNo ? updatedEmployeeDetails : employee
-      )
-    );
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    updateEmployeeDetails(employeeDetails)
-    setShowPopupMsg(true);
-  }
 
   return (
     <div>
       <div className="bg-blue-100 max-w-[1300px] p-5 md:p-15 py-10 rounded-lg w-[95%] relative block mt-1 m-auto">
         {/* <h1 className="text-3xl text-center font-bold">Update Employeee Details</h1> */}
-        <form onSubmit={handleSubmit} >
+        <form >
           <div className="md:flex gap-20 flex-wrap">
             <div className="flex-1">
               <div className="flex flex-col">
@@ -97,13 +80,6 @@ export default function Empaddress() {
               </div>
             </div>
           </div>
-          <button
-            type="submit"
-            className="btn btn-wide bg-blue-400 hover:bg-transparent outline-blue-600 text-black border-blue-600 m-4 ml-1"
-            onClick={() => console.log("pressed")}
-          >
-            Submit
-          </button>
         </form>
       </div>
     </div>
